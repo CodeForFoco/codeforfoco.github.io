@@ -10,6 +10,8 @@ $socialbuttonOutline: #0a175b;/*Should be slightly darker than primary color*/
 $headerColor: transparent;
 $footerColor: gray;
 
+/*Font Colors*/
+$primaryFontColor: #0F228B;
 /*HAMBURGER COLORS*/
 $drawerOpenColor: #fff;
 $drawerClosedColor: #fff;
@@ -71,7 +73,10 @@ footer{
 	min-width: 100%;
 
 	img{
-		width: 85%;
+		width: 100%;
+	}
+	a{
+		font-color: $primaryFontColor;
 	}
 }
 
@@ -203,8 +208,10 @@ section.module.parallax-1 {
 	}
 	.card{
 		display: inline-block;
-		padding: 10px;
-		background-color: rgba(0,0,255,0.5);
+		padding: 4px;
+		margin: 10px;
+		background-color: rgba(0,0,0,0.5);
+		border: none;
 	}
 
 }
@@ -275,7 +282,7 @@ section.module.parallax-2 {
 /*------------------------------------------------------*/
 
 
-a { text-decoration: none; }
+a { text-decoration: none; color: #000; }
 a:active { text-decoration: none; }
 a:hover { text-decoration: none; }
 
@@ -691,7 +698,7 @@ nav a, nav a:active, nav a:selected {
 	border-left: none;
 	border-right: 100vw solid $primaryColor;
 	border-bottom: ($triangleHeight * 2) solid transparent;
-	padding: 0 0 $triangleHeight 0;
+	padding: 0 0 ($triangleHeight * 1.1) 0;
 	z-index: 10;
 }
 

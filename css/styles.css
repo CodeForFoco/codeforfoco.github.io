@@ -1,6 +1,7 @@
 /*FONT FAMILIES*/
 /*DEFAULT COLORS*/
 /*Should be slightly darker than primary color*/
+/*Font Colors*/
 /*HAMBURGER COLORS*/
 /* TRIANGLE and SLANT Height */
 /* SECTION TOP OFFSET */
@@ -46,7 +47,9 @@ footer {
   width: 100vw;
   min-width: 100%; }
   footer img {
-    width: 85%; }
+    width: 100%; }
+  footer a {
+    font-color: #0F228B; }
 
 /*-----------------------
 		HERO SLIDER
@@ -144,8 +147,10 @@ section.module.parallax-1 {
     height: 100%; }
   #lp-skills .card {
     display: inline-block;
-    padding: 10px;
-    background-color: rgba(0, 0, 255, 0.5); }
+    padding: 4px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none; }
 
 /* ----------------------------------------- PARTNERS*/
 #lp-partners {
@@ -195,7 +200,8 @@ section.module.parallax-2 {
 /* Typography */
 /*------------------------------------------------------*/
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 a:active {
   text-decoration: none; }
@@ -558,7 +564,7 @@ nav a, nav a:active, nav a:selected {
   border-left: none;
   border-right: 100vw solid #0F228B;
   border-bottom: 100px solid transparent;
-  padding: 0 0 50px 0;
+  padding: 0 0 55px 0;
   z-index: 10; }
 
 .slant-top-gray {
