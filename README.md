@@ -23,7 +23,7 @@ A few things to keep in mind:
 
 ## Bugs / Feedback / Suggestions
 
-We encourage you to open up an issue if you have any feedback, suggestions or bugs.
+We encourage you to [open up an issue](https://github.com/CodeForFoco/codeforfoco.github.io/issues/new) if you have any feedback, suggestions or bugs.
 
 ## License
 
