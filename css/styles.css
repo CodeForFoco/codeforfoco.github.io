@@ -75,7 +75,7 @@ cd-hero-slider .cd-btn {
 -------------------------*/
 /* ---------------EVENTS----------------*/
 #top .overlay {
-  min-height: 100%;
+  min-height: 750px;
   width: 100vw;
   min-width: 100%;
   margin: 0;
@@ -83,7 +83,7 @@ cd-hero-slider .cd-btn {
   /*set this to relative for triangles*/ }
 #top .social {
   position: absolute;
-  bottom: 1em;
+  bottom: 0;
   left: 40%;
   z-index: 100; }
 
@@ -147,10 +147,9 @@ section.module.parallax-1 {
     height: 100%; }
   #lp-skills .card {
     display: inline-block;
-    padding: 4px;
+    padding: 8px;
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none; }
+    background-color: rgba(0, 0, 0, 0.5); }
 
 /* ----------------------------------------- PARTNERS*/
 #lp-partners {
