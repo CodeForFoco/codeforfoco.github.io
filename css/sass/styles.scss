@@ -8,7 +8,7 @@ $primaryColor: #0F228B;
 $primaryColorRGBA: rgba(15,34,139,0.5);
 $socialbuttonOutline: #0a175b;/*Should be slightly darker than primary color*/
 $headerColor: transparent;
-$footerColor: gray;
+$footerColor: #aaa;
 
 /*Font Colors*/
 $primaryFontColor: #0F228B;
@@ -24,11 +24,7 @@ $triangleHeight: 50px;
 /* SECTION TOP OFFSET */
 $sectionTopOffset: 4em;
 
-/*--------------------------*/
-/* Typography Defaults */
-/*--------------------------*/
-h1,h2,h3,h4 {	font-family: $fontFamilyHeaders; }
-p, label, input, button {font-family: $fontFamilyText; }
+
 
 /*--------------------------*/
 /* Structure#				 */
@@ -36,8 +32,8 @@ p, label, input, button {font-family: $fontFamilyText; }
 html, body{
 	padding:0;
 	margin:0;
+	overflow-x:hidden;
 }
-
 header {
 	width: 100%;
 	height: 70px;
@@ -45,14 +41,15 @@ header {
 	background-color: $headerColor;
 
 	nav {
-		padding-right: 4em;
+		
 
-		.nav-title{
+		h1{
 			font-size: 30px;
-			text-align: center;
+			padding-left: 50px;
 		}
 		.nav-links{
 			text-align: right;
+			padding-right: 4em;
 		}
 	}
 }
@@ -62,13 +59,9 @@ header {
 		top:0;
 		z-index: 200;
 }
-
-
-
 footer{
 	background-color: $footerColor;
-	height: 40vh;
-	min-height: 40vh;
+	height: 350px;
 	width: 100vw;
 	min-width: 100%;
 
@@ -105,54 +98,47 @@ cd-hero-slider .cd-btn{
 }
 
 
-
-
 /*-----------------------
 		#SECTIONS
 -------------------------*/
 
-/* ---------------EVENTS----------------*/
+
+/* ---------------TOP LANDING----------------*/
 #top{
+	height: 700px;
+	width: 100vw;
+	min-width: 100%;
 	.overlay{
-		min-height: 750px;
-		width: 100vw;
-		min-width: 100%;
+		height: inherit;
 		margin:0;
-		position: relative; /*set this to relative for triangles*/	
 	}
 	.social{
-		position: absolute;
-		bottom: 0;
-		left: 40%;
-		z-index: 100;
+		display: block;
+		margin: 0 auto 5% auto;
+		text-align: center;
 	}
 
 }
 
 
-
-
 /* ---------------EVENTS----------------*/
 #lp-events{
 	height: 100%;
-	padding-bottom: 40px;
+	min-height: 700px;
+	padding: 40px 0 40px 0;
 
 	.overlay{
 		min-height: 100%;
 		width: 100vw;
 		min-width: 100%;
 		margin:0;
-		position: relative; /*set this to relative for triangles*/	
 		padding: $sectionTopOffset;
 	}
 }
 
-
-
 /*---------MISSION STATEMENT ----------*/
 #lp-mission{
-	height: 60vh;
-	max-height: 100vh;
+	height: 450px;
 	width: 100vw;
 	min-width: 100%;
 
@@ -162,14 +148,15 @@ cd-hero-slider .cd-btn{
 		width: 100vw;
 		min-width: 100%;
 		margin:0;
-		position: relative; /*set this to relative for triangles*/	
-		padding:$sectionTopOffset 0 0 0;
+		padding:0 0 0 0;
 		
 		
 	}
 	.text-box {
-		margin:5em 0 0 0;
+		display: block;
+		margin:7% auto 0 auto;
 		padding: 0;
+		width: 50em;
 		h1 {
 			text-align: center;
 			line-height: 2em;
@@ -191,45 +178,52 @@ section.module.parallax-1 {
 }
 
 
-
 /*-----------HELP/SKILLS-------------------------*/
 #lp-skills{
 	left:0;
 	top:0;
-	background-color: gray;
+	background-color: #aaa;
 	height: 100%;
-	margin:0;
 	width: 100vw;
 	min-width: 100%;
-	padding: $sectionTopOffset 0 $sectionTopOffset 0;
-	
+	padding: 0;
+	margin:0;
+
 	.overlay{
-		height: 100%;
+		height: inherit;
 	}
 	.card{
-		display: inline-block;
-		padding: 8px;
-		margin: 10px;
-		background-color: rgba(0,0,0,0.5);
+		float:left;
+		width: 49.5%;
+		height: 350px;
+		padding: 0;
+		margin: 0;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		h4{
+			line-height: 350px;
+			text-align: center;
+			background: transparent;
+		}
 	}
 
 }
 
 
-
-/* ----------------------------------------- PARTNERS*/
+/*--------------------PARTNERS-------------------------*/
 #lp-partners {
-	height: 80vh;
+	height: 700px;
 	min-height: 100%;
 	margin:0;
 
 	.overlay{
 		background-color: rgba(255,255,255,0.7);
-		min-height: 100%;
-		width: 100vw;
-		min-width: 100%;
+		height: inherit;
+		width: 100%;
 		margin:0;
-		position: relative; /*set this to relative for triangles*/	
+		
 		padding:$sectionTopOffset 0 0 0;
 		
 	}
@@ -239,18 +233,16 @@ section.module.parallax-2 {
 }
 
 
-
-/* ----------------------------------------- SECTION*/
+/* ---------------#Newsletter#------------------------*/
 #lp-newsletter{
 	position: relative;
 	background: #fff;
-	height: 30vh;
+	height: 200px;
 	width: 100vw;
 	min-width: 100%;
 	margin: 0;
-
 	.overlay{
-		min-height: 100%;
+		height: inherit;
 		width: 100vw;
 		min-width: 100%;
 		margin:0;
@@ -264,51 +256,48 @@ section.module.parallax-2 {
 	}
 
 	form{
-		margin-top: 4em;
-		position: absolute;
-		top: 30%;
-		left: 20%;
+		display: block;
+		margin: 5% auto 0 auto;
+		text-align: center;
+	}
+	button {
+		font-size: 1em;
+		border-radius: 2%;
+		padding: 5px;
+	}
+	label {
+		font-size: 1.3em;
+		padding: 0 10px 0 20px;
+	}
+	input {
+		font-size: 1.3em;
+		padding: 5px;
+		border-radius: 2%;
 	}
 }
 
 
-
-
-
-
 /*------------------------------------------------------*/
-/* Typography */
+/* #Typography# */
 /*------------------------------------------------------*/
 
-
+h1,h2,h3,h4 {	font-family: $fontFamilyHeaders; }
+p, label, input, button {font-family: $fontFamilyText; }
 a { text-decoration: none; color: #000; }
 a:active { text-decoration: none; }
 a:hover { text-decoration: none; }
-
 code {
 	font-family: "Lucida Console", Monaco, monospace;
 	font-size: 1em;
 	font-weight: bold;
 	color: #000;
 	background: gray;
+	
+	strong{
+		color: red;
+		font-weight: bolder;
+	}
 }
-code strong{
-	color: red;
-	font-weight: bolder;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ------------------------------------------------ */
@@ -317,54 +306,51 @@ code strong{
 nav {
 	width: 100%;
 	height: 100%;
+	
+	.logo{
+		width: 64px;
+		height: 64px;
+	}
+	.nav-title{
+		display: inline-block;
+		width: 50%;
+		margin: 0;
+		color: #fff;
+		font-family: 'Quantico', sans-serif;
+		font-size: 1.1em;
+		line-height: 50px;
+		vertical-align: middle;
+		padding-left: 100px;
+	}
+	.nav-title h1{ /*Override h1 so it centers vertically*/
+		margin: 0;
+		padding: 0;
+	}
+	.nav-links{
+		display: inline-block;
+		width: 50%;
+		margin: 0;
+		float: right;
+	}
+	a{
+		display: inline-block;
+		font-family: 'Nunito', sans-serif;
+		font-size: 1em;
+		line-height: 50px;
+		vertical-align: middle;
+		color: #fff;
+		padding: 0 15px 0 0;
+		transition: 0.5s;
+	}
+	a:hover {
+		color: #ccc;
+		text-shadow: 0.1px 0.1px 1px rgba(0,0,0,0.3);
+	}
+	/* Clean up nav links */
+	a, a:active, a:selected {
+		text-decoration: none;
+	}
 }
-nav .logo{
-	width: 64px;
-	height: 64px;
-}
-
-nav .nav-title{
-	display: inline-block;
-	width: 50%;
-	margin: 0;
-	color: #fff;
-	font-family: 'Quantico', sans-serif;
-	font-size: 1.1em;
-	line-height: 50px;
-	vertical-align: middle;
-	text-align: center;
-}
-nav .nav-title h1{ /*Override h1 so it centers vertically*/
-	margin: 0;
-	padding: 0;
-}
-nav .nav-links{
-	display: inline-block;
-	width: 50%;
-	margin: 0;
-	float: right;
-}
-nav a{
-	display: inline-block;
-	font-family: 'Nunito', sans-serif;
-	font-size: 1em;
-	line-height: 50px;
-	vertical-align: middle;
-	color: #fff;
-	padding: 0 15px 0 0;
-	transition: 0.5s;
-}
-nav a:hover {
-	color: #ccc;
-	text-shadow: 0.1px 0.1px 1px rgba(0,0,0,0.3);
-}
-/* Clean up nav links */
-nav a, nav a:active, nav a:selected {
-	text-decoration: none;
-}
-
-
-
 
 
 /*------------------------------------------------------*/
@@ -381,12 +367,12 @@ nav a, nav a:active, nav a:selected {
 
 
 /*------------------------------------------------------*/
-/* DRAWER MENU */
+/* #DRAWER MENU# */
 /*------------------------------------------------------*/
 #drawer-button{
 	position: fixed;
-	left: 20px;
-	top: 17px;
+	left: 22px;
+	top: 20px;
 	width: 30px;
 	height: 10px;
 	/*padding: 10px 35px 16px 0px;*/
@@ -445,16 +431,16 @@ nav a, nav a:active, nav a:selected {
 }
 .drawer-side{
 	float: left;
-	width: 25%;
+	width: 28%;
 	height: 100vh;
 	margin:0;
-	padding: 5% 5px 1% 1%;
+	padding: 4em 0 0 2em;
 	background: rgba(255,255,255,0.95);
 	overflow-y:auto;
 }
 .screen-side{
 	float: left;
-	width: 72.5%;
+	width: 71.5%;
 	height: 100vh;
 	background: rgba(0,0,0,0.5);
 	margin: 0;
@@ -476,7 +462,6 @@ nav a, nav a:active, nav a:selected {
 	color: #000;
 	
 }
-
 #drawer h4{
 	font-size: 1.2em;
 	font-weight: bold;
@@ -509,7 +494,6 @@ nav a, nav a:active, nav a:selected {
 	vertical-align: middle;
 	text-align: center;
 	background-color: $primaryColor;
-		
 	border: 2px solid $socialbuttonOutline;
 	color: #fff;
 	margin-left: 1px;
@@ -517,150 +501,131 @@ nav a, nav a:active, nav a:selected {
 	cursor: pointer;
 	transition: 0.2s;
 }
-
 .social-mobile-icon:hover{
 	background-color: $socialbuttonOutline;
 	box-shadow: 0.2px 0.2px 2px #000;
 }
 
 
-
-
-
 /*--------------------------*/
 /*  EVENTS BLOG */
 /*--------------------------*/
-.event-container{
-
-}
+.event-container{}
 .event{
 	display: inline-block;
 	width: 100%;
 	padding: 0;
 	margin: 20px;
 	cursor: pointer;
-}
-.event-sml{
-	width: 100%;
-	height: 280px;
-}
-.event-big{
-	width: 100%;
-	height: 200px;
-}
-.event-link{
-	text-decoration: none;
-}
 
-.event .header{
-		position: absolute;
-		top:0;
-		left:0;
+	.event-big{
 		width: 100%;
+		height: 200px;
+	}
+	.event-link{
+		text-decoration: none;
+	}
+
+	.header{
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			background-color: rgba(0,0,0,0.5);
+	}
+	h4{
+		display: inline-block;
 		margin: 0;
 		padding: 0;
-		background-color: rgba(0,0,0,0.5);
-}
-.event h4{
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	font-size: 1.3em;
-	padding: 0;
+		color: #000;
+		font-size: 1.3em;
+		padding: 0;
 
-}
-.event h4 title{
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	font-size: 1.7em;
-	font-weight: bolder;
-	padding: 0;
+	}
+	h4 .title{
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		color: #000;
+		font-size: 1.7em;
+		font-weight: bolder;
+		padding: 0;
 
-}
-.event p{
-	font-family: 'Nunito', sans-serif;
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	color: #777;
-	font-size: 1em;
-	padding: 0;
+	}
+	p{
+		font-family: 'Nunito', sans-serif;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		color: #777;
+		font-size: 1em;
+		padding: 0;
 
-}
-.event .date-time{
-	width: 100%;
-}
-.event .date{
-	display: block;
-	width: 100%;
-	font-size: 1.2em;
-	color: #000;
-	text-align: left;
-	padding:0;
-	margin:0;
-}
-.event .time{
-	display: inline-block;
-	padding: 0 4px 0 0;
-	text-align: right;
-	color: #777;
-	margin: 0;
-	font-size: 0.9em;
-}
-
-.event .view-event{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	font-size: 14px;
-	text-align: right;
-	background-color: rgba(0,0,0,0.3);
-}
-.event .view-event h4{
-	padding-right: 20px;
-}
-
-.event .description{
-	position:absolute; 
-    bottom:0;
-    width:100%;
-    height:100%;
-	margin: 0;
-	padding: 0;
-	background-color:rgba(24,135,119,0.97);
-	z-index: 1;
+	}
+	.date-time{
+		width: 100%;
+	}
+	.date{
+		display: block;
+		width: 100%;
+		font-size: 1.2em;
+		color: #000;
+		text-align: left;
+		padding:0;
+		margin:0;
+	}
+	.time{
+		display: inline-block;
+		padding: 0 4px 0 0;
+		text-align: right;
+		color: #777;
+		margin: 0;
+		font-size: 0.9em;
+	}
+	.view-event{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		font-size: 14px;
+		text-align: right;
+		background-color: rgba(0,0,0,0.3);
 	
+		h4{
+			padding-right: 20px;
+		}
+	}
+	.description{
+		position:absolute; 
+	    bottom:0;
+	    width:100%;
+	    height:100%;
+		margin: 0;
+		padding: 0;
+		background-color:rgba(24,135,119,0.97);
+		z-index: 1;
+		
+		p{
+			padding: 10px;
+			color: #fff;
+			font-family: 'Nunito', sans-serif;
+			font-size: 16px;
+		}
+	}
+	img{
+		height: 100%;
+		width: 100%;
+	}
+	.more-arrow{
+		position: absolute;
+		right: 10px;
+		top: 0;
+		font-size: 46px;
+		color: #fff;
+		padding-right: 4%;
+	}
 }
-.event .description p{
-	padding: 10px;
-	color: #fff;
-	font-family: 'Nunito', sans-serif;
-	font-size: 16px;
-}
-
-.event img{
-	height: 100%;
-	width: 100%;
-}
-
-
-.event .more-arrow{
-	/*display: block;
-	text-align: right;
-	margin: auto;*/
-
-	position: absolute;
-	right: 10px;
-	top: 0;
-	font-size: 46px;
-	color: #fff;
-	padding-right: 4%;
-	
-}
-
 
 
 /*--------------------------*/
@@ -672,20 +637,20 @@ nav a, nav a:active, nav a:selected {
     background-image: linear-gradient(to right, transparent 50%, rgba(0,0,0,0.1) 100%);
 	transition: 0.2s;
 }
-.archive p{
-	padding: 1em 1em 1em 2em;
-}
-.archive i{
-	padding:10px;
-}
+.archive {
+	p{
+		padding: 1em 1em 1em 2em;
+	}
 
-
+	i{
+		padding:10px;
+	}
+}
 
 
 /*--------------------------*/
-/*  SLANTS# */
+/*  #SLANTS# */
 /*--------------------------*/
-
 .slant-very-top{
 	position: absolute;
 	top:0;
@@ -694,25 +659,13 @@ nav a, nav a:active, nav a:selected {
 	height:0;
 	margin:0;
 	min-height:0;
-	border-left: none;
-	border-right: 100vw solid $primaryColor;
+	border-left: 70vw solid $primaryColor;
+	border-right: none;
 	border-bottom: ($triangleHeight * 2) solid transparent;
-	padding: 0 0 ($triangleHeight * 1.1) 0;
+	/*padding: 0 0 ($triangleHeight * 1.1) 0;*/
 	z-index: 10;
 }
 
-.slant-top-gray{
-	position: absolute;
-	top:0;
-	left:0;
-	width: 0;
-	height: 0;
-	margin:0;
-	border-left: none;
-	border-right: 100vw solid gray;
-	border-bottom: $triangleHeight solid transparent;
-	z-index: 200;
-}
 .slant-bottom-gray{
 	position: absolute;
 	bottom:0;
@@ -720,24 +673,13 @@ nav a, nav a:active, nav a:selected {
 	width: 0;
 	height: 0;
 	margin:0;
-	border-left: 100vw solid gray;
+	border-left: 100vw solid $footerColor;
 	border-right: none;
 	border-top: $triangleHeight solid transparent;
 	z-index: 200;
 }
-.slant-top-white{
-	position: absolute;
-	bottom:0;
-	left:0;
-	width: 0;
-	height: 0;
-	margin:0;
-	border-left: none;
-	border-right: 100vw solid gray;
-	border-top: $triangleHeight solid transparent;
-	z-index: 200;
-}
-.slant-bottom-white, .slant-bottom-white_top{
+
+.slant-bottom-white_top{
 	position: absolute;
 	bottom:0;
 	left:0;
@@ -749,70 +691,6 @@ nav a, nav a:active, nav a:selected {
 	border-top: $triangleHeight solid transparent;
 	z-index: 10;
 }
-.slant-bottom-white_top{
-	padding: ($triangleHeight * 1.5) 0 0 0;
-}
-
-.triangle-gray-transparent-gray-down {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	margin:0;
-	border-left: 50vw solid gray;
-	border-right: 50vw solid gray;
-	border-top: $triangleHeight solid transparent;
-	transform: translateX(-50vw);
-	z-index: 200;
-
-}
-.triangle-white-transparent-white-down {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	margin:0;
-	border-left: 50vw solid white;
-	border-right: 50vw solid white;
-	border-top: $triangleHeight solid transparent;
-	transform: translateX(-50vw);
-	z-index: 200;
-
-}
-
-.triangle-white-transparent-white-up {
-	position: absolute;
-	top:0;
-	left:50%;
-	width: 0;
-	height: 0;
-	margin:0;
-	border-left: 50vw solid white;
-	border-right: 50vw solid white;
-	border-bottom: $triangleHeight solid transparent;
-	transform: translateX(-50vw);
-	z-index: 200;
-
-}
-.triangle-gray-transparent-gray-up {
-	position: absolute;
-	top:0;
-	left:50%;
-	width: 0;
-	height: 0;
-	margin:0;
-	border-left: 50vw solid gray;
-	border-right: 50vw solid gray;
-	border-bottom: $triangleHeight solid transparent;
-	transform: translateX(-50vw);
-	z-index: 200;
-
-}
-
-
-
 
 
 
@@ -876,9 +754,6 @@ nav a, nav a:active, nav a:selected {
 
 
 
-
-
-
 /* ============================================================
   SECTION PARALLAX
 ============================================================ */
@@ -906,44 +781,14 @@ section.module.parallax:last-child {
 
 
 /* ------------------------------------------------ */
-/*		HELPER CLASSES							*/
-/* ------------------------------------------------ */
-.centered {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-
-
-
-/* ------------------------------------------------ */
 /*		Media Queries								*/
 /* ------------------------------------------------ */
-
-
-
-
 /* iPhone 6 Portrait */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
-
-	.section{
-		width: 100vw;
-		min-width: 100%;
-		height: 100%;
-		padding:10px;
-		margin:0;
-		background-color: transparent;
-	}
-  
-	#lp-newsletter,footer,#lp-mission{
-		height: 20vh;
-	}
 
 	nav {
 		.nav-links {
@@ -952,7 +797,7 @@ section.module.parallax:last-child {
 			height:0;
 		}
 		.nav-title {
-			width: 100%;
+			padding-left: 75px;
 		}
 	}
 
@@ -967,34 +812,3 @@ section.module.parallax:last-child {
 	}
 	
 }
-
-
-
-
-
-/*============================================
-		FORMS
-==============================================*/
-
-form{
-	margin: 10px;
-	padding: 0.5%;
-}
-
-button {
-	font-size: 1em;
-	border-radius: 2%;
-	padding: 5px;
-}
-label {
-	font-size: 1.3em;
-	padding: 0 10px 0 20px;
-}
-input {
-	font-size: 1.3em;
-	padding: 5px;
-	border-radius: 2%;
-}
-
-
-

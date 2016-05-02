@@ -1,7 +1,5 @@
 /* -------------------------------- 
-
 Main Components 
-
 -------------------------------- */
 .cd-header {
   position: absolute;
@@ -177,9 +175,7 @@ Slider
 }
 
 /* -------------------------------- 
-
 Single slide style
-
 -------------------------------- */
 .cd-hero-slider li {
   background-position: center center;
@@ -233,7 +229,7 @@ Single slide style
 .cd-hero-slider .cd-img-container img {
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 55%;
   bottom: auto;
   right: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -359,7 +355,8 @@ Single slide style
 @media only screen and (min-width: 1170px) {
   .cd-hero-slider .cd-full-width,
   .cd-hero-slider .cd-half-width {
-    padding-top: 180px;
+    /*padding-top: 180px;*/
+    padding-top: 17%;
   }
   .cd-hero-slider h2, .cd-hero-slider p {
     margin-bottom: 20px;
@@ -381,16 +378,14 @@ Single slide style
 
     .cd-hero-slider .cd-full-width,
     .cd-hero-slider .cd-half-width {
-    padding: 100px 0 0 0;
+    padding: 150px 0 0 0;
     margin: 0;
   }
 
 
 
 /* -------------------------------- 
-
 Single slide animation
-
 -------------------------------- */
 @media only screen and (min-width: 768px) {
   .cd-hero-slider .cd-half-width {
@@ -495,9 +490,7 @@ Single slide animation
   }
 }
 /* -------------------------------- 
-
 Slider navigation
-
 -------------------------------- */
 .cd-slider-nav {
   position: absolute;
@@ -650,9 +643,7 @@ Slider navigation
 }
 
 /* -------------------------------- 
-
 Main content
-
 -------------------------------- */
 .cd-main-content {
   width: 90%;

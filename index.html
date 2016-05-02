@@ -1,20 +1,20 @@
  <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Code For FoCo</title>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+  <!--Font-Awesome-->
+
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-  <!--Font-Awesome-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  
 
   <link rel="stylesheet" type="text/css" href="css/hero-slider.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -25,21 +25,17 @@
 
 <body>
 <div class="container-fluid">
-<div class="row">
+    <div class="row">
 
+      <a id="drawer-button"><span></span></a>
+  
 
-
-  <a id="drawer-button"><span></span></a>
-
-
-  <!-- LANDING SECTION-->
-  <section id="top" class="section">
-  <div class="overlay">
-  <div class="slant-very-top"></div>
-
-
-          <!-- PRIMARY NAVIGATION -->
-              <header class="header-fixed">
+      <!-- LANDING SECTION-->
+      <section id="top" class="section">
+          <div class="overlay">      
+              
+            <!-- PRIMARY NAVIGATION -->
+            <header class="header-fixed">
                 <nav>
                   <div class="nav-title"><h1>Code For FoCo</h1></div>
                   <div class="nav-links">
@@ -50,10 +46,10 @@
                   </div>
                 </nav>
             </header>
-
-
-        <!-- HERO SLIDER -->
-              <section class="cd-hero">
+             
+            <!-- HERO SLIDER -->
+            <section class="cd-hero">
+                <div class="slant-very-top"></div>
                 <ul class="cd-hero-slider autoplay">
                   <!-- Slide 1-->
                   <li class="selected">
@@ -88,210 +84,180 @@
                     </div>
                   </li>
                 </ul>
-              </section>
-        <!-- END HERO SLIDER-->
+                <div class="slant-bottom-white_top"></div>
+            </section>
 
-
-        <div class="social">
-            <a href="www.facebook.com" title="Facebook">
-            <i class="social-mobile-icon fa fa-facebook-official" aria-hidden="true"></i>
-            </a>
-            <a href="www.twitter.com" title="Twitter">
-            <i class="social-mobile-icon fa fa-twitter-square" aria-hidden="true"></i>
-            </a>
-            <a href="https://codeforfoco.slack.com" title="Slack">
-            <i class="social-mobile-icon fa fa-slack" aria-hidden="true"></i>
-            </a>
-            <a href="www.youtube.com" title="YouTube">
-            <i class="social-mobile-icon fa fa-youtube-square" aria-hidden="true"></i>
-            </a>
-        </div>
-        <div class="slant-bottom-white_top"></div>
-
-</div>
-</section>
-
-
-
-
-
-<!-- EVENTS AND RECENT POSTS -->
-<section id="lp-events" class="section">
-<div class="overlay">
-    <div class="row">
-            <div class="col-xs-6 col-md-6">
-              <h1>Events</h1>
-
-
-            <!-- Start Events Data - Repeat for Wintersmith -->
-            <div class="events-data">
-
-                <div data-title="Code For FoCo Openhouse"
-                  data-author="Jordan"
-                  data-date="5/20/2016"
-                  data-starttime="9:00AM"
-                  data-endtime="12:00PM"
-                  data-desc="Do you need visual outreach for your idea, but don't have the financial well being? Code For Fort Collins is reaching out to the community. Stop by and get to know us. Let us show you how we can help bring your ideas to life."
-                  data-info="242 Linden St. Fort Collins, CO | Pizza and beer will be provided."
-                  data-img="http://lorempixel.com/700/300/technics/2/"
-                  data-link="eventspage.html"
-                ></div>
-
-                <div data-title="Hack-a-thon"
-                  data-author="Jordan"
-                  data-date="6/01/2016"
-                  data-starttime="10:00AM"
-                  data-endtime="12:00AM"
-                  data-desc="Crush code video game! Compete for the grand prize of 1 million dollars and a job making video games."
-                  data-info="242 Linden St. Fort Collins, CO | Sushi and Sake will be provided."
-                  data-img="http://lorempixel.com/700/300/technics/2/"
-                  data-link="eventspage.html"
-                ></div>
-
+            <!--TOP SOCIAL ICONS-->
+            <div class="social">
+                <a href="www.facebook.com" title="Facebook">
+                <i class="social-mobile-icon fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+                <a href="www.twitter.com" title="Twitter">
+                <i class="social-mobile-icon fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="www.slack.com" title="Slack">
+                <i class="social-mobile-icon fa fa-slack" aria-hidden="true"></i>
+                </a>
+                <a href="www.youtube.com" title="YouTube">
+                <i class="social-mobile-icon fa fa-youtube-square" aria-hidden="true"></i>
+                </a>
             </div>
 
-            <div class="events-container event-container"></div>
-
-            <a class="archive" href="#"><p><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>See All Events</p></a>
-        </div>
-        <!-- End Events -->
+          </div>
+      </section>
 
 
-        <div class="col-xs-6 col-md-6">
-            <h1>Blog</h1>
+      <!-- EVENTS AND RECENT POSTS -->
+      <section id="lp-events" class="section">
+          <div class="overlay">
+              <div class="row">
+                  <div class="col-xs-6 col-md-6">
+                      <h1>Events</h1>
+            
+                          <!-- Start Events Data - Repeat for Wintersmith -->
+                          <div class="events-data">
 
-            <!-- Start Blog Data - Repeat for Wintersmith -->
-            <div class="blog-data">
+                              <div data-title="Code For FoCo Openhouse"
+                                data-author="Jordan"
+                                data-date="5/20/2016"
+                                data-starttime="9:00AM"
+                                data-endtime="12:00PM"
+                                data-desc="Do you need visual outreach for your idea, but don't have the financial well being? Code For Fort Collins is reaching out to the community. Stop by and get to know us. Let us show you how we can help bring your ideas to life."
+                                data-info="242 Linden St. Fort Collins, CO | Pizza and beer will be provided."
+                                data-img="http://lorempixel.com/700/300/technics/2/"
+                                data-link="eventspage.html"
+                              ></div>
+                              
+                              <div data-title="Hack-a-thon"
+                                data-author="Jordan"
+                                data-date="6/01/2016"
+                                data-starttime="10:00AM"
+                                data-endtime="12:00AM"
+                                data-desc="Crush code video game! Compete for the grand prize of 1 million dollars and a job making video games."
+                                data-info="242 Linden St. Fort Collins, CO | Sushi and Sake will be provided."
+                                data-img="http://lorempixel.com/700/300/technics/2/"
+                                data-link="eventspage.html"
+                              ></div>
 
-                <div data-title="How to code faster"
-                  data-author="Jordan"
-                  data-date="4/28/2016"
-                  data-starttime=""
-                  data-endtime=""
-                  data-desc=""
-                  data-info="Introduction to Learning to Learn concepts"
-                  data-img="http://lorempixel.com/700/300/technics/2/"
-                  data-link="eventspage.html"
-                ></div>
+                          </div>
+                          <div class="events-container event-container"></div>
+                          
+                          <a class="archive" href="#"><p><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>See All Events</p></a>
+                  </div>
 
-                <div data-title="HTML/CSS Introduction"
-                  data-author="Dr. Doom"
-                  data-date="6/01/2016"
-                  data-starttime=""
-                  data-endtime=""
-                  data-desc=""
-                  data-info="HTML are the bricks and CSS is the paint."
-                  data-img="http://lorempixel.com/700/300/technics/2/"
-                  data-link="eventspage.html"
-                ></div>
+                  <div class="col-xs-6 col-md-6">
+                      <h1>Blog</h1>
 
+                      <!-- Start Blog Data - Repeat for Wintersmith -->
+                      <div class="blog-data">
+
+                          <div data-title="How to code faster"
+                            data-author="Jordan"
+                            data-date="4/28/2016"
+                            data-starttime=""
+                            data-endtime=""
+                            data-desc=""
+                            data-info="Introduction to Learning to Learn concepts"
+                            data-img="http://lorempixel.com/700/300/technics/2/"
+                            data-link="eventspage.html"
+                          ></div>
+                          
+                          <div data-title="HTML/CSS Introduction"
+                            data-author="Dr. Doom"
+                            data-date="6/01/2016"
+                            data-starttime=""
+                            data-endtime=""
+                            data-desc=""
+                            data-info="HTML are the bricks and CSS is the paint."
+                            data-img="http://lorempixel.com/700/300/technics/2/"
+                            data-link="eventspage.html"
+                          ></div>
+
+                      </div>
+                  
+                      <div class="blog-container event-container"></div>
+                      <a class="archive" href="#"><p><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>See All Posts</p></a>
+                  </div>
+                  <!-- End Blog List-->
+              </div>        
+          </div>
+      </section>
+
+      <!-- MISSION STATEMENT -->
+      <section id="lp-mission" class="section module parallax parallax-1">
+        <div class="overlay">
+            <div class="row">
+              <div class="col-xs-12 col-md-12">
+                  <div class="text-box">
+                    <h1 class="text-center">Welcome</h1>
+                    <h4 class="text-center">Code for Foco is a community of volunteers dedicated to using technology to solve everyday challenges that local non-profits, charities and other grassroots 'do-good' organizations face.</h4>
+                    <h4 class="text-center">We are a community of programmers, designers, hackers, makers, tinkerers, writers and artists that all want to have an impact on the community around us.</h4>
+                  </div>
+              </div>
             </div>
-
-            <div class="blog-container event-container"></div>
-            <a class="archive" href="#"><p><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>See All Posts</p></a>
         </div>
-        <!-- End Blog List-->
-
-</div>
-</div>
-</section>
+      </section>
 
 
 
+      <!-- IMPROVE SKILLS SECTION -->
+      <section id="lp-skills" class="section">
+          <div class="overlay">
+              <div class="row">
+                  <div class="col-xs-12 col-md-12">
+                      <div class="card">
+                        <img src="http://lorempixel.com/400/200/technics/1" alt="Skills"/>
+                      </div>
+                      <div class="card">
+                          <h4>Join us to build your skill set</h4>
+                      </div>
+                      <div class="card">
+                          <h4>Be a part of a development community</h4>
+                      </div>
+                      <div class="card">
+                        <img src="http://lorempixel.com/400/200/technics/2" alt="Skills"/>
+                      </div>
+                      <div class="card">
+                        <img src="http://lorempixel.com/400/200/technics/3" alt="Skills"/>
+                      </div>
+                      <div class="card">
+                          <h4>Help to build a foundation for a better future in Fort Collins</h4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
 
-<!-- MISSION STATEMENT -->
-<section id="lp-mission" class="section module parallax parallax-1">
-<div class="overlay">
-<div class="row">
 
-        <div class="col-xs-10 col-md-6 col-md-offset-3">
-            <div class="text-box">
-              <h1 class="text-center">Our Mission</h1>
-              <h4 class="text-center">Mission statement goes here blah blah blah blah blah blah blah blah blah blah blah blah blah</h4>
-            </div>
+      <!-- SECTION PARTNERS --> 
+      <section id="lp-partners" class="section module parallax parallax-2">
+          <div class="overlay">
+              <div class="row">
+                  <div class="row">
+                        <h1 class="text-center">Partners</h1>
+                  </div>
+                  <div class="col-xs-6 col-md-6">
+                  
+                  </div>
+                  <div class="col-xs-6 col-md-6">
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section id="lp-newsletter" class="section">
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+              <form id="slack" name="slack" method="POST" action="https://codeforfocoslack.herokuapp.com/invite">
+                <label for="email">Join us on Slack:</label>
+                <input id="slack-email" name="email" cols="100" rows="10"/>
+                <button type="submit">Submit</button>
+              </form>
+          </div>
+          <div class="slant-bottom-gray"></div>
         </div>
-
-
-</div>
-</div>
-</section>
-
-
-
-
-
-<!-- HOW CAN WE HELP -->
-<section id="lp-skills" class="section">
-<div class="overlay">
-  <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2">
-          <div class="card">
-            <img src="http://lorempixel.com/400/200/technics/1"/>
-          </div>
-          <div class="card">
-            <img src="http://lorempixel.com/400/200/technics/2"/>
-          </div>
-          <div class="card">
-            <img src="http://lorempixel.com/400/200/technics/3"/>
-          </div>
-          <div class="card">
-            <img src="http://lorempixel.com/400/200/technics/4"/>
-          </div>
-          <div class="card">
-            <img src="http://lorempixel.com/400/200/technics/5"/>
-          </div>
-          <div class="card">
-            <img src="http://lorempixel.com/400/200/technics/6"/>
-          </div>
-      </div>
-  </div>
-</div>
-</section>
-
-
-<!-- SECTION PARTNERS -->
-<section id="lp-partners" class="section module parallax parallax-2">
-<div class="overlay">
-<div class="row">
-    <div class="col-xs-12 col-md-12">
-          <h1 class="text-center">Partners</h1>
-    </div>
-    <div class="col-xs-6 col-md-4">
-          <!-- <h4>GALVANIZE</h4> -->
-    </div>
-    <div class="col-xs-6 col-md-4">
-
-    </div>
-    <div class="col-xs-6 col-md-4">
-
-    </div>
-
-
-
-</div>
-<div class="slant-bottom-white"></div>
-</div>
-</section>
-
-
-
-
-
-<section id="lp-newsletter" class="section">
-<div class="row">
-
-    <div class="col-xs-12 col-md-8 col-md-offset-1">
-        <form id="slack" name="slack" method="POST" action="https://codeforfocoslack.herokuapp.com/invite">
-          <label for="email">Join us on Slack:
-          </label>
-          <input id="slack-email" name="email" cols="100" rows="10"/>
-          <button type="submit">Submit</button>
-        </form>
-    </div>
-
-<div class="slant-bottom-gray"></div>
-</div>
-</section>
+      </section>
 
 
 <footer id="lp-footer" class="footer">
@@ -322,7 +288,6 @@
             <i class="social-mobile-icon fa fa-youtube-square" aria-hidden="true"></i>
             </a>
           </div>
-
     </div>
 </footer>
 
@@ -333,7 +298,7 @@
 <!-- POPUP SIDE DRAWER -->
   <div id="drawer">
     <div class="drawer-side">
-
+        
         <!-- ENTER LINKS HERE -->
         <div class="row">
           <h4>Code for FoCo</h4>
@@ -352,7 +317,7 @@
             <a class="slide-effect" href="http://www.codefordenver.org/">Code For Denver</a>
             <a class="slide-effect" href="http://www.codeforboulder.org/">Code For Boulder</a>
         </div>
-
+    
         <!-- Social -->
         <div class="row">
           <h4>Social</h4>
@@ -364,7 +329,7 @@
             <a href="www.twitter.com" title="Twitter">
             <i class="social-mobile-icon fa fa-twitter-square" aria-hidden="true"></i>
             </a>
-            <a href="https://codeforfoco.slack.com" title="Slack">
+            <a href="www.slack.com" title="Slack">
             <i class="social-mobile-icon fa fa-slack" aria-hidden="true"></i>
             </a>
             <a href="www.youtube.com" title="YouTube">
@@ -375,10 +340,7 @@
     </div>
     <div class="screen-side"></div>
   </div>
-
-
-
-
+  
 
 
 
@@ -391,7 +353,6 @@
 <script type="text/javascript" src="js/zcss.js"></script>
 <script type="text/javascript" src="js/hero-slider.js"></script>
 <script type="text/javascript" src="js/slack-invite.js"></script>
-
 </div>
 </div>
 </body>
