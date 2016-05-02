@@ -1,20 +1,20 @@
  <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Code For FoCo</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!--Fonts-->
-  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
-  <!--Font-Awesome-->
-
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet" type="text/css">
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+  <!--Font-Awesome-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  
-  
 
   <link rel="stylesheet" type="text/css" href="css/hero-slider.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -26,17 +26,17 @@
 <body>
 <div class="container-fluid">
 <div class="row">
-  
 
-  
+
+
   <a id="drawer-button"><span></span></a>
-  
+
 
   <!-- LANDING SECTION-->
   <section id="top" class="section">
   <div class="overlay">
   <div class="slant-very-top"></div>
-  
+
 
           <!-- PRIMARY NAVIGATION -->
               <header class="header-fixed">
@@ -50,8 +50,8 @@
                   </div>
                 </nav>
             </header>
- 
-           
+
+
         <!-- HERO SLIDER -->
               <section class="cd-hero">
                 <ul class="cd-hero-slider autoplay">
@@ -91,7 +91,7 @@
               </section>
         <!-- END HERO SLIDER-->
 
-        
+
         <div class="social">
             <a href="www.facebook.com" title="Facebook">
             <i class="social-mobile-icon fa fa-facebook-official" aria-hidden="true"></i>
@@ -99,7 +99,7 @@
             <a href="www.twitter.com" title="Twitter">
             <i class="social-mobile-icon fa fa-twitter-square" aria-hidden="true"></i>
             </a>
-            <a href="www.slack.com" title="Slack">
+            <a href="https://codeforfoco.slack.com" title="Slack">
             <i class="social-mobile-icon fa fa-slack" aria-hidden="true"></i>
             </a>
             <a href="www.youtube.com" title="YouTube">
@@ -109,7 +109,7 @@
         <div class="slant-bottom-white_top"></div>
 
 </div>
-</section>  
+</section>
 
 
 
@@ -136,7 +136,7 @@
                   data-img="http://lorempixel.com/700/300/technics/2/"
                   data-link="eventspage.html"
                 ></div>
-                
+
                 <div data-title="Hack-a-thon"
                   data-author="Jordan"
                   data-date="6/01/2016"
@@ -149,9 +149,9 @@
                 ></div>
 
             </div>
-        
+
             <div class="events-container event-container"></div>
-            
+
             <a class="archive" href="#"><p><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>See All Events</p></a>
         </div>
         <!-- End Events -->
@@ -173,7 +173,7 @@
                   data-img="http://lorempixel.com/700/300/technics/2/"
                   data-link="eventspage.html"
                 ></div>
-                
+
                 <div data-title="HTML/CSS Introduction"
                   data-author="Dr. Doom"
                   data-date="6/01/2016"
@@ -186,7 +186,7 @@
                 ></div>
 
             </div>
-        
+
             <div class="blog-container event-container"></div>
             <a class="archive" href="#"><p><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>See All Posts</p></a>
         </div>
@@ -249,7 +249,7 @@
 </section>
 
 
-<!-- SECTION PARTNERS --> 
+<!-- SECTION PARTNERS -->
 <section id="lp-partners" class="section module parallax parallax-2">
 <div class="overlay">
 <div class="row">
@@ -281,10 +281,10 @@
 <div class="row">
 
     <div class="col-xs-12 col-md-8 col-md-offset-1">
-        <form id="newsletter" name="newsletter">
-          <label for="email">Keep Informed, Sign Up For Our Newsletter:
+        <form id="slack" name="slack" method="POST" action="https://codeforfocoslack.herokuapp.com/invite">
+          <label for="email">Join us on Slack:
           </label>
-          <input name="email" cols="100" rows="10"/>
+          <input id="slack-email" name="email" cols="100" rows="10"/>
           <button type="submit">Submit</button>
         </form>
     </div>
@@ -333,7 +333,7 @@
 <!-- POPUP SIDE DRAWER -->
   <div id="drawer">
     <div class="drawer-side">
-        
+
         <!-- ENTER LINKS HERE -->
         <div class="row">
           <h4>Code for FoCo</h4>
@@ -352,7 +352,7 @@
             <a class="slide-effect" href="http://www.codefordenver.org/">Code For Denver</a>
             <a class="slide-effect" href="http://www.codeforboulder.org/">Code For Boulder</a>
         </div>
-    
+
         <!-- Social -->
         <div class="row">
           <h4>Social</h4>
@@ -364,7 +364,7 @@
             <a href="www.twitter.com" title="Twitter">
             <i class="social-mobile-icon fa fa-twitter-square" aria-hidden="true"></i>
             </a>
-            <a href="www.slack.com" title="Slack">
+            <a href="https://codeforfoco.slack.com" title="Slack">
             <i class="social-mobile-icon fa fa-slack" aria-hidden="true"></i>
             </a>
             <a href="www.youtube.com" title="YouTube">
@@ -375,7 +375,7 @@
     </div>
     <div class="screen-side"></div>
   </div>
-  
+
 
 
 
@@ -390,6 +390,7 @@
 
 <script type="text/javascript" src="js/zcss.js"></script>
 <script type="text/javascript" src="js/hero-slider.js"></script>
+<script type="text/javascript" src="js/slack-invite.js"></script>
 
 </div>
 </div>
