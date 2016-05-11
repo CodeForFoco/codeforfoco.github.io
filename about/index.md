@@ -1,36 +1,45 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: About Code for Foco
+tags: [about]
+date: 2016-04-11
 ---
-    
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## About Code for Foco
 
-## Preview
+We are programmers, designers, hackers, makers, tinkerers, writers and artists and we want to have an impact on the community around us.
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+We are dedicated to using technology to solve everyday challenges that the people, non-profits, charities, schools, government and grassroots organizations of Fort Collins face.
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+## Joining Code for Foco
 
-## Getting Started
+Want to join us? Here are three ways to get started:
 
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+- Come say hi at one of our [events](#events).
+- Hop on our [Slack channel](https://codeforfoco.slack.com) and introduce yourself.
+- Email us at [people@codeforfoco.org](mailto:people@codeforfoco.org).
+- Tackle an issue on our [Github](https://github.com/codeforfoco).
+
+Be sure to read and understand our [Code of Conduct](/code_of_conduct).
+
+## Events
+
+Here is a succinct list of ongoing events:
+
+#### Organizational Meeting
+
+- **Time:** 12:00PM every Friday
+- **Location:** Galvanize Fort Collins
+- **About:** A time to share ideas, create events, raise concerns, discuss operations and have an impact. If you want to help get involved this is a great place to start.
+
+#### Pitch Night
+
+- **Time:** TBA
+- **Location:** TBA
+- **About:** Pitch project ideas, shake hands and drink beers. If we like a pitch, we take on the project.
+
+#### Civic Hack Night
+
+- **Time:** TBA
+- **Location:** TBA
+- **About:** Hack nights are a time for community to get together and use their creative and technical skills to bring a project to life.
