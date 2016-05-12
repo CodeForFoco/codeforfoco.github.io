@@ -30,14 +30,14 @@ disqus_shortname:   codeforfoco
 
 # Social
 # if you don't have any of social below, comment the line.
-#google:
+google:
   #plus:            #username
-  #analytics:
+  analytics:        UA-59781126-3
   #verify:
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
+email:              people@codeforfoco.org
 slack:              codeforfoco
 #twitter:            codeforfoco
 #facebook:           codeforfoco
