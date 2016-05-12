@@ -11,19 +11,19 @@ A few things to keep in mind:
 - The `master` branch is production - develop on a separate branch.
 - Ensure your code follows best practices and adheres to good style.
 
-## Roadmap
+## Site Roadmap
 
-- Content
-  - Pictures
-  - Events
-  - Articles
-- Wintersmith / Jekyll / Metalsmith support.
-- Build tooling.
-- Style guidelines.
+- The current site is temporary and going to be replaced with an in-house Wintersmith based site.
 
 ## Bugs / Feedback / Suggestions
 
 We encourage you to [open up an issue](https://github.com/CodeForFoco/codeforfoco.github.io/issues/new) if you have any feedback, suggestions or bugs.
+
+## Credits
+
+The current site is based on the [Moon Jekyll Theme](https://github.com/TaylanTatli/Moon) by [TaylanTatli](https://github.com/TaylanTatli/Moon).
+
+To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
 
 ## License
 
