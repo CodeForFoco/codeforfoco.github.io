@@ -15,7 +15,7 @@ We are dedicated to using technology to solve everyday challenges that the peopl
 
 Want to join us? Here are three ways to get started:
 
-- Come say hi at one of our [events](#events).
+- Come say 'hi' at one of our [events](#events).
 - Hop on our [Slack channel](https://codeforfoco.slack.com) and introduce yourself.
 - Email us at [people@codeforfoco.org](mailto:people@codeforfoco.org).
 - Tackle an issue on our [Github](https://github.com/codeforfoco).
