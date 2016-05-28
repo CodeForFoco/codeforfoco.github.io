@@ -5,17 +5,23 @@ tags: [partners]
 date: 2016-04-13
 ---
 
-## Partners
-
 Code for Foco's goal is to give back to the community, and part of that is forming partnerships with the community.
 
 Our partnerships are a two way road; without are partners we wouldn't have the means to help the community. In addition, we help the groups that we partner with in any way we can.
+
+<hr class="hr-line">
+
+## Our Partners
 
 <a href="http://www.galvanize.com/campuses/fort-collins/"><img src="http://www.galvanize.com/wp-content/themes/galvanize/img/galvanize-logo.svg" /></a>
 
 Galvanize Fort Collins has provided Code for Fort Collins event space and event promotions. In addition, Galvanize has connected us with many talented individuals who are passionate about using their skills to have a positive impact on the community.
 
+<hr class="hr-line">
+
 <a href="http://www.fcgov.com/"><img src="/assets/img/fortcollins.jpg" /></a>
+
+<hr class="hr-line">
 
 <a href="http://www.fcgov.com/opencity"><img src="/assets/img/opencity.jpg" /></a>
 
