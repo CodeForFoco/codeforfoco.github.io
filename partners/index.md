@@ -24,7 +24,7 @@ Galvanize Fort Collins has provided Code for Fort Collins event space and event 
 
 #### [City of Fort Collins](http://www.fcgov.com/)
 
-<img src="/assets/img/fortcollins.png" />
+<img src="/assets/img/fortcollins.jpg" />
 
 #### [Open City](http://www.fcgov.com/opencity/)
 
