@@ -1,4 +1,99 @@
 ---
-layout: home
-title: Home
+layout: default
 ---
+
+
+<!-- Hero -->
+<section class="row">
+  <div id="hero" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <img src="/assets/images/logo_white.png"/>
+  </div>
+</section>
+
+
+
+<!-- Join Us -->
+<section class="row">
+  <div id="join-us" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <h2 class="text-center">Want to join us?</h2>
+    <ul class="text-center">
+      <li><a href="/category/events/"><i class="fa fa-calendar-plus-o fa-1x" aria-hidden="true"></i> Come see an event</a></li>
+      <li><a href="https://codeforfoco.slack.com/"><i class="fa fa-slack fa-1x" aria-hidden="true"></i> Visit our Slack Channel</a></li>
+      <li><a href="https://github.com/codeforfoco"><i class="fa fa-github fa-1x" aria-hidden="true"></i> Help on Github</a>.</li>
+       <li><a href="mailTo:people@codeforfoco.org"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> Email Code For Foco </a></li>
+    </ul>
+  </div>
+</section>
+
+
+
+<!-- BLOG - CURRENT EVENTS -->
+<section class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <h2 class="text-center marg">What are we up to?</h2>
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-offset-1 col-lg-10 col-lg-offset-1 marg">
+          <ul>
+            {% for post in site.categories.blog limit:5 %}
+                {% include list.html %}
+            {% endfor %} 
+          </ul>
+        <a href="/category/blog/"><h4 class="more">View all posts</h4></a>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- Partners -->
+<section class="row">
+  <div id="partners" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 marg">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-offset-1 col-lg-10 col-lg-offset-1">
+        <div class="row">
+        {% for post in site.categories.partners limit:5 %}
+          <a href="{{ post.url | prepend: site.baseurl }}">
+              <img src="/assets/images/{{ post.image }}"/>
+          </a>
+        {% endfor %}
+        </div>
+      </div>
+
+        <div class="row">
+          <a href="/category/partners/"><h4 class="more">View all partners</h4></a>  
+        </div>
+  </div>
+</section>
+
+
+
+<!-- OTHER CODE FOR ORGS -->
+<section class="row">
+  <div id="other-orgs" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <ul class="text-center">
+      <li><a href="https://www.codeforamerica.org/">Code For America</a></li>
+      <li><a href="http://www.codefordenver.org/">Code For Denver</a></li>
+      <li><a href="http://www.codeforboulder.org/">Code For Boulder</a></li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section class="row">
+  <div id="projects" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+   <h2 class="text-center marg">What have we been working on?</h2>
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-offset-1 col-lg-10 col-lg-offset-1 marg">
+      <div class="row">
+        {% if site.categories.projects.size %}
+          {% assign categoryname = "projects" %}
+          {% assign limitsize = 9 %}
+          {% include gallery.html %}
+        {% endif %}
+        </div>
+        <br/>
+        <div class="row">
+            <a href="/category/projects/"><h4 class="more">View all projects</h4></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

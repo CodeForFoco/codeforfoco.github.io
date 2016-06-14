@@ -1,49 +1,41 @@
 ---
-layout: compress
+layout: default
 ---
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
-<head>
-    {% include head.html %}
-</head>
-<body>
-    {% include nav.html %}
-    <!-- Header -->
-    <header class="header" role="banner">
-        <div class="wrapper animated fadeIn">
-            <div class="content">
-                <div class="post-title {% if page.feature %} feature {% endif %}">
-                    <h1>{{ page.title }}</h1>
-                    <h4>{{ page.date | date_to_string }}</h4>
-                    {% if site.reading_time %}
-                    <p class="reading-time">
-                      <i class="fa fa-clock-o"></i>
-                      {% include read-time.html %}
-                    </p><!-- /.entry-reading-time -->
-                    {% endif %}
-                    {% if page.project %}
-                    <a class="btn zoombtn" href="{{site.url}}/projects/">
-                    {% else %}
-                    <a class="btn zoombtn" href="{{site.url}}/posts/">
-                    {% endif %}
-                        <i class="fa fa-chevron-left"></i>
-                    </a>
-                </div>
-                {{ content }}
-                <div class="entry-meta">
-                {% include meta.html %}
-                </div>
-            </div>
-        </div>
-        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
-    </header>
-    {% include scripts.html %}
-    {% if site.mathjax == true %}
-    <!-- MathJax -->
-    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    {% endif %}
-</body>
-</html>
+<article class="row">
+  <section id="hero-page" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hero-page">
+  		<div class="row container">
+	  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	        	{% if page.image %}
+		          <img class="hero-page-logo center-block" src="/assets/images/{{ page.image }}"/>
+		        {% else %}
+		          <img class="hero-page-logo center-block" src="/assets/images/default.png"/>
+		        {% endif %}
+			    
+	  		</div>
+	  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+  				<h2>{{ page.title }}</h2>
+  				<p class="post-meta">
+  					{% if page.date %}
+	  					<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+	  					{% if page.author %} 
+	  						<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+	  							<span class="author" itemprop="name">{{ page.author }}</span>
+	  						</span>
+	  					{% endif %}
+	  				{% endif %}
+  				</p>
+  			</div>
+  		</div>
+	</section>
+    
+	<section class="col-xs-12 col-sm-12 col-md-10 col-lg-offset-1 col-lg-10 col-lg-offset-1 marg">
+	  	<div class="post-content">
+	    	{{ content }}
+	  	</div>
+
+  	</section>
+
+</article>
+
+
+

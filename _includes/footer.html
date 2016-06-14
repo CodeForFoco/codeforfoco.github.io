@@ -1,0 +1,37 @@
+<footer class="row marg">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h4>{{ site.title }}</h4>
+            <hr/>
+            <nav class="row">
+                <ul class="text-center">
+                  <li><a href="mailTo:people@codeforfoco.org"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="https://codeforfoco.slack.com/"><i class="fa fa-slack fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="http://github.com/codeforfoco"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+            <a href="{{ site.baseurl }}/license"><span class="copyright">&copy; codeforfoco.org</span></a>
+            <hr/>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h4>Organization</h4>
+            <hr/>
+            {% for post in site.categories.organization limit:5 %}
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                  <h5 class="title-list-item">{{ post.title | capitalize }}</h5>
+              </a>
+            {% endfor %}
+            <hr/>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h4>Categories</h4>
+            <hr/>
+            {% for category in site.categories %}
+                <a href="/category/{{ category[0] }}/">
+                    <h5 class="title-list-item">{{ category[0] | capitalize }}</h5>
+                </a>
+            {% endfor %}
+            <hr/>
+        </div>
+    </div>
+</footer>
