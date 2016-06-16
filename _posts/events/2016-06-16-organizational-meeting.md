@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Civic Hack Night"
+title:  "Organizational Meeting"
 image:
-date:   2016-06-07 12:04:53 -0700
+date:   2016-06-17 12:00:00 -0700
 categories: events
 ---
 
