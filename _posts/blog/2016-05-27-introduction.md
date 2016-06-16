@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Introducing..."
-image:
 date:   2016-05-27 12:04:53 -0700
+author: John Doe
 categories: blog
 ---
 

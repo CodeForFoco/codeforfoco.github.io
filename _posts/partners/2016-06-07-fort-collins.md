@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "City of Fort Collins"
-image: fortcollins.jpg
 date:   2016-06-07 12:04:53 -0700
+image: fortcollins.jpg
 categories: partners
 ---
 

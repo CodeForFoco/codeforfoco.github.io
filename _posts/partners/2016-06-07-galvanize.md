@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Galvanize"
-image: galvanize.png
 date:   2016-06-07 12:04:53 -0700
+image: galvanize.png
 categories: partners
 ---
 
