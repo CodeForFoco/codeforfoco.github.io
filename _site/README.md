@@ -11,9 +11,15 @@ A few things to keep in mind:
 - The `master` branch is production - develop on a separate branch.
 - Ensure your code follows best practices and adheres to good style.
 
+## Getting Started
+
+1. Navigate to repo and install all project dependencies using the`bundle` command
+1. Build the project using `jekyll b` to prepare for deployment
+1. Use `jekyll s` to setup a development server.
+
 ## Site Roadmap
 
-- The current site is temporary and going to be replaced with an in-house Wintersmith based site.
+- Need to develop content
 
 ## Bugs / Feedback / Suggestions
 
