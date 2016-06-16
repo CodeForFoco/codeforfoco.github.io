@@ -1,27 +1,27 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Code For FoCo
+title: Code For Foco
 email: people@codeforfoco.org
+github_username:  codeforfoco
 description: > # this means to ignore newlines until "baseurl:"
-  We are programmers, designers, hackers, makers, tinkerers, 
-  writers and artists and we want to have an impact on the community 
+  We are programmers, designers, hackers, makers, tinkerers,
+  writers and artists and we want to have an impact on the community
   around us.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://codeforfoco.org" # the base hostname & protocol for your site
+
+# Plugins
 gems: [jekyll-paginate]
 
-#twitter_username: jekyllrb
-#github_username:  jekyll
-
-# Build settings
+# Conversion
 markdown: kramdown
 highlighter: rouge
+markdown_ext: "md"
+encoding: "utf-8"
 permalink: pretty
-port: 8080
 
+# Serving
+port: 8080
+baseurl: ""
+url: "https://codeforfoco.org"
+
+# Kramdown settings
+kramdown:
+  input: GFM

@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Organizational Meeting"
+title: Organizational Meeting
 image:
-date:   2016-06-17 12:00:00 -0700
+date: 2016-06-17 12:00:00 -0700
 categories: events
 ---
 

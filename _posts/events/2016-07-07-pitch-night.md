@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Pitch Night"
+title: Pitch Night
 image:
-date:   2016-07-07 6:30:00 -0700
+date: 2016-07-07 06:30:00 -0700
 categories: events
 ---
 
