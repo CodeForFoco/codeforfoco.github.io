@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "Introducing..."
+title:  "We are online!"
 date:   2016-05-27 12:04:53 -0700
-author: John Doe
+author: Jordan Majd
 categories: blog
 ---
 
-Code For Foco!
+Welcome to Code For Foco!
 
-We announced Code For Foco, got an update for Go Code for Colorado, and Jordan launched his new app Pikr.
+We are really excited to have our website live and running. The next step is to start posting content to it.
 
-It was a busy night with a lot going on, but a little beer pong kept everyone enjoying the festivities. There was great networking and good times for all.
+If you are or know someone interested in content writing be sure to contact us at [people@codeforfoco.com](mailto:people@codeforfoco.com).
+
+- Jordan Majd

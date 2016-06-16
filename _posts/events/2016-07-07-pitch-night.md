@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Pitch Night"
-date: 2016-07-07 06:30:00 -0700
+title:  "Pitch Night"
+date:   2016-06-167 18:30:00 -0700
 categories: events
 ---
 

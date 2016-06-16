@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Organizational Meeting"
-date: 2016-06-17 12:00:00 -0700
+title:  "Organizational Meeting"
+date:   2016-06-07 12:00:01 -0700
 categories: events
 ---
 
-Welcome to our first civic hack night.
-We will come up with ideas, decide on a plan, then build an application or website to help a non-profit.
+- **Time:** 12:00PM Every Friday
+- **Location:** Galvanize, Fort Collins
+- **About:**  A time to share ideas, create events, raise concerns, discuss operations and have an impact. If you want to help get involved this is a great place to start.
