@@ -1,0 +1,7 @@
+/* TEAM */
+
+  Team Captain: Jordan Majd
+  Twitter: twitter.com/jordanmajd
+  Github: github.com/jordanmajd
+
+/* THANKS */
