@@ -1,19 +1,19 @@
-/*  
+/*
     STYLES.CSS
 
     I.      Structure Classes - contains classes that reference
             the layout. Grid is done with bootstrap
-    
+
     II.     Typography
-    
+
     III.    Header Classes - for header tags, contains classes
             for Navigation and social icons
-    
+
     IV.     Section Classes - I divided each section up and gave it
             an ID. That way I can set heights and organize my layout
             better. Also contains classes for my full page templates
             of #posts and #archives
-    
+
     V.      Full Screen Template Classes - These are for the page.html,
             post.html and category.html
 
@@ -26,7 +26,7 @@
                 3.  Thumb - Small version of list with image and title
                 4.  Just the Title
                 5.  Just the Image
-    
+
     VI.     Footer Classes - bootstrap grid can be changed in html. Default
             3 column. Contains classes for copyright and social.
 
@@ -55,9 +55,9 @@ body{
 /*=================================
     II. TYPOGRAPHY CLASSES
 ===================================*/
-/* 
+/*
     red-orange: #FF5300; rgba(255,83, 0, 1); eaa319
-    hover - Light Red-Orange: #F8AC51; 
+    hover - Light Red-Orange: #F8AC51;
     Blue-gray: #399ED2;
 */
 
@@ -70,12 +70,12 @@ a{ font-size: 1em; font-family: 'Lato', sans-serif; color: #6A6B6D; transition: 
 a:hover { text-decoration: none; color: #F8AC51; }
 a:active { text-decoration: none; color: #F8AC51; }
 li { font-size: 1.2em; }
-.more{ 
+.more{
     font-size: 1em;
     padding-right: 7%;
     float: right;
-    font-family: 'Quantico', sans-serif; 
-    color: #eaa319; 
+    font-family: 'Quantico', sans-serif;
+    color: #eaa319;
 }
 .copyright {
     font-size: 1.4em;
@@ -120,9 +120,9 @@ nav ul li a{
 }
 
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
     header nav ul{
         display: none;
@@ -172,7 +172,7 @@ nav ul li a{
     transform: translate(-50%, -50%);
 }
 
-#hero-page{ 
+#hero-page{
     min-height: 350px;
     height: 100%;
     padding: 10% 0 10% 0;
@@ -304,9 +304,9 @@ nav ul li a{
     background-color: white; /* Set this if img is transparent or no image*/
     transition: 0.25s;
 }
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .gallery-item{
         width: 100%;
@@ -385,11 +385,11 @@ footer{
 /*=================================
     VI. POPUP MENU CLASSES
 ===================================*/
-#popup-menu{ 
+#popup-menu{
     display: none;
     position: fixed;
     top:0; right:0;  bottom:0; left:0; /* Covers the entire viewing screen */
-    
+
     padding: 10%;
     background: linear-gradient(to bottom right,rgba(0,155,193,0.4),rgba(0,155,193,0.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
     z-index: 50;
@@ -408,4 +408,30 @@ footer{
 }
 #popup-menu nav ul .social {
     display: inline-block;
+}
+
+
+/*=================================
+    VII. MISC
+===================================*/
+.post-content {
+
+  p {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+
+  li {
+    margin-left: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  strong {
+    font-weight: 700;
+  }
 }

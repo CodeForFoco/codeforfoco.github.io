@@ -6,6 +6,8 @@ permalink: /code-of-conduct/
 categories: organization
 ---
 
+# Code of Conduct
+
 The Code for Foco community expects that Code for Foco network activities, events, and digital forums:
 
 1. Are a safe and respectful environment for all participants.
@@ -23,7 +25,7 @@ The Code for Foco community expects that Code for Foco network activities, event
 
 Code for Foco reserves the right to ask anyone in violation of these policies not to participate in Code for Foco network activities, events, and digital forums.
 
-####Code for Foco's Anti-Harassment Policy
+#### Code for Foco's Anti-Harassment Policy
 
 This anti-harassment policy is based on <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">the example policy</a> from the Geek Feminism wiki, created by the Ada Initiative and other volunteers.
 
@@ -49,11 +51,10 @@ You can also contact Code for Foco about harassment at people@codeforfoco.org an
 
 We value your attendance and hope that by communicating these expectations widely we can all enjoy a harassment-free environment.
 
-####Email Template for Anti-Harassment Reporting
+#### Email Template for Anti-Harassment Reporting
 
 SUBJECT: Safe Space alert at [EVENT NAME]
 
 I am writing because of harassment at a Code for Foco Communities event, (NAME, PLACE, DATE OF EVENT).
 
 You can reach me at (CONTACT INFO). Thank you.
-

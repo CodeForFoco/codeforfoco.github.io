@@ -52,22 +52,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*  
+/*
     STYLES.CSS
 
     I.      Structure Classes - contains classes that reference
             the layout. Grid is done with bootstrap
-    
+
     II.     Typography
-    
+
     III.    Header Classes - for header tags, contains classes
             for Navigation and social icons
-    
+
     IV.     Section Classes - I divided each section up and gave it
             an ID. That way I can set heights and organize my layout
             better. Also contains classes for my full page templates
             of #posts and #archives
-    
+
     V.      Full Screen Template Classes - These are for the page.html,
             post.html and category.html
 
@@ -80,7 +80,7 @@ table {
                 3.  Thumb - Small version of list with image and title
                 4.  Just the Title
                 5.  Just the Image
-    
+
     VI.     Footer Classes - bootstrap grid can be changed in html. Default
             3 column. Contains classes for copyright and social.
 
@@ -105,9 +105,9 @@ body {
 /*=================================
     II. TYPOGRAPHY CLASSES
 ===================================*/
-/* 
+/*
     red-orange: #FF5300; rgba(255,83, 0, 1); eaa319
-    hover - Light Red-Orange: #F8AC51; 
+    hover - Light Red-Orange: #F8AC51;
     Blue-gray: #399ED2;
 */
 h1 {
@@ -432,3 +432,18 @@ footer {
 
 #popup-menu nav ul .social {
   display: inline-block; }
+
+/*=================================
+    VII. MISC
+===================================*/
+.post-content p {
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+.post-content li {
+  margin-left: 1rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+.post-content ol {
+  list-style-type: decimal; }
+.post-content strong {
+  font-weight: 700; }
