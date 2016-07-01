@@ -6,6 +6,7 @@ author: Jordan Majd
 categories: blog
 ---
 
+
 Want To Make Fort Collins Better? There’s A Hackathon For That
 
 FORT COLLINS, Colo., July 1, 2016 -- Code For FoCo, a new Fort Collins-based civic tech organization, hosts its inaugural hackathon Friday July 8.
