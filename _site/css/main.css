@@ -93,7 +93,7 @@ table {
 body {
   /*set default colors*/
   background-color: #fff;
-  color: #6A6B6D; }
+  color: #0F4E7E; }
 
 .marg {
   padding-top: 4%;
@@ -129,7 +129,7 @@ h3 {
 h4 {
   font-family: 'Quantico', sans-serif;
   font-size: 1.4em;
-  color: #6A6B6D;
+  color: #0F4E7E;
   padding: 1%; }
 
 p {
@@ -144,7 +144,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #F8AC51; }
+  color: #0F4E7E; }
 
 a:active {
   text-decoration: none;
@@ -215,13 +215,13 @@ nav ul li a {
 #hero-page is for our page.html, page.html and category.html(archive)*/
 #hero, #hero-page {
   height: 550px;
-  background: linear-gradient(to bottom right, rgba(234, 163, 45, 0.4), rgba(234, 163, 45, 0.4)), url("../assets/images/hero-one.jpg") center center no-repeat;
+  background: linear-gradient(to bottom right, rgba(195, 172, 11, 0.4), rgba(15, 78, 126, 0.4)), url("../assets/images/hero-one.jpg") center center no-repeat;
   background-size: cover; }
 
 /* Center image vertically and horizontally - works on <IE8*/
 #hero img {
   position: absolute;
-  max-width: 80%;
+  max-width: 30%;
   top: 10%;
   left: 10%; }
 
@@ -265,11 +265,11 @@ nav ul li a {
   padding-top: 4%;
   padding-bottom: 4%;
   height: 100%;
-  background: #ddd; }
+  background: #9FB8CB; }
 
 #other-orgs {
   padding: 0;
-  background: #eaa319; }
+  background: #B70A29; }
 
 #join-us ul {
   padding: 2%; }
@@ -279,12 +279,16 @@ nav ul li a {
   margin: 1%;
   padding: 1%;
   width: 280px;
-  background-color: #eaa319;
+  background-color: #B70A29;
   color: #fff;
   font-size: 1.4em; }
 
 #join-us ul li a, #other-orgs ul li a {
   color: #fff; }
+
+#join-us ul li:hover, #other-orgs ul li:hover {
+  box-shadow: 1px 1px 3px #000;
+  color: #0F4E7E; }
 
 /* -- Partners section on landing page -- */
 #partners {
@@ -302,14 +306,13 @@ nav ul li a {
   max-width: 350px;
   height: 150px;
   margin: 1%;
-  background-color: #fff;
+  background-color: transparent;
   opacity: 0.8;
   transition: 0.2s; }
 
 #partners img:hover {
   opacity: 1; }
 
-/* Projects section on landing page*/
 /*=================================
     V. FULLSCREEN TEMPLATES
 ===================================*/
@@ -340,8 +343,7 @@ nav ul li a {
   min-width: 300px;
   max-width: 450px;
   height: 330px;
-  background-color: white;
-  /* Set this if img is transparent or no image*/
+  background-color: transparent;
   transition: 0.25s; }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -355,7 +357,8 @@ nav ul li a {
   margin: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; }
+  z-index: 0;
+  background-color: transparent; }
 
 .gallery-item h4 {
   position: absolute;
@@ -387,10 +390,14 @@ nav ul li a {
   margin: 0;
   width: 100%;
   max-width: 350px;
-  height: 200px; }
+  height: 350px;
+  background-color: transparent; }
 
 .list-item .meta {
-  padding: 1%; }
+  padding: 10% 1% 1% 3%; }
+
+.list-item .meta p {
+  padding: 1% 1% 1% 5%; }
 
 /*for the for loop for the Title only*/
 .title-list-item {
@@ -403,7 +410,7 @@ nav ul li a {
 footer {
   height: 100%;
   min-height: 300px;
-  background-color: #ccc;
+  background-color: #9FB8CB;
   padding: 2%; }
 
 /*=================================
