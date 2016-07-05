@@ -6,8 +6,6 @@ author: Jordan Majd
 categories: blog
 ---
 
-# WEEKLY UPDATE
-
 Great job everybody, lots of forward momentum this week.
 
 ## Organization:
