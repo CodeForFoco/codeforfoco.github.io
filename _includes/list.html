@@ -10,11 +10,12 @@
       </div>
       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <div class="row">
-          <h3>{{ post.title }}</h3>
-          <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-        </div>
-        <div class="row">
-          <p>{{ post.excerpt }}</p>
+          <div class="meta">
+              <h3>{{ post.title }}</h3>
+              {{ post.date | date: "%b %-d, %Y" }}
+            <div class="row">
+              <p>{{ post.excerpt }}</p>
+            </div>
         </div>
       </div>
     </div>
