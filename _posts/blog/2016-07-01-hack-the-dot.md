@@ -7,7 +7,7 @@ categories: blog
 ---
 
 
-Want To Make Fort Collins Better? There’s A Hackathon For That
+Want To Make Fort Collins Better? There’s A Hackathon For That.
 
 FORT COLLINS, Colo., July 1, 2016 -- Code For FoCo, a new Fort Collins-based civic tech organization, hosts its inaugural hackathon Friday July 8.
 
@@ -23,6 +23,8 @@ It will take place at Galvanize Fort Collins, 242 Linden St, Fort Collins, CO 80
 
 There is no charge to participate and registration will take place on site. Teams will be randomly assigned, but pairs of participants may request to be grouped together.
 
-Contact: Daniel Dwyer, Code For FoCo hackathon coordinator. danielpatrickdwyer@gmail.com
+Contact: Daniel Dwyer, Code For FoCo hackathon coordinator. [danielpatrickdwyer@gmail.com](mailto:danielpatrickdwyer@gmail.com)
 
-Organization Website: CodeForFoCo.org
+Organization Website: [CodeForFoCo.org](codeforfoco.org)
+
+[Event details can be found on Eventbrite](https://www.eventbrite.com/e/hack-the-dot-fort-collins-tickets-26431480269)

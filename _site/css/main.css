@@ -134,7 +134,8 @@ h4 {
 
 p {
   font-size: 1em;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  margin-top: 1em; }
 
 a {
   font-size: 1em;
