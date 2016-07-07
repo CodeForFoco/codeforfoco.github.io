@@ -20,7 +20,7 @@ permalink: pretty
 # Serving
 port: 8080
 baseurl: ""
-url: "https://codeforfoco.org"
+url: "http://codeforfoco.org"
 
 # Kramdown settings
 kramdown:
