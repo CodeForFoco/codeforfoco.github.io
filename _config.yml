@@ -8,7 +8,9 @@ description: > # this means to ignore newlines until "baseurl:"
   around us.
 
 # Plugins
-gems: [jekyll-paginate]
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
 
 # Conversion
 markdown: kramdown
