@@ -69,6 +69,7 @@ p{ font-size: 1em; font-family: 'Lato', sans-serif; margin-top: 1em }
 a{ font-size: 1em; font-family: 'Lato', sans-serif; color: #6A6B6D; transition: 0.2s; }
 a:hover { text-decoration: none; color: #0F4E7E; }
 a:active { text-decoration: none; color: #F8AC51; }
+ul{ list-style-type: none; }
 li { font-size: 1.2em; }
 .more{
     font-size: 1em;
@@ -96,6 +97,11 @@ header{
     z-index: 100;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     transition: background-color 0.4s; /* see effects.js scroll effect */
+
+    h1{
+      display: inline-block;
+      margin:0;
+    }
 }
 header img{ /* Logo */
     display: inline-block;
@@ -203,11 +209,17 @@ nav ul li a{
 
 
 /*Join Us section and Other Orgs section on landing page*/
-#join-us{
+#join-us {
     padding-top: 4%;
     padding-bottom: 4%;
     height: 100%;
     background: #9FB8CB;
+
+    p{
+      &.about {
+        font-size: 2rem;
+      }
+    }
 }
 #other-orgs{
     padding: 0;
