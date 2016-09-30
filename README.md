@@ -1,6 +1,6 @@
 #Code For Fort Collins
 
-This repo is for our website, [codeforfoco.org](codeforfoco.org).
+This repo is for our website, [codeforfoco.org](http://www.codeforfoco.org).
 
 ## Contributing Guidelines
 
