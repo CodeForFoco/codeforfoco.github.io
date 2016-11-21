@@ -25,6 +25,20 @@ TL;DR Contribution Workflow:
 1. Build the project using `jekyll b` to prepare for deployment
 1. Use `jekyll s` to setup a development server.
 
+### Locally test changes
+
+A few requirements:
+ 1. Requires a working installation of Ruby programming language. 
+ 2. Assumes you have `bundler` installed (`$ gem install bundler`). 
+ 3. Have a local git clone of https://github.com/CodeForFoco/codeforfoco.github.io
+
+```bash
+cd codeforfoco.github.io
+bundle exec jekyll serve
+open http://127.0.0.1:8080/
+```
+
+
 ## Site Roadmap
 
 - Need to develop content
