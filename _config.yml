@@ -1,29 +1,47 @@
 # Site settings
-title: Code For Foco
-email: people@codeforfoco.org
-github_username:  codeforfoco
-description: > # this means to ignore newlines until "baseurl:"
+title           : Code For Foco
+url             : "http://codeforfoco.org"
+baseurl         : ""
+email           : people@codeforfoco.org
+github_username :  codeforfoco
+description: > # this means to ignore newlines until next yaml item
   We are programmers, designers, hackers, makers, tinkerers,
   writers and artists and we want to have an impact on the community
   around us.
+
+# Reading files
+encoding: "utf-8"
+markdown_ext: "md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+
+
+# Markdown processing
+kramdown:
+  input: GFM
+
+  
+# Outputting
+permalink: pretty
 
 # Plugins
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-mentions
+  - jekyll-gist
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-markdown_ext: "md"
-encoding: "utf-8"
-permalink: pretty
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-mentions
+  - jekyll-gist
+
 
 # Serving
-port: 8080
-baseurl: ""
-url: "http://codeforfoco.org"
+port          : 8080
 
-# Kramdown settings
-kramdown:
-  input: GFM
