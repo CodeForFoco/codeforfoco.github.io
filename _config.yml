@@ -23,6 +23,12 @@ highlighter: rouge
 kramdown:
   input: GFM
 
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: nested
+#  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.htm
+
   
 # Outputting
 permalink: pretty
@@ -30,16 +36,14 @@ permalink: pretty
 # Plugins
 gems:
   - jekyll-sitemap
+  - jekyll-feed
   - jekyll-paginate
-  - jekyll-mentions
-  - jekyll-gist
 
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-sitemap
+  - jekyll-feed
   - jekyll-paginate
-  - jekyll-mentions
-  - jekyll-gist
 
 
 # Serving
