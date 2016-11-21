@@ -17,11 +17,7 @@ layout: default
 		  <p>{{ page.content }}</p>
 		{% endunless %}
 
-		{% unless site.categories.[page.category] | size > 0 %}
-		  <p>No posts in this category at this time.</p>
-		{% endunless %}
-
-		{% for post in site.categories.[page.category] %}
+		{% for post in site.categories[page.category] %}
 			{% include list.html %}
 		{% endfor %}
 	</ul>
