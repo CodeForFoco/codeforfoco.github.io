@@ -1,41 +1,41 @@
-#Code For Fort Collins
+# Code For Fort Collins
 
-This repo is for our website, [codeforfoco.org](http://www.codeforfoco.org).
+This git repo is for the site [codeforfoco.org](http://www.codeforfoco.org).
 
 ## Contributing
 
-We welcome new contributors. Not sure where to start? Check for any [open issues][githubissue] or ping the team on [our slack channel](https://codeforfoco.slack.com/). 
+We welcome new contributors.  Be sure to check out guide on [contributing][contributing], which includes instructions on how to fork, clone, branch, commit, pull request and sync your fork.
 
-Ensure your code follows best practices and adheres to good style.
+Not sure where to start? Look for [open issues][githubissue] on GitHub, or message the team on [our Slack site](https://codeforfoco.slack.com/) (can sign up via [email here]()).
 
-Be sure to read our in depth guide on [contributing][contributing], which includes instructions on how to fork, clone, branch, commit, pull request and sync your fork.
 
 TL;DR Contribution Workflow:
 
-1. [Fork][fork] this repository and clone your fork.
-1. Make a patch branch.
-1. Make changes, commit, and push.
-1. Submit a pull request and your changes will be reviewed and merged.
+1. [Fork][fork] this repository and Clone your fork locally.
+1. Checkout a new branch on which to make your changes.
+1. Make edits. Try to match existing coding style.
+1. Test your changes.
+1. Commit your changes. Push your changes to your fork on GitHub.
+1. Submit a new [pull request][pullrequest] and your changes will be reviewed and merged.
 
 
 
-## Getting Started
-
-1. Navigate to repo and install all project dependencies using the`bundle` command
-1. Build the project using `jekyll b` to prepare for deployment
-1. Use `jekyll s` to setup a development server.
+## Seeing What Changes Will Look Like
 
 ### Locally test changes
 
 A few requirements:
- 1. Requires a working installation of Ruby programming language. 
- 2. Assumes you have `bundler` installed (`$ gem install bundler`). 
- 3. Have a local git clone of https://github.com/CodeForFoco/codeforfoco.github.io
+ 1. Requires a working installation of Ruby programming language.
+ 2. Installed `bundler` tool for installing "gems" (`gem install bundler`).
+ 3. Local git clone of [this repo][forkthisrepo] where you have changes to test.
+
+Previewing
 
 ```bash
 cd codeforfoco.github.io
+bundle install
 bundle exec jekyll serve
-open http://127.0.0.1:8080/
+open http://127.0.0.1:8080/  # open this address in web broswer
 ```
 
 
@@ -52,5 +52,7 @@ We encourage you to [open up an issue](https://github.com/CodeForFoco/codeforfoc
 MIT, see [LICENSE](/LICENSE) for full license.
 
 [fork]: https://help.github.com/articles/fork-a-repo/
+[forkthisrepo]: https://github.com/CodeForFoco/codeforfoco.github.io#fork-destination-box
 [contributing]: https://github.com/CodeForFoco/org/blob/master/CONTRIBUTING.md
 [githubissue]: https://github.com/CodeForFoco/codeforfoco.github.io/issues
+[pullrequest]: https://github.com/CodeForFoco/codeforfoco.github.io/pulls
