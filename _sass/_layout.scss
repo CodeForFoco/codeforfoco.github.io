@@ -69,8 +69,10 @@ p{ font-size: 1em; font-family: 'Lato', sans-serif; margin-top: 1em }
 a{ font-size: 1em; font-family: 'Lato', sans-serif; color: #6A6B6D; transition: 0.2s; }
 a:hover { text-decoration: none; color: #0F4E7E; }
 a:active { text-decoration: none; color: #F8AC51; }
+
 ul{ list-style-type: none; }
-li { font-size: 1.2em; }
+li { font-size: 1.2em;}
+
 .more{
     font-size: 1em;
     padding-right: 7%;
@@ -242,7 +244,7 @@ nav ul li a{
 }
 #join-us ul li:hover, #other-orgs ul li:hover{
     box-shadow: 1px 1px 3px #000;
-    color: #0F4E7E;
+    color: #9abce0;
 }
 
 
