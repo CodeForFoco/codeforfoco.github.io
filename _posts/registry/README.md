@@ -6,13 +6,16 @@ Creating a post in our registry that will be displayed on our [web page](http://
 
 ### How to create a new post
 The registry post use something called markdown to display. Markdown is a simple way to format plain text. You can learn more about it [here](https://daringfireball.net/projects/markdown/). Also you will need to know a bit about Github. You can learn more about Github [here](https://guides.github.com/). To complete the onboarding challenge follow the steps below. And remember if you need help, ask! Known of us here bite.
-1. Fork the repository
-1. In your local repository, copy the md template below
-1. Create a new file, and paste in the template.
-1. Edit the template with your information and message
-1. Save the file with the name in the form: YYYY-MM-DD-YOURTITLE.md
-1. Commit your changes
-1. Make a pull request to merge your post into master.
+
+ 1. Fork the repository
+ 1. In your local repository, copy the **.md template** below
+ 1. Create a new file, and paste in the template.
+ 1. Save the file with the name in the form: `YYYY-MM-DD-YOURTITLE.md`
+ 1. Edit the template with your information and message
+ 1. Commit your changes
+ 1. Make a pull request to merge your post into master.
+
+## .md (markdown) template
 
 ```markdown
 ---
