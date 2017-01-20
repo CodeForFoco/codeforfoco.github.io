@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ben Gondrez signature"
+title:  "Ben Gondrez"
 date:  (2017-01-29 18:40)
 categories: registry
 ---
