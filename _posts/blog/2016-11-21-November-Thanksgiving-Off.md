@@ -6,7 +6,7 @@ author: David Crook
 categories: blog
 ---
 
-Reminder that there will not be a Thursday Meetup this week! (Nov. 20-26, 2016)
+Reminder that there will not be a Code for Fort Collins Meetup on Thursday this week! (Nov. 20-26, 2016)
 
 ## See you again in December!
 
