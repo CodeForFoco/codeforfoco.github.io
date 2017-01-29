@@ -1,0 +1,11 @@
+/**
+ * Things that are too big to be components
+ */
+
+.top-bar {
+    background-color: transparentize($light-blue, .5);
+
+    &--opaque {
+        background-color: transparentize($light-blue, .1);
+    }
+}
