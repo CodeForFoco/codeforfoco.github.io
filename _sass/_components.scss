@@ -3,10 +3,16 @@
  */
 
 .donate-button {
-    background: #B70A29;
+    background-color: $dark-red;
     padding: 14px;
-    color: white;
+    color: $white;
     border-radius: 7px;
     box-shadow: 2px 2px 5px gray;
     font-weight: bold;
+    border: solid 1px $dark-red;
+
+    &:hover {
+        color: $dark-red;
+        background-color: $white;
+    }
 }
