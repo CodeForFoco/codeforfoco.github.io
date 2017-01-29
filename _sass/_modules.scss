@@ -2,32 +2,76 @@
  * Things that are too big to be components
  */
 
-// Logo, nav, etc.
+// Container for logo, nav, etc.
 .top-bar {
   background-color: transparentize($light-blue, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100vw;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  transition: background-color .4s;
+  /* see effects.js scroll effect */
 
   &--opaque {
     background-color: transparentize($light-blue, .1);
   }
+
+  @media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  }
 }
 
 // Logo and page title container
-.page-title a {
-  display: block;
-  color: $medium-blue;
-  font-family: $heading-font;
-  transition: color 300ms;
+.page-title {
+  margin: 0;
 
-  &:hover {
-    color: lighten($medium-blue, 10%);
+  // Link to home page
+  a {
+    display: block;
+    color: $medium-blue;
+    font-family: $heading-font;
+    transition: color 300ms;
+
+    &:hover {
+      color: lighten($medium-blue, 10%);
+    }
+  }
+
+  .logo {
+    display: inline-block;
+    margin: 0 auto;
+    width: 70px;
+    cursor: pointer;
   }
 }
 
 // Nav menu
 .site-nav {
   text-align: right;
+  display: inline-block;
+  float: right;
 
-  ul {
-    float: none;
+  @media (max-width: 767px) {
+    ul {
+      display: none;
+    }
+  }
+}
+
+.site-nav ul > li {
+  display: inline-block;
+  line-height: 70px;
+  padding: 0 8px;
+
+  a:not(.donate-button) {
+    color: $near-black;
+    &:hover {
+      color: $medium-blue;
+    }
   }
 }

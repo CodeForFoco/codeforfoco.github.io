@@ -102,7 +102,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #0F4E7E;
+  color: $medium-blue;
 }
 
 a:active {
@@ -134,62 +134,7 @@ li {
 /*=================================
     III.    HEADER CLASSES
 ===================================*/
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 70px;
-  width: 100vw;
-  z-index: 100;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  transition: background-color .4s;
-  /* see effects.js scroll effect */
-
-  h1 {
-    display: inline-block;
-    margin: 0;
-  }
-}
-
-header img {
-  /* Logo */
-  display: inline-block;
-  margin: 0 auto;
-  width: 70px;
-  cursor: pointer;
-}
-
-/* -- Primary menu -- */
-nav ul {
-  float: right;
-  width: 100%;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 70px;
-  padding: 0 2%;
-
-}
-
-nav ul li a {
-  color: #000;
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  header nav ul {
-    display: none;
-  }
-
-  header {
-    border-bottom: none;
-  }
-}
-@media (max-width: 1000px) {
-  header nav ul {
-    display: none;
-  }
-
-}
+/** MOVED TO _modules.scss **/
 
 /*=================================
     IV. SECTION CLASSES
