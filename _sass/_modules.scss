@@ -2,10 +2,21 @@
  * Things that are too big to be components
  */
 
+// Logo, nav, etc.
 .top-bar {
     background-color: transparentize($light-blue, .5);
 
     &--opaque {
         background-color: transparentize($light-blue, .1);
+    }
+}
+
+.page-title a {
+    font-family: $heading-font;
+    color: $medium-blue;
+    display: block;
+    transition: color 300ms;
+    &:hover {
+        color: lighten($medium-blue, 10%);
     }
 }
