@@ -11,12 +11,23 @@
     }
 }
 
+// Logo and page title container
 .page-title a {
     font-family: $heading-font;
     color: $medium-blue;
     display: block;
     transition: color 300ms;
+
     &:hover {
         color: lighten($medium-blue, 10%);
     }
+}
+
+// Nav menu
+.site-nav {
+text-align: right;
+ul {
+    float: none;
+}
+
 }
