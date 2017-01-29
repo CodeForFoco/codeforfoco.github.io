@@ -4,30 +4,30 @@
 
 // Logo, nav, etc.
 .top-bar {
-    background-color: transparentize($light-blue, .5);
+  background-color: transparentize($light-blue, .5);
 
-    &--opaque {
-        background-color: transparentize($light-blue, .1);
-    }
+  &--opaque {
+    background-color: transparentize($light-blue, .1);
+  }
 }
 
 // Logo and page title container
 .page-title a {
-    font-family: $heading-font;
-    color: $medium-blue;
-    display: block;
-    transition: color 300ms;
+  display: block;
+  color: $medium-blue;
+  font-family: $heading-font;
+  transition: color 300ms;
 
-    &:hover {
-        color: lighten($medium-blue, 10%);
-    }
+  &:hover {
+    color: lighten($medium-blue, 10%);
+  }
 }
 
 // Nav menu
 .site-nav {
-text-align: right;
-ul {
-    float: none;
-}
+  text-align: right;
 
+  ul {
+    float: none;
+  }
 }
