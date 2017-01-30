@@ -1,6 +1,14 @@
 <section id="popup-menu" class="col-xs-12 text-center">
     <div class="col-xs-12 popup-menu__content">
         <nav>
+            <ul class="internal-links">
+                {% for category in site.categories %}
+                    <li>
+                        <a href="/category/{{ category[0] }}/">{{ category[0] | capitalize }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <hr>
             <ul class="social-links">
                 <li>
                     <a href="mailTo:people@codeforfoco.org">
@@ -32,14 +40,6 @@
                         <i class="fa fa-meetup fa-2x" aria-hidden="true"></i>
                     </a>
                 </li>
-            </ul>
-            <hr/>
-            <ul>
-                {% for category in site.categories %}
-                    <li>
-                        <a href="/category/{{ category[0] }}/">{{ category[0] | capitalize }}</a>
-                    </li>
-                {% endfor %}
             </ul>
             <hr/>
             <ul>

@@ -107,6 +107,20 @@
   border-bottom-right-radius: $border-radius;
   border-bottom-right-radius: $border-radius;
   box-shadow: 0 4px 15.4px rgba(15, 79, 128, 0.9);
+
+  // Links to pages within the site
+  .internal-links li {
+    line-height: 2;
+
+    a {
+      font-size: 1.2em;
+      color: $link-color;
+    }
+
+    &:not(:last-of-type) {
+      border-bottom: dashed 1px $light-blue;
+    }
+  }
 }
 
 #popup-menu ul {
