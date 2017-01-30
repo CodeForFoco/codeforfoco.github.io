@@ -28,6 +28,11 @@ $height: 3px;
   width: 40px;
   margin-right: 6px;
   display: block;
+
+  // Hide on larger screens
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-trigger-bar {
