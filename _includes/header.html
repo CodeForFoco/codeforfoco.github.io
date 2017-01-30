@@ -1,26 +1,25 @@
 <header id="site-header" class="top-bar">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="page-title">
-                    <a href="{{ site.baseurl }}/">
-                        <img id="popmenu" class="logo" src="{{ site.baseurl }}/assets/images/logo.png">{{ site.title }}
-                    </a>
-                </h1>
-                <nav class="site-nav">
-                    <ul>
-                        {% for category in site.categories %}
-                            <li>
-                                <a href="/category/{{ category[0] }}/">{{ category[0] | capitalize }}</a>
-                            </li>
-                        {% endfor %}
-                        <li>
-                            <a class="donate-button" href="https://secure.codeforamerica.org/page/contribute/default?brigade=CodeForFoCo">Donate</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        <h1 class="page-title">
+            <a href="{{ site.baseurl }}/"><img class="logo" src="{{ site.baseurl }}/assets/images/logo.png">{{ site.title }}</a>
+        </h1>
+        <nav class="site-nav">
+            <ul>
+                {% for category in site.categories %}
+                    <li>
+                        <a href="/category/{{ category[0] }}/">{{ category[0] | capitalize }}</a>
+                    </li>
+                {% endfor %}
+                <li>
+                    <a class="donate-button" href="https://secure.codeforamerica.org/page/contribute/default?brigade=CodeForFoCo">Donate</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="menu-trigger">
+            <i class="menu-trigger-bar top"></i>
+            <i class="menu-trigger-bar middle"></i>
+            <i class="menu-trigger-bar bottom"></i>
+        </a>
     </div>
 </header>
 
