@@ -16,3 +16,52 @@
     background-color: $white;
   }
 }
+
+/**
+ * Tilted hamburger-ish mobile nav menu toggle
+ */
+$small-bar-size: 50%;
+$height: 3px;
+
+// Container
+.menu-trigger {
+  width: 40px;
+  margin-right: 6px;
+  display: block;
+}
+
+.menu-trigger-bar {
+  background-color: $medium-blue;
+  display: block;
+  height: $height;
+  margin-bottom: 6px;
+  position: relative;
+  transition: transform 300ms;
+  width: 100%;
+
+
+  &.middle {
+    transform: rotate(-45deg);
+  }
+
+  &.bottom,
+  &.top {
+    transform: rotate(-45deg) translateX(0) translateY(0);
+    width: $small-bar-size;
+  }
+
+  &.bottom {
+    margin-left: $small-bar-size;
+  }
+}
+
+// When menu is active
+.close-trigger .menu-trigger-bar {
+  &.top {
+    transform: rotate(45deg) translateX(2px) translateY(-2px);
+  }
+
+  &.bottom {
+    transform: rotate(45deg) translateX(-2px) translateY(0);
+  }
+}

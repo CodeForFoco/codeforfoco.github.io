@@ -10,8 +10,10 @@ $(document).ready(function(){
 
 
 	/* Menu Pop up Toggle */
-	$('#popmenu').click( function(){
+	$('.menu-trigger').click( function(e){
+        e.preventDefault();
 		$('#popup-menu').toggle('hide');
+        $('.menu-trigger').toggleClass('close-trigger');
 	});
 
 

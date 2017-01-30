@@ -19,16 +19,24 @@
     background-color: transparentize($light-blue, .1);
   }
 
-  @media (max-width: 1024px) {
   .container {
-    width: 100%;
-  }
+    @media (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5px;
+    }
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
   }
 }
 
 // Logo and page title container
 .page-title {
   margin: 0;
+  flex: 1;
+  display: inline-block;
 
   // Link to home page
   a {
@@ -55,7 +63,6 @@
   text-align: right;
   display: inline-block;
   float: right;
-
   @media (max-width: 767px) {
     ul {
       display: none;
@@ -70,6 +77,7 @@
 
   a:not(.donate-button) {
     color: $near-black;
+
     &:hover {
       color: $medium-blue;
     }
