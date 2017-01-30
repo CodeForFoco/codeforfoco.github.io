@@ -29,7 +29,7 @@ sass:
   style: nested
 #  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.htm
 
-  
+
 # Outputting
 permalink: pretty
 
@@ -38,6 +38,7 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-autoprefixer
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -48,4 +49,3 @@ whitelist:
 
 # Serving
 port          : 8080
-
