@@ -127,7 +127,8 @@
   padding: 0;
 }
 
-nav .social-links {
+ul.social-links {
+  padding: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
