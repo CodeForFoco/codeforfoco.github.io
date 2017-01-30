@@ -5,24 +5,48 @@
             <hr/>
             <nav class="row">
                 <ul class="text-center">
-                  <li><a href="mailTo:people@codeforfoco.org"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-                  <li><a href="https://codeforfoco.slack.com/"><i class="fa fa-slack fa-2x" aria-hidden="true"></i></a></li>
-                  <li><a href="http://github.com/codeforfoco"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-                  <li><a href="https://www.facebook.com/CodeforFoCo/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-                  <li><a href="https://twitter.com/CodeForFoco"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-                  <li><a href="http://www.meetup.com/Code-for-Fort-Collins/"><img src="/assets/images/meetup-logo.png"/></a></li>
+                    <li>
+                        <a href="mailTo:people@codeforfoco.org">
+                            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://codeforfoco.slack.com/">
+                            <i class="fa fa-slack fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://github.com/codeforfoco">
+                            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/CodeforFoCo/">
+                            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/CodeForFoco">
+                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.meetup.com/Code-for-Fort-Collins/"><img src="/assets/images/meetup-logo.png"/></a>
+                    </li>
                 </ul>
             </nav>
-            <span class="copyright">&copy; {{ site.copyright }} Code for Fort Collins</span>
+            <span class="copyright">&copy;
+                {{ site.copyright }}
+                Code for Fort Collins</span>
             <hr/>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <h4>Organization</h4>
             <hr/>
-            {% for post in site.categories.organization limit:5 %}
-              <a href="{{ post.url | prepend: site.baseurl }}">
-                  <h5 class="title-list-item">{{ post.title | capitalize }}</h5>
-              </a>
+            {% for post in site.categories.organization limit : 5 %}
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    <h5 class="title-list-item">{{ post.title | capitalize }}</h5>
+                </a>
             {% endfor %}
             <hr/>
         </div>
