@@ -90,19 +90,17 @@
 #popup-menu {
   display: none;
   position: fixed;
-  top: 0;
+  top: $site-header-height;
   right: 0;
   bottom: 0;
   left: 0;
   /* Covers the entire viewing screen */
 
-  padding: 10%;
   background: linear-gradient(to bottom right,rgba(0,155,193,0.4),rgba(0,155,193,0.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
   z-index: 50;
 }
 
 #popup-menu .content {
-  width: 80%;
   margin: 0 auto;
   /*center content on screen*/
   background: white;
