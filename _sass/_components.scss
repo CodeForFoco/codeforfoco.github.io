@@ -19,9 +19,8 @@
 
 /**
  * Tilted hamburger-ish mobile nav menu toggle
+ * Inspired by: https://codepen.io/karlovidek/pen/aNYWKE
  */
-$small-bar-size: 50%;
-$height: 3px;
 
 // Container
 .menu-trigger {
@@ -35,15 +34,17 @@ $height: 3px;
   }
 }
 
+// The individual bars
 .menu-trigger-bar {
+  $small-bar-size: 50%;
+
   background-color: $medium-blue;
   display: block;
-  height: $height;
+  height: 3px;
   margin-bottom: 6px;
   position: relative;
   transition: transform 300ms;
   width: 100%;
-
 
   &.middle {
     transform: rotate(-45deg);
