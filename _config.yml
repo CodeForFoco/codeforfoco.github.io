@@ -2,6 +2,7 @@
 title           : Code For FoCo
 url             : "http://codeforfoco.org"
 baseurl         : ""
+copyright       : "2017"
 email           : people@codeforfoco.org
 github_username : codeforfoco
 description: > # this means to ignore newlines until next yaml item
@@ -35,6 +36,7 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-autoprefixer
 
 # mimic GitHub Pages with --safe
 whitelist:
