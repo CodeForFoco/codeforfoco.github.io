@@ -5,13 +5,17 @@
         </h1>
         <nav class="site-nav">
             <ul>
-                {% for category in site.categories %}
-                    <li>
-                        <a href="/category/{{ category[0] }}/">{{ category[0] | capitalize }}</a>
-                    </li>
-                {% endfor %}
                 <li>
-                    <a class="donate-button" href="https://secure.codeforamerica.org/page/contribute/default?brigade=CodeForFoCo">Donate</a>
+                    <a href="/category/blog/">Blog</a>
+                </li>
+                <li>
+                    <a href="/category/registry/">Members</a>
+                </li>
+                <li>
+                    <a href="/join-us/">Join Us</a>
+                </li>
+                <li>
+                    <a class="donate-button" href="https://secure.codeforamerica.org/page/contribute/default?brigade=CodeForFoCo">Donate!</a>
                 </li>
             </ul>
         </nav>
@@ -23,4 +27,4 @@
     </div>
 </header>
 
-{% include popup-menu.html %}
+{% include popup - menu.html %}

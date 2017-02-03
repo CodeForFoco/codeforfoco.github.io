@@ -181,6 +181,10 @@ li {
   color: #fff;
 }
 
+#hero-page .hero-page-logo{
+  width: 300px;
+}
+
 #hero-page time {
   padding: 0 2%;
 }
@@ -350,9 +354,7 @@ li {
   display: block;
   padding: 0;
   margin: 0;
-  width: 100%;
-  max-width: 350px;
-  height: 350px;
+  max-width: 100%;
   background-color: transparent;
 }
 
