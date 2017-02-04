@@ -13,12 +13,49 @@ TL;DR Contribution Workflow:
 
 1. [Fork][fork] this repository and Clone your fork locally.
 1. Checkout a new branch on which to make your changes.
-1. Make edits. Try to match existing coding style.
+1. Make edits. Try to match [existing coding style](https://github.com/CodeForFoco/codeforfoco.github.io#code-standards).
 1. Test your changes.
 1. Commit your changes. Push your changes to your fork on GitHub.
 1. Submit a new [pull request][pullrequest] and your changes will be reviewed and merged.
 
+### Code Standards
+Development in a team environment can result in code inconsistency, which may 
+have undesired impacts including a reduction in readability. Therefore we ask 
+that you standardize and "beautify" your code before submitting a pull request. 
+A few options to simplify this process are outlined below.
 
+#### [EditorConfig project](http://editorconfig.org/) 
+
+> EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.
+
+This tool eliminates common inconsistencies such as tab style and line endings, 
+and has plugins available for most modern IDEs and text editors. Find yours [here](http://editorconfig.org/#download).
+
+#### Linters
+Linters validate your code and provide errors and warnings when validation is 
+not met. Here are some linters for common text editors:
+- [linter](https://atom.io/packages/linter) for **Atom** and these 
+language-specific linters:
+  - [linter-scss-lint](https://atom.io/packages/linter-scss-lint)
+  - [linter-jshint](https://atom.io/packages/linter-jshint)
+  - [linter-htmlhint](https://atom.io/packages/linter-htmlhint)
+- [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3) for **Sublime Text** and these language-specific linters:
+  - [SublimeLinter-scss-lint](https://github.com/attenzione/SublimeLinter-scss-lint)
+  - [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
+  - [SublimeLinter-html-tidy](https://github.com/SublimeLinter/SublimeLinter-html-tidy)
+  
+
+#### Beautifiers
+The settings for beautifying this repo's code is found in `.csscomb.json` and 
+`.jsbeautifyrc` at the root of the project. Implementation of the settings is 
+carried out by various plugins specific to each text editor. Here are some of 
+the most common:
+- [atom-beautify](https://atom.io/packages/atom-beautify) is an all-in-one 
+package for **Atom** that will handle beautification of most common languages (FYI 
+it's a big package so it takes a little while for the installation to complete!).
+- **Sublime Text** does not have an all-in-one beautifier, but
+[Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify)
+should suffice for this project.
 
 ## Seeing What Changes Will Look Like
 
