@@ -1,41 +1,35 @@
 ---
 layout: default
 ---
+
 <article class="row">
-  <section id="hero-page" class="col-xs-12 hero-page">
-  		<div class="row container">
-	  		<div class="col-xs-12 col-md-6">
-	        	{% if page.image %}
-		          <img class="hero-page-logo center-block" src="/assets/images/{{ page.image }}"/>
-		        {% else %}
-		          <img class="hero-page-logo center-block" src="/assets/images/default.png"/>
-		        {% endif %}
-			    
-	  		</div>
-	  		<div class="col-xs-12 col-md-6 text-center">
-  				<h2>{{ page.title }}</h2>
-  				<p class="post-meta">
-  					{% if page.date %}
-	  					<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-	  					{% if page.author %} 
-	  						<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-	  							<span class="author" itemprop="name">{{ page.author }}</span>
-	  						</span>
-	  					{% endif %}
-	  				{% endif %}
-  				</p>
-  			</div>
-  		</div>
-	</section>
-    
-	<section class="col-xs-12 col-md-10 col-lg-offset-1 marg">
-	  	<div class="post-content">
-	    	{{ content }}
-	  	</div>
-
-  	</section>
-
+    <section id="hero-page" class="col-xs-12 hero-page">
+        <div class="row container">
+            <div class="col-xs-12 col-md-6">
+                {% if page.image %}
+                    <img class="hero-page-logo center-block" src="/assets/images/{{ page.image }}"/>
+                {% else %}
+                    <img class="hero-page-logo center-block" src="/assets/images/default.png"/>
+                {% endif %}
+            </div>
+            <div class="col-xs-12 col-md-6 text-center">
+                <h2>{{ page.title }}</h2>
+                <p class="post-meta">
+                    {% if page.date %}
+                        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+                        {% if page.author %}
+                            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                <span class="author" itemprop="name">{{ page.author }}</span>
+                            </span>
+                        {% endif %}
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="col-xs-12 col-md-10 col-lg-offset-1 marg">
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </section>
 </article>
-
-
-

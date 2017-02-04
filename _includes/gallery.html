@@ -1,12 +1,12 @@
-{% for post in site.categories[categoryname] limit:[limitsize] %}
-  <a href="{{ post.url | prepend: site.baseurl }}">
-    <div class="gallery-item">
-      {% if post.image %}
-        <img src="{{ post.image }}"/>
-      {% else %}
-        <img src="/assets/images/default.png"/>
-      {% endif %}
-      <h4>{{ post.title }}</h4>
-    </div>
-  </a>
+{% for post in site.categories[categoryname]limit : [limitsize] %}
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <div class="gallery-item">
+            {% if post.image %}
+                <img src="{{ post.image }}"/>
+            {% else %}
+                <img src="/assets/images/default.png"/>
+            {% endif %}
+            <h4>{{ post.title }}</h4>
+        </div>
+    </a>
 {% endfor %}
