@@ -2,9 +2,9 @@
 layout: default
 ---
 <article class="row">
-  <section id="hero-page" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hero-page">
+  <section id="hero-page" class="col-xs-12 hero-page">
   		<div class="row container">
-	  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	  		<div class="col-xs-12 col-md-6">
 	        	{% if page.image %}
 		          <img class="hero-page-logo center-block" src="/assets/images/{{ page.image }}"/>
 		        {% else %}
@@ -12,7 +12,7 @@ layout: default
 		        {% endif %}
 			    
 	  		</div>
-	  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+	  		<div class="col-xs-12 col-md-6 text-center">
   				<h2>{{ page.title }}</h2>
   				<p class="post-meta">
   					{% if page.date %}
@@ -28,7 +28,7 @@ layout: default
   		</div>
 	</section>
     
-	<section class="col-xs-12 col-sm-12 col-md-10 col-lg-offset-1 col-lg-10 col-lg-offset-1 marg">
+	<section class="col-xs-12 col-md-10 col-lg-offset-1 marg">
 	  	<div class="post-content">
 	    	{{ content }}
 	  	</div>
