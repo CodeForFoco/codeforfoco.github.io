@@ -2,17 +2,19 @@
  * BUTTONS, TINY PIECES, ETC.
  */
 
-.donate-button {
-  background-color: $dark-red;
-  padding: 14px;
+// Bootstrap overrides
+.btn {
+  border-radius: 3px;
+}
+
+// Custom Bootstrap button color
+.btn--call-to-action {
   color: $white;
-  border-radius: 7px;
-  box-shadow: 2px 2px 5px gray;
-  font-weight: bold;
   border: solid 1px $dark-red;
+  background-color: $call-to-action-color;
 
   &:hover {
-    color: $dark-red;
+    color: $call-to-action-color;
     background-color: $white;
   }
 }
