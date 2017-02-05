@@ -38,9 +38,9 @@
     I.  STRUCTURE CLASSES
 ===================================*/
 body {
+  color: #0f4e7e;
   /*set default colors*/
   background-color: #fff;
-  color: #0F4E7E;
 }
 
 .marg {
@@ -62,51 +62,61 @@ body {
 */
 
 h1 {
-  display: inline-block;
-  font-size: 1.7em;
   font-family: 'Quantico', sans-serif;
+  font-size: 1.7em;
+
+  display: inline-block;
+
   color: #000;
 }
 
 h2 {
-  font-size: 2em;
   font-family: 'Quantico', sans-serif;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 1.7em;
   font-family: 'Quantico', sans-serif;
+  font-size: 1.7em;
+
   margin: 1% 0;
 }
 
 h4 {
   font-family: 'Quantico', sans-serif;
   font-size: 1.4em;
-  color: #0F4E7E;
+
   padding: 1%;
+
+  color: #0f4e7e;
 }
 
 p {
-  font-size: 1em;
   font-family: 'Lato', sans-serif;
+  font-size: 1em;
+
   margin-top: 1em;
 }
 
 a {
-  font-size: 1em;
   font-family: 'Lato', sans-serif;
-  color: #6A6B6D;
+  font-size: 1em;
+
   transition: .2s;
+
+  color: #6a6b6d;
 }
 
 a:hover {
   text-decoration: none;
+
   color: $medium-blue;
 }
 
 a:active {
   text-decoration: none;
-  color: #F8AC51;
+
+  color: #f8ac51;
 }
 
 ul {
@@ -118,10 +128,13 @@ li {
 }
 
 .more {
-  font-size: 1em;
-  padding-right: 7%;
-  float: right;
   font-family: 'Quantico', sans-serif;
+  font-size: 1em;
+
+  float: right;
+
+  padding-right: 7%;
+
   color: #eaa319;
 }
 
@@ -138,32 +151,36 @@ li {
 #hero-page is for our page.html, page.html and category.html(archive)*/
 #hero,
 #hero-page {
+  position: relative;
+
   height: 550px;
-  background: linear-gradient(to bottom right,rgba(195,172,11,0.4),rgba(15,78,126,0.4)), url('../assets/images/hero-one.jpg') center center no-repeat;
+
+  background: linear-gradient(to bottom right,rgba(195,172,11,.4),rgba(15,78,126,.4)), url('../assets/images/hero-one.jpg') center center no-repeat;
   background-size: cover;
 }
 
 /* Center image vertically and horizontally - works on <IE8*/
 #hero img {
   position: absolute;
-  max-width: 30%;
   top: 10%;
   left: 10%;
+
+  max-width: 30%;
 }
 
 #hero img:empty {
   top: 50%;
   left: 50%;
+
   -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #hero-page {
   min-height: 350px;
-  height: 100%;
   padding: 10% 0;
 }
 
@@ -172,8 +189,10 @@ li {
 }
 
 #hero-page h2 {
-  padding-top: 50px;
   font-size: 3em;
+
+  padding-top: 50px;
+
   color: #fff;
 }
 
@@ -181,7 +200,7 @@ li {
   color: #fff;
 }
 
-#hero-page .hero-page-logo{
+#hero-page .hero-page-logo {
   width: 300px;
 }
 
@@ -202,7 +221,9 @@ li {
 #join-us {
   padding-top: 4%;
   padding-bottom: 4%;
-  background: #9FB8CB;
+
+  color: $white;
+  background: #9fb8cb;
 
   p {
     &.about {
@@ -219,7 +240,8 @@ li {
 #partners {
   height: 100%;
   min-height: 350px;
-  background: linear-gradient(to bottom right,rgba(0,155,193,0.4),rgba(0,155,193,0.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
+
+  background: linear-gradient(to bottom right,rgba(0,155,193,.4),rgba(0,155,193,.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -229,13 +251,16 @@ li {
 
 #partners img {
   display: inline-block;
+
   width: 100%;
   max-width: 350px;
   height: 150px;
   margin: 1%;
-  background-color: transparent;
-  opacity: .8;
+
   transition: .2s;
+
+  opacity: .8;
+  background-color: transparent;
 }
 
 #partners img:hover {
@@ -246,17 +271,20 @@ li {
     V. FULLSCREEN TEMPLATES
 ===================================*/
 #post {
-  display: none;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
+
+  display: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
   width: 100vw;
   height: 100vh;
   padding: 7%;
+
   background-color: #ccc;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  z-index: 100;
 }
 
 #archive {
@@ -269,13 +297,17 @@ li {
 /*GALLERY CLASSES - these are used in _includes/gallery.html*/
 .gallery-item {
   position: relative;
+
   display: inline-block;
+
   width: 30%;
   min-width: 300px;
   max-width: 450px;
   height: 330px;
-  background-color: transparent;
+
   transition: .25s;
+
+  background-color: transparent;
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .gallery-item {
@@ -285,28 +317,34 @@ li {
 
 .gallery-item img {
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
-  padding: 0;
-  margin: 0;
+
   width: 100%;
   height: 100%;
-  z-index: 0;
+  margin: 0;
+  padding: 0;
+
   background-color: transparent;
 }
 
 .gallery-item h4 {
-  position: absolute;
-  color: #000;
-  top: 35%;
-  left: 0;
-  width: 100%;
-  padding: 2%;
-  margin: 0;
-  background-color: rgba(255,255,255,0.7);
   font-size: 20px;
   font-weight: bold;
+
+  position: absolute;
+  top: 35%;
+  left: 0;
+
+  width: 100%;
+  margin: 0;
+  padding: 2%;
+
   text-align: center;
+
+  color: #000;
+  background-color: rgba(255,255,255,.7);
 }
 
 .gallery-item:hover {
@@ -315,18 +353,21 @@ li {
 
 /* LIST CLASSES - These are used in _includes/list.html*/
 .list-item {
-  background-color: transparent;
+  width: 100%;
+  height: 200px;
   margin-bottom: 1%;
   padding: 0;
-  height: 200px;
-  width: 100%;
+
+  background-color: transparent;
 }
 
 .list-item img {
   display: block;
-  padding: 0;
-  margin: 0;
+
   max-width: 100%;
+  margin: 0;
+  padding: 0;
+
   background-color: transparent;
 }
 
@@ -369,9 +410,9 @@ li {
   }
 
   li {
-    margin-left: 1rem;
     margin-top: .5rem;
     margin-bottom: .5rem;
+    margin-left: 1rem;
   }
 
   ol {
