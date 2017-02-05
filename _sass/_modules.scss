@@ -75,6 +75,12 @@
   float: right;
 
   text-align: right;
+
+  ul {
+    margin: 0;
+
+    @include flex-vert-align;
+  }
   @media (max-width: 767px) {
     ul {
       display: none;
@@ -83,10 +89,6 @@
 }
 
 .site-nav ul > li {
-  line-height: 70px;
-
-  display: inline-block;
-
   padding: 0 8px;
 
   a:not(.btn) {
@@ -115,16 +117,13 @@
 }
 
 .popup-menu__content {
-  $border-radius: 3px;
-
   padding-top: 20px;
   padding-bottom: 20px;
 
-  border-bottom-right-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
   background: $white;
   box-shadow: 0 4px 15.4px rgba(15, 79, 128, .9);
-
 
   // Links to pages within the site
   .internal-links li {
