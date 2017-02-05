@@ -248,7 +248,6 @@ li {
 
 /* -- Partners section on landing page -- */
 #partners {
-  height: 100%;
   min-height: 350px;
 
   background: linear-gradient(to bottom right,rgba(0,155,193,.4),rgba(0,155,193,.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
@@ -399,10 +398,10 @@ li {
     VI. FOOTER CLASSES
 ===================================*/
 .site-footer {
-  height: 100%;
-  min-height: 300px;
-  background-color: #9FB8CB;
-  padding: 2%;
+  min-height: 25vh;
+  padding: 3rem 20px;
+
+  background-color: #9fb8cb;
 }
 
 /*=================================
