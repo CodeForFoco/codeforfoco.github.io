@@ -120,7 +120,17 @@ a:active {
 }
 
 ul {
+  padding: 0;
+
   list-style-type: none;
+}
+
+.list {
+  &--even-distrib {
+    display: flex;
+
+    justify-content: space-around;
+  }
 }
 
 li {
