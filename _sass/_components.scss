@@ -79,3 +79,25 @@
     transform: rotate(45deg) translateX(-2px) translateY(0);
   }
 }
+
+/**
+ * Big ol' vertical paddin'
+ */
+.big-ol-panel {
+  font-size: 2.5rem;
+
+  min-height: 40vh;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  color: $near-black;
+
+  &--color-bg {
+    position: relative;
+
+    border: solid hsl(349, 61%, 46%);
+    border-width: 5px 0;
+    box-shadow: 0 0 0 10px hsla(52, 69%, 66%, 1), 0 0 0 15px hsla(206, 66%, 38%, 1);
+    box-shadow: 0 0 0 10px hsla(206, 30%, 87%, 1), 0 0 0 15px hsla(206, 69%, 34%, 1);
+  }
+}

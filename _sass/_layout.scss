@@ -137,17 +137,6 @@ li {
   font-size: 1.2em;
 }
 
-.more {
-  font-family: 'Quantico', sans-serif;
-  font-size: 1em;
-
-  float: right;
-
-  padding-right: 7%;
-
-  color: #eaa319;
-}
-
 /*=================================
     III.    HEADER CLASSES
 ===================================*/
@@ -227,28 +216,12 @@ li {
   height: 200px;
 }
 
-/*Join Us section and Other Orgs section on landing page*/
-#join-us {
-  padding-top: 4%;
-  padding-bottom: 4%;
-
-  color: $white;
-  background: #9fb8cb;
-
-  p {
-    &.about {
-      font-size: 2rem;
-    }
-  }
-}
-
 #other-orgs {
   background: #b70a29;
 }
 
 /* -- Partners section on landing page -- */
 #partners {
-  min-height: 350px;
 
   background: linear-gradient(to bottom right,rgba(0,155,193,.4),rgba(0,155,193,.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
   background-size: cover;
