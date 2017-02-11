@@ -37,12 +37,6 @@
 /*=================================
     I.  STRUCTURE CLASSES
 ===================================*/
-body {
-  font-family: 'Lato', sans-serif;
-
-  background-color: $white;
-}
-
 .marg {
   padding-top: 4%;
   padding-bottom: 4%;
@@ -55,82 +49,13 @@ body {
 /*=================================
     II. TYPOGRAPHY CLASSES
 ===================================*/
+/** MOSTLY MOVED TO _elements.scss **/
 /*
     red-orange: #FF5300; rgba(255,83, 0, 1); eaa319
     hover - Light Red-Orange: #F8AC51;
     Blue-gray: #399ED2;
 */
 
-html {
-  font-size: 15px;
-
-  @include mq(tablet) {
-    font-size: 16px;
-  }
-  @include mq(desktop) {
-    font-size: 17px;
-  }
-  @include mq($from: wide) {
-    font-size: 18px;
-  }
-}
-
-h1,
-h4,
-h5,
-h6 {
-  font-family: 'Quantico', sans-serif;
-}
-
-h1 {
-  font-size: 2.2em;
-}
-
-h2 {
-  font-size: 1.6em;
-
-  margin: 0 0 .2em;
-}
-
-h3 {
-  font-size: 1.5em;
-
-  margin: .2em 0 0;
-}
-
-h4 {
-  font-size: 1.3rem;
-}
-
-p {
-  font-size: 1.1em;
-
-  margin: .9em auto;
-}
-
-a {
-  transition: .2s;
-
-  color: $link-color;
-
-  &:hover {
-    text-decoration: none;
-
-    color: $link-color-hover;
-  }
-
-  &:active {
-    text-decoration: none;
-
-    color: #f8ac51;
-  }
-}
-
-ul {
-  padding: 0;
-
-  list-style-type: none;
-}
 
 .list {
   &--even-distrib {
@@ -148,72 +73,7 @@ ul {
 /*=================================
     IV. SECTION CLASSES
 ===================================*/
-/* -- Section at top of landing page -- */
-/* #hero is for our landing page
-#hero-page is for our page.html, page.html and category.html(archive)*/
-#hero,
-#hero-page {
-  position: relative;
-
-  height: 550px;
-
-  background: linear-gradient(to bottom right,rgba(195,172,11,.4),rgba(15,78,126,.4)), url('../assets/images/hero-one.jpg') center center no-repeat;
-  background-size: cover;
-}
-
-/* Center image vertically and horizontally - works on <IE8*/
-#hero img {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-
-  max-width: 30%;
-}
-
-#hero img:empty {
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
-}
-
-#hero-page {
-  min-height: 20rem;
-  padding: 10% 0;
-}
-
-#hero-page .container {
-  padding-top: 7%;
-}
-
-#hero-page h2 {
-  font-size: 3rem;
-
-  padding-top: 3rem;
-
-  color: #fff;
-}
-
-#hero-page p {
-  color: #fff;
-}
-
-#hero-page .hero-page-logo {
-  width: 300px;
-}
-
-#hero-page time {
-  padding: 0 2%;
-}
-
-#hero-page .author {
-  padding: 0 2%;
-}
-
-#hero-page .hero-page-logo {
-  width: 300px;
-  height: 200px;
-}
+/** HERO MOVED TO modules/_module.hero.scss **/
 
 #other-orgs {
   background: #b70a29;
@@ -272,62 +132,7 @@ ul {
 /*==================================================
     VI.  LIST CLASSES
 ====================================================*/
-/*GALLERY CLASSES - these are used in _includes/gallery.html*/
-.gallery-item {
-  position: relative;
-
-  display: inline-block;
-
-  width: 30%;
-  min-width: 300px;
-  max-width: 450px;
-  height: 330px;
-
-  transition: .25s;
-
-  background-color: transparent;
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  .gallery-item {
-    width: 100%;
-  }
-}
-
-.gallery-item img {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-
-  background-color: transparent;
-}
-
-.gallery-item h4 {
-  font-size: 20px;
-  font-weight: bold;
-
-  position: absolute;
-  top: 35%;
-  left: 0;
-
-  width: 100%;
-  margin: 0;
-  padding: 2%;
-
-  text-align: center;
-
-  color: #000;
-  background-color: rgba(255,255,255,.7);
-}
-
-.gallery-item:hover {
-  opacity: 1;
-}
+/** GALLERY CLASSES - moved to modules/_module.gallery.scss **/
 
 /* LIST CLASSES - These are used in _includes/list.html*/
 .list-item {

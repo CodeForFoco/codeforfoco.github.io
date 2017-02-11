@@ -1,0 +1,65 @@
+/* #hero is for our landing page
+#hero-page is for our page.html, page.html and category.html(archive)*/
+#hero,
+#hero-page {
+  position: relative;
+
+  height: 550px;
+
+  background: linear-gradient(to bottom right,rgba(195,172,11,.4),rgba(15,78,126,.4)), url('../assets/images/hero-one.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+/* Center image vertically and horizontally - works on <IE8*/
+#hero img {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+
+  max-width: 30%;
+}
+
+#hero img:empty {
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+#hero-page {
+  min-height: 20rem;
+  padding: 10% 0;
+}
+
+#hero-page .container {
+  padding-top: 7%;
+}
+
+#hero-page h2 {
+  font-size: 3rem;
+
+  padding-top: 3rem;
+
+  color: #fff;
+}
+
+#hero-page p {
+  color: #fff;
+}
+
+#hero-page .hero-page-logo {
+  width: 300px;
+}
+
+#hero-page time {
+  padding: 0 2%;
+}
+
+#hero-page .author {
+  padding: 0 2%;
+}
+
+#hero-page .hero-page-logo {
+  width: 300px;
+  height: 200px;
+}

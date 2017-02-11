@@ -1,0 +1,86 @@
+/**
+ * BASE ELEMENTS STYLING (aka not classes)
+ */
+
+/**
+ * By setting base font in pixels at various breakpoints,
+ * font sizes can easily be controlled using rems for
+ * module-level parent elements, then fine-tuned using ems
+ * for components within the module.
+ */
+html {
+  font-size: 15px;
+
+  @include mq(tablet) {
+    font-size: 16px;
+  }
+  @include mq(desktop) {
+    font-size: 17px;
+  }
+  @include mq($from: wide) {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+
+  background-color: $white;
+}
+
+h1,
+h4,
+h5,
+h6 {
+  font-family: 'Quantico', sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.6em;
+
+  margin: 0 0 .2em;
+}
+
+h3 {
+  font-size: 1.5em;
+
+  margin: .2em 0 0;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.1em;
+
+  margin: .9em auto;
+}
+
+a {
+  transition: .2s;
+
+  color: $link-color;
+
+  &:hover {
+    text-decoration: none;
+
+    color: $link-color-hover;
+  }
+
+  &:active {
+    text-decoration: none;
+
+    color: #f8ac51;
+  }
+}
+
+ul {
+  padding: 0;
+
+  list-style-type: none;
+}
