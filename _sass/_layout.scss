@@ -61,6 +61,19 @@ body {
     Blue-gray: #399ED2;
 */
 
+html {
+  font-size: 15px;
+  @include mq(tablet) {
+    font-size: 16px;
+  }
+  @include mq(desktop) {
+    font-size: 17px;
+  }
+  @include mq($from: wide) {
+    font-size: 18px;
+  }
+}
+
 h1 {
   font-family: 'Quantico', sans-serif;
   font-size: 1.7em;
@@ -102,7 +115,6 @@ p {
 
 a {
   font-family: 'Lato', sans-serif;
-  font-size: 1em;
 
   transition: .2s;
 

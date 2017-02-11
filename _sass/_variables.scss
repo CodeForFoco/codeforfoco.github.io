@@ -28,3 +28,13 @@ $heading-font: 'Quantico', sans-serif;
  * LAYOUT
  */
  $site-header-height: 70px;
+
+ /**
+ * BREAKPOINTS (using sass-mq)
+ */
+ $mq-breakpoints: (
+  mobile:  320px,
+  tablet:  768px,
+  desktop: 980px,
+  wide:    1300px
+);
