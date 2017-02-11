@@ -4,19 +4,19 @@
 
 // Container for logo, nav, etc.
 .top-bar {
-  background-color: transparentize($light-blue, .5);
+  background-color: transparentize($white, 0.2);
+  box-shadow: 0 0 4px #999;
   position: fixed;
   top: 0;
   left: 0;
   height: 70px;
   width: 100vw;
   z-index: 100;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
   transition: background-color .4s;
   /* see effects.js scroll effect */
 
   &--opaque {
-    background-color: transparentize($light-blue, .1);
+    background-color: transparentize($white, .05);
   }
 
   .container {
@@ -76,7 +76,7 @@
   padding: 0 8px;
 
   a:not(.donate-button) {
-    color: $near-black;
+    color: $dark-red;
 
     &:hover {
       color: $medium-blue;
@@ -118,7 +118,7 @@
     }
 
     &:not(:last-of-type) {
-      border-bottom: dashed 1px $light-blue;
+      border-bottom: dashed 1px $white;
     }
   }
 }
@@ -134,6 +134,6 @@ ul.social-links {
   align-items: center;
 
   a {
-    color: $link-color;
+    color: $medium-blue;
   }
 }
