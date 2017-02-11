@@ -24,7 +24,7 @@
   }
 
   .container {
-    @include mq($from: tablet) {
+    @include mq($until: tablet) {
       display: flex;
 
       padding: 0 5px;
@@ -63,7 +63,8 @@
   .logo {
     display: inline-block;
 
-    width: 70px;
+    height: $site-header-height;
+    width: $site-header-height;
     margin: 0 auto;
 
     cursor: pointer;
