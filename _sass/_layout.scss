@@ -38,9 +38,7 @@
     I.  STRUCTURE CLASSES
 ===================================*/
 body {
-  color: #0f4e7e;
-  /*set default colors*/
-  background-color: #fff;
+  background-color: $white;
 }
 
 .marg {
@@ -76,7 +74,7 @@ html {
 
 h1 {
   font-family: 'Quantico', sans-serif;
-  font-size: 1.7em;
+  font-size: 1.7rem;
 
   display: inline-block;
 
@@ -86,20 +84,20 @@ h1 {
 h2 {
   font-family: 'Quantico', sans-serif;
   font-family: 'Lato', sans-serif;
-  font-size: 2em;
-  margin-bottom: .25em;
+  font-size: 2rem;
+  margin-bottom: .25rem;
 }
 
 h3 {
   font-family: 'Quantico', sans-serif;
-  font-size: 1.7em;
+  font-size: 1.7rem;
 
   margin: 1% 0;
 }
 
 h4 {
   font-family: 'Quantico', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.4rem;
 
   padding: 1%;
 
@@ -108,9 +106,9 @@ h4 {
 
 p {
   font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 a {
@@ -148,7 +146,7 @@ ul {
 }
 
 li {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 /*=================================
@@ -184,16 +182,11 @@ li {
 #hero img:empty {
   top: 50%;
   left: 50%;
-
-  -webkit-transform: translate(-50%, -50%);
-     -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-       -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #hero-page {
-  min-height: 350px;
+  min-height: 20rem;
   padding: 10% 0;
 }
 
@@ -202,9 +195,9 @@ li {
 }
 
 #hero-page h2 {
-  font-size: 3em;
+  font-size: 3rem;
 
-  padding-top: 50px;
+  padding-top: 3rem;
 
   color: #fff;
 }

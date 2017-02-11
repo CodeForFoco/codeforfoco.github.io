@@ -4,20 +4,19 @@
 
 // Container for logo, nav, etc.
 .top-bar {
-  background-color: transparentize($white, 0.2);
-  box-shadow: 0 0 4px #999;
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
 
-  width: 100vw;
-  height: 70px;
+  width: 100%;
+  height: $site-header-height;
 
-  z-index: 100;
   transition: background-color .4s;
 
   border-bottom: 1px solid rgba(0,0,0,.2);
+  background-color: transparentize($white, .2);
+  box-shadow: 0 0 4px #999;
   /* see effects.js scroll effect */
 
   &--opaque {
@@ -25,7 +24,7 @@
   }
 
   .container {
-    @media (max-width: 768px) {
+    @include mq($from: tablet) {
       display: flex;
 
       padding: 0 5px;
@@ -33,7 +32,7 @@
       align-items: center;
       justify-content: space-between;
     }
-    @media (max-width: 1024px) {
+    @include mq($until: desktop) {
       width: 100%;
     }
   }
@@ -83,7 +82,8 @@
 
     @include flex-vert-align;
   }
-  @media (max-width: 767px) {
+
+  @include mq($until: tablet) {
     ul {
       display: none;
     }
@@ -124,7 +124,7 @@
     line-height: 2;
 
     a {
-      font-size: 1.2em;
+      font-size: 1.2rem;
     }
 
     &:not(:last-of-type) {
@@ -144,8 +144,4 @@ ul.social-links {
 
   justify-content: space-around;
   align-items: center;
-
-  a {
-    color: $medium-blue;
-  }
 }
