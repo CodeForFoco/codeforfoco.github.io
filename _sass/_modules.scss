@@ -4,6 +4,8 @@
 
 // Container for logo, nav, etc.
 .top-bar {
+  background-color: transparentize($white, 0.2);
+  box-shadow: 0 0 4px #999;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -12,14 +14,14 @@
   width: 100vw;
   height: 70px;
 
+  z-index: 100;
   transition: background-color .4s;
 
   border-bottom: 1px solid rgba(0,0,0,.2);
-  background-color: transparentize($light-blue, .5);
   /* see effects.js scroll effect */
 
   &--opaque {
-    background-color: transparentize($light-blue, .1);
+    background-color: transparentize($white, .05);
   }
 
   .container {
@@ -90,14 +92,6 @@
 
 .site-nav ul > li {
   padding: 0 8px;
-
-  a:not(.btn) {
-    color: $near-black;
-
-    &:hover {
-      color: $medium-blue;
-    }
-  }
 }
 
 /**
@@ -131,12 +125,10 @@
 
     a {
       font-size: 1.2em;
-
-      color: $link-color;
     }
 
     &:not(:last-of-type) {
-      border-bottom: dashed 1px $light-blue;
+      border-bottom: dashed 1px $white;
     }
   }
 }
@@ -154,6 +146,6 @@ ul.social-links {
   align-items: center;
 
   a {
-    color: $link-color;
+    color: $medium-blue;
   }
 }

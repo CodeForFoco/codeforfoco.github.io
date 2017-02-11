@@ -95,7 +95,7 @@ h4 {
 
 p {
   font-family: 'Lato', sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
 
   margin-top: 1em;
 }
@@ -106,19 +106,19 @@ a {
 
   transition: .2s;
 
-  color: #6a6b6d;
-}
+  color: $link-color;
 
-a:hover {
-  text-decoration: none;
+  &:hover {
+    text-decoration: none;
 
-  color: $medium-blue;
-}
+    color: $link-color-hover;
+  }
 
-a:active {
-  text-decoration: none;
+  &:active {
+    text-decoration: none;
 
-  color: #f8ac51;
+    color: #f8ac51;
+  }
 }
 
 ul {
@@ -375,7 +375,7 @@ li {
   padding-top: 3rem;
   padding-bottom: 3rem;
 
-  background-color: #9fb8cb;
+  background-color: $header-footer-bg;
 }
 
 /*=================================
@@ -388,8 +388,8 @@ li {
 ===================================*/
 .post-content {
   p {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
   }
 
   li {

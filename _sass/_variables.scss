@@ -12,12 +12,12 @@ $medium-blue: hsl(206, 79%, 28%);
 $gold: hsl(52, 89%, 40%);
 $light-blue: hsl(206, 30%, 71%);
 
-/**
- * COMPONENTS
- */
-$link-color: $medium-blue; // Not consistent, but probably should be
-$call-to-action-color: $dark-red; // Not consistent, but probably should be
+// Components
+$link-color: $medium-blue;
+$link-color-hover: lighten($link-color, 10%);
+$call-to-action-color: $dark-red;
 $big-ol-panel-bg: $light-blue;
+$header-footer-bg: $white;
 
 /**
  * FONTS
