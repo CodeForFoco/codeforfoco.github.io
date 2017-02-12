@@ -35,12 +35,21 @@
   }
 }
 
-.centered-row-items {
-  display: flex;
+.btn--wide {
+  min-width: 175px;
+}
 
-  justify-content: center;
-  > li:not(:last-of-type) {
-    margin-right: 15px;
+.centered-row-items {
+  li {
+    margin-bottom: 1.2rem;
+  }
+  @include mq(tablet) {
+    display: flex;
+
+    justify-content: center;
+    > li:not(:last-of-type) {
+      margin-right: 15px;
+    }
   }
 }
 /**
