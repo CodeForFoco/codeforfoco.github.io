@@ -62,3 +62,8 @@ ul.social-links {
   justify-content: space-around;
   align-items: center;
 }
+
+// Vertical alignment using flexbox
+.flex-vert-align {
+  @include flex-vert-align;
+}

@@ -5,12 +5,11 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "vendor/sass-mq/mq";
-@import "variables";
-@import "mixins";
-@import "helpers";
+@import "helpers/variables";
+@import "helpers/mixins";
 @import "elements";
 @import "layout";
-@import "components";
+@import "components/_components.scss";
 @import "components/_components.buttons.scss";
 @import "modules/_module.top-bar.scss";
 @import "modules/_module.mobile-nav.scss";
