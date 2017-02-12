@@ -19,8 +19,12 @@
 #hero img {
   position: relative;
 
-  height: 50vh;
   max-width: 100%;
+  height: 17em;
+
+  @include mq($from: tablet) {
+    height: 70%;
+  }
 }
 
 #hero-page {
