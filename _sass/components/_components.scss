@@ -67,3 +67,9 @@ ul.social-links {
 .flex-vert-align {
   @include flex-vert-align;
 }
+
+// Blurred background
+.blur-bg:before {
+  filter: blur(2px);
+  transition: 2s;
+}

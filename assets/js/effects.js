@@ -42,6 +42,11 @@ $(document).ready(function(){
 	    } else {
             $('#site-header').removeClass('top-bar--opaque');
 	    }
+	    if ($(window).scrollTop() > window.innerHeight/4) {
+	        $('body').addClass('blur-bg');
+	    } else {
+            $('body').removeClass('blur-bg');
+	    }
 	});
 
 

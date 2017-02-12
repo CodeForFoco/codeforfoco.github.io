@@ -36,12 +36,7 @@ body {
 
     content: '';
 
-    background: linear-gradient(
-    to bottom right,
-    rgba(195,172,11,.4),
-    rgba(15,78,126,.4)
-    ),
-    url('../assets/images/hero-one.jpg') center center no-repeat;
+    background: linear-gradient(to bottom right, hsla(52, 40%, 48%, 0.3) 5%, hsla(192, 100%, 38%, 0.3)), url(../assets/images/hero-one.jpg) center center no-repeat;
     background-size: cover;
 
     // Mobile devices get weird with fixed full-height bg's during scroll

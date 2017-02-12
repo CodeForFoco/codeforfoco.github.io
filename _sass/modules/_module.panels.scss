@@ -13,6 +13,8 @@
 
   text-align: center;
 
+  background-color: transparentize($white, .8);
+
   @include mq(mobile) {
     font-size: 1.7rem;
   }
@@ -20,16 +22,6 @@
     font-size: 2.3rem;
   }
   justify-content: center;
-
-  // The background
-  &:before {
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    content: '';
-  }
 
   p {
     font-size: .7em;

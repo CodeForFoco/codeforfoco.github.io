@@ -20,8 +20,8 @@ $link-color: $medium-blue;
 $link-color-hover: lighten($link-color, 10%);
 $call-to-action-color: $dark-red;
 $big-ol-panel-bg: $light-blue;
-$hipster-bg: linear-gradient(to bottom right,rgba(195,172,11,.4),rgba(0,155,193,.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
 $header-footer-bg: $white;
+$hipster-bg: linear-gradient(to bottom right, hsla(52, 88.3%, 40.3%, 0.4), hsla(192, 100%, 38%, 0.4)), url(../assets/images/bg-75.jpg) center center no-repeat;
 $btn-default-bg: saturate($medium-blue, 1);
 $textured-panel-bg: radial-gradient(
   hsla(206, 79%, 28%,.3),
