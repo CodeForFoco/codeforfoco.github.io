@@ -10,9 +10,9 @@
 
   transition: background-color .4s;
 
-  border-bottom: 1px solid rgba(0,0,0,.2);
   background: $textured-panel-bg;
-  box-shadow: 0 0 4px #999;
+  box-shadow: 0 4px 12px 1px transparentize($near-black, .5);
+
   a {
     color: $near-white;
     &:not(.btn--call-to-action):hover {

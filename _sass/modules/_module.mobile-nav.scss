@@ -19,6 +19,7 @@
 // The individual bars
 .menu-trigger-bar {
   position: relative;
+  top: 3px;
 
   display: block;
 
@@ -28,7 +29,7 @@
 
   transition: transform 300ms;
 
-  background-color: $medium-blue;
+  background-color: $near-white;
 
   $small-bar-size: 50%;
 
