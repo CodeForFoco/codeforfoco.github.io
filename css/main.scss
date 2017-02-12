@@ -7,8 +7,8 @@
 @import "vendor/sass-mq/mq";
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "elements";
-@import "layout";
+@import "base/elements";
+@import "base/layout";
 @import "components/_components.scss";
 @import "components/_components.buttons.scss";
 @import "modules/_module.top-bar.scss";
