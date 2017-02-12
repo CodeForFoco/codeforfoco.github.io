@@ -23,8 +23,16 @@
     font-size: .7em;
   }
 
+  h2 {
+    @include fancy-code-hr($near-black);
+  }
+
   &--color-bg {
     @include textured-bg;
+
+    h2 {
+      @include fancy-code-hr($white);
+    }
 
     $thin-border: .07em;
     $thick-border: .2em;

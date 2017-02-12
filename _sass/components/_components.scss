@@ -3,55 +3,6 @@
  */
 
 /**
- * Fancypants pseudo-<hr>
- */
-.heading--fancy-hr {
-  display: flex;
-  flex-direction: column;
-
-  &:after {
-    font-size: .5em;
-
-    margin-top: .2em;
-
-    content: '{\a0\a0}';
-  }
-
-  &:before {
-    position: relative;
-    top: -.25em;
-
-    height: 1px;
-
-    content: '';
-
-    order: 2;
-    @include mq(mobile) {
-      background: linear-gradient(
-      to right,
-      transparentize($near-white, .9),
-      $near-white 40%,
-      $transparent 40%,
-      $transparent 60%,
-      $near-white 60%,
-      transparentize($near-white, .9)
-      );
-    }
-    @include mq($from: tablet) {
-      background: linear-gradient(
-      to right,
-      transparentize($near-white, .9),
-      $near-white 44%,
-      $transparent 44%,
-      $transparent 56%,
-      $near-white 56%,
-      transparentize($near-white, .9)
-      );
-    }
-  }
-}
-
-/**
  * Social link icons
  */
 ul.social-links {
