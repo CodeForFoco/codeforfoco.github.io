@@ -18,3 +18,12 @@
   position: relative;
   padding-bottom: $panel-vert-padding;
 }
+
+@mixin boostrap-btn-override($color) {
+  background-color: $color;
+  box-shadow: 0 0 0 4px $color, $shadow-half-trans-gray;
+
+  &:hover {
+    color: $color;
+  }
+}

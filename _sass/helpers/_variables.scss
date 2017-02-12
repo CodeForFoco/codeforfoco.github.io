@@ -51,3 +51,9 @@ $mq-breakpoints: (
   desktop: 1024px,
   wide:    1300px
 );
+
+/**
+ * OTHER
+ */
+// Box shadow for buttons, etc.
+$shadow-half-trans-gray: 2px 1px 6px 4px rgba(10, 10, 0, .5)
