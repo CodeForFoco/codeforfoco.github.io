@@ -20,7 +20,7 @@ $link-color: $medium-blue;
 $link-color-hover: lighten($link-color, 10%);
 $call-to-action-color: $dark-red;
 $big-ol-panel-bg: $light-blue;
-$hipster-bg: linear-gradient(to bottom right,rgba(195,172,11,0.4),rgba(0,155,193,0.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
+$hipster-bg: linear-gradient(to bottom right,rgba(195,172,11,.4),rgba(0,155,193,.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
 $header-footer-bg: $white;
 $btn-default-bg: saturate($medium-blue, 1);
 $textured-panel-bg: radial-gradient(
@@ -36,12 +36,12 @@ $heading-font: 'Quantico', sans-serif;
 /**
  * LAYOUT
  */
-$site-header-height: 4rem;
+$site-header-height: 4.2rem;
 
- /**
+/**
  * BREAKPOINTS (using sass-mq)
  */
- $mq-breakpoints: (
+$mq-breakpoints: (
   mobile:  320px,
   tablet:  768px,
   desktop: 1024px,
