@@ -31,7 +31,12 @@
 }
 
 .btn--wide {
-  min-width: 175px;
+  @include mq(mobile) {
+  min-width: 200px;
+}
+  @include mq(tablet) {
+  min-width: auto;
+}
 }
 
 .centered-row-items {
