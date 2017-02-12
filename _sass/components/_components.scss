@@ -65,11 +65,35 @@ ul.social-links {
 
 // Vertical alignment using flexbox
 .flex-vert-align {
-  @include flex-vert-align;
+  @include mq($until: tablet) {
+    &:not(.row) {
+      @include flex-vert-align;
+    }
+  }
+  @include mq(tablet) {
+    @include flex-vert-align;
+  }
 }
 
 // Blurred background
 .blur-bg:before {
-  filter: blur(2px);
   transition: 2s;
+
+  filter: blur(2px);
+}
+
+// Spacing between columns on mobile
+@include mq($until: tablet) {
+  .row {
+    [class^='col-'] + [class^='col-'] {
+      margin: $inter-grid-spacing 0;
+    }
+  }
+}
+
+@include mq(tablet) {
+  .row + .row {
+    margin-top: $inter-grid-spacing;
+    margin-bottom: $inter-grid-spacing;
+  }
 }

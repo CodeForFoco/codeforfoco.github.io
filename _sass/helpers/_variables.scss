@@ -41,6 +41,7 @@ $heading-font: 'Quantico', sans-serif;
 $site-header-height: 4.2rem;
 $panel-min-height: 12em;
 $panel-vert-padding: 2em;
+$inter-grid-spacing: .75em; // between rows and between mobile columns
 
 /**
  * BREAKPOINTS (using sass-mq)

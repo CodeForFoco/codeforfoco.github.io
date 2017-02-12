@@ -67,28 +67,18 @@
 /** HERO MOVED TO modules/_module.hero.scss **/
 
 /* -- Partners section on landing page -- */
+
 #partners {
-  background: linear-gradient(to bottom right,rgba(0,155,193,.4),rgba(0,155,193,.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
-  background-size: cover;
-}
+  img {
+    max-width: 100%;
 
-#partners h4 {
-  color: #fff;
-}
+    transition: transform .2s;
+    transform: scale3d(1,1,1);
 
-#partners img {
-  display: inline-block;
-
-  max-width: 100%;
-
-  transition: transform .2s;
-  transform: scale3d(1,1,1);
-
-  background-color: transparent;
-}
-
-#partners img:hover {
-  transform: scale3d(1.05,1.05,1);
+    &:hover {
+      transform: scale3d(1.05,1.05,1);
+    }
+  }
 }
 
 /*=================================
