@@ -158,8 +158,22 @@
     VI. FOOTER CLASSES
 ===================================*/
 .site-footer {
+  font-size: 1.1rem;
+
   @include textured-bg;
   @include spacious-panel;
+  h3 {
+    font-family: $heading-font;
+    border-bottom: dashed 1px;
+    padding-bottom: .24em;
+    margin-bottom: .3em;
+  }
+  .copyright {
+    font-size: small;
+    margin-top: 1.5em;
+    position: relative;
+    top: $panel-vert-padding;
+  }
 }
 
 /*=================================

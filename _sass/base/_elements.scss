@@ -23,8 +23,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-
+  font-family: $default-font-fam;
   color: $near-ish-black;
 
   // Sticky background
@@ -76,7 +75,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.4em;
 }
 
 p {
