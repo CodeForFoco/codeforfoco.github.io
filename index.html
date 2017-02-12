@@ -12,7 +12,7 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1 text-center">
-                <h2><a href="/category/registry" title="Members list">Who We Are</a></h2>
+                <h2 class="heading--fancy-hr">Who We Are</h2>
                 <p>
                     We are programmers, designers, hackers, makers, tinkerers, writers and artists who want to have an impact on the community around us.
                 </p>
@@ -24,7 +24,7 @@ layout: default
         </div>
     </div>
 </section>
-<section id="join-us" class="big-ol-panel big-ol-panel--color-bg">
+<section id="join-us" class="big-ol-panel">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-center">
@@ -53,12 +53,18 @@ layout: default
 <section id="partners" class="big-ol-panel">
     <div class="container text-center">
         <div class="row">
-            {% for post in site.categories.partners limit : 9 %}
-            <div class="col-xs-12 col-md-4">
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                    <img src="/assets/images/{{ post.image }}"/>
-                </a>
+            <div class="col-xs-12">
+                <h2>Our Partners</h2>
+                <p>Code For Fort Collins would not exist without the support of our partner organizations.</p>
             </div>
+        </div>
+        <div class="row">
+            {% for post in site.categories.partners limit : 9 %}
+                <div class="col-xs-12 col-md-4">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <img src="/assets/images/{{ post.image }}"/>
+                    </a>
+                </div>
             {% endfor %}
         </div>
         <div class="row">
@@ -68,7 +74,7 @@ layout: default
 </section>
 
 <!-- OTHER CODE FOR ORGS -->
-<section>
+<section class="big-ol-panel big-ol-panel--color-bg">
     <div class="container">
         <div class="row">
             <div id="other-orgs" class="col-xs-12">

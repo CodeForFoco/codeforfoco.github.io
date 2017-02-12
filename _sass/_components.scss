@@ -110,19 +110,109 @@
 .big-ol-panel {
   font-size: 2.3rem;
 
-  min-height: 20rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 12em;
   padding-top: 2em;
   padding-bottom: 2em;
 
-  color: $near-black;
-text-align: center;
+  text-align: center;
+
+  justify-content: center;
 
   p {
     font-size: .7em;
   }
 
+  /**
+  * Stripes
+  */
   &--color-bg {
+    color: $white;
+    background: radial-gradient(hsla(206, 79%, 28%,.3),hsla(206, 79%, 28%,.3)), url(../assets/images/dark_fish_skin.png); // credit: subtlepatterns.com
+
+    $thin-border: .07em;
+    $thick-border: .2em;
+
+    &:before,
+    &:after {
+      position: absolute;
+
+      display: block;
+
+      width: 100%;
+      height: .9em;
+
+      content: '';
+
+      border-width: 0;
+      border-style: solid;
+      border-color: $medium-blue;
+      background-color: transparentize($light-blue,.3);
+    }
+
+    &:before {
+      top: 0;
+
+      border-top-width: $thick-border;
+      border-bottom-width: $thin-border;
+    }
+
+    &:after {
+      bottom: 0;
+
+      border-top-width: $thin-border;
+      border-bottom-width: $thick-border;
+    }
+  }
+}
+
+/**
+ * Fancypants pseudo-<hr>
+ */
+.heading--fancy-hr {
+  display: flex;
+  flex-direction: column;
+
+  &:after {
+    font-size: .5em;
+
+    content: '{{ }}';
+  }
+
+  &:before {
     position: relative;
-    box-shadow: 0 0 0 10px hsla(206, 30%, 87%, 1), 0 0 0 15px hsla(206, 69%, 34%, 1);
+    top: -.25em;
+
+    height: 1px;
+
+    content: '';
+
+    order: 2;
+    @include mq(mobile) {
+      background: linear-gradient(
+      to right,
+      transparentize($near-white, .9),
+      $near-white 40%,
+      $transparent 40%,
+      $transparent 60%,
+      $near-white 60%,
+      transparentize($near-white, .9)
+      );
+    }
+    @include mq($from: tablet) {
+      background: linear-gradient(
+      to right,
+      transparentize($near-white, .9),
+      $near-white 44%,
+      $transparent 44%,
+      $transparent 56%,
+      $near-white 56%,
+      transparentize($near-white, .9)
+      );
+    }
   }
 }
