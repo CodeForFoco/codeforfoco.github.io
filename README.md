@@ -11,7 +11,7 @@ Not sure where to start? Look for [open issues][githubissue] on GitHub, or messa
 
 TL;DR Contribution Workflow:
 
-1. [Fork][fork] this repository and Clone your fork locally.
+1. [Fork][fork] this repository and Clone your fork locally. Afterward be sure to run `git submodule update --init --recursive` to ensure any third-party submodules are installed.
 1. Checkout a new branch on which to make your changes.
 1. Make edits. Try to match existing coding style.
 1. Test your changes.
