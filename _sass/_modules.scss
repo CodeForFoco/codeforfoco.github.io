@@ -97,49 +97,6 @@
   padding: 0 8px;
 }
 
-/**
- * The hidden mobile nav menu
- */
-#popup-menu {
-  position: fixed;
-  z-index: 50;
-  top: $site-header-height;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  display: none;
-
-  background: linear-gradient(to bottom right,rgba(0,155,193,.4),rgba(0,155,193,.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
-}
-
-.popup-menu__content {
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  background: $white;
-  box-shadow: 0 4px 15.4px rgba(15, 79, 128, .9);
-
-  // Links to pages within the site
-  .internal-links li {
-    line-height: 2;
-
-    a {
-      font-size: 1.2rem;
-    }
-
-    &:not(:last-of-type) {
-      border-bottom: dashed 1px $white;
-    }
-  }
-}
-
-#popup-menu ul {
-  padding: 0;
-}
-
 ul.social-links {
   display: flex;
 
