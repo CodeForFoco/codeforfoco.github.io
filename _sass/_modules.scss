@@ -40,6 +40,8 @@
 
 // Logo and page title container
 .page-title {
+  font-size: 1.9em;
+
   display: inline-block;
   flex: 1;
 
@@ -47,8 +49,6 @@
 
   // Link to home page
   a {
-    font-family: $heading-font;
-
     display: block;
 
     transition: color 300ms;
@@ -63,8 +63,8 @@
   .logo {
     display: inline-block;
 
-    height: $site-header-height;
     width: $site-header-height;
+    height: $site-header-height;
     margin: 0 auto;
 
     cursor: pointer;
