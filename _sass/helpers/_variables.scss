@@ -19,8 +19,9 @@ $light-blue: hsl(206, 30%, 71%);
 $link-color: $medium-blue;
 $link-color-hover: lighten($link-color, 10%);
 $call-to-action-color: $dark-red;
+
+// Backgrounds
 $big-ol-panel-bg: $light-blue;
-$header-footer-bg: $white;
 $hipster-bg: linear-gradient(to bottom right, hsla(52, 88.3%, 40.3%, 0.4), hsla(192, 100%, 38%, 0.4)), url(../assets/images/bg-75.jpg) center center no-repeat;
 $btn-default-bg: saturate($medium-blue, 1);
 $textured-panel-bg: radial-gradient(
@@ -37,6 +38,8 @@ $heading-font: 'Quantico', sans-serif;
  * LAYOUT
  */
 $site-header-height: 4.2rem;
+$panel-min-height: 12em;
+$panel-vert-padding: 2em;
 
 /**
  * BREAKPOINTS (using sass-mq)

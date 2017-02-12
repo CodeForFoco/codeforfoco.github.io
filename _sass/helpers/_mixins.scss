@@ -3,3 +3,18 @@
 
   align-items: center;
 }
+
+@mixin textured-bg() {
+  color: $white;
+  background: $textured-panel-bg;
+  a {
+    color: $white;
+  }
+}
+
+@mixin spacious-panel() {
+  min-height: $panel-min-height;
+  padding-top: $panel-vert-padding;
+  position: relative;
+  padding-bottom: $panel-vert-padding;
+}

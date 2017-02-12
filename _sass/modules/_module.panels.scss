@@ -2,15 +2,11 @@
  * Large, decorative, container-level wrappers
  */
 .big-ol-panel {
-  position: relative;
 
   display: flex;
   flex-direction: column;
 
-  min-height: 12em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-
+  @include spacious-panel;
   text-align: center;
 
   background-color: transparentize($white, .8);
@@ -28,8 +24,7 @@
   }
 
   &--color-bg {
-    color: $white;
-    background: $textured-panel-bg;
+    @include textured-bg;
 
     $thin-border: .07em;
     $thick-border: .2em;

@@ -158,11 +158,8 @@
     VI. FOOTER CLASSES
 ===================================*/
 .site-footer {
-  min-height: 25vh;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-
-  background-color: $header-footer-bg;
+  @include textured-bg;
+  @include spacious-panel;
 }
 
 /*=================================
