@@ -2,28 +2,25 @@
 #hero-page is for our page.html, page.html and category.html(archive)*/
 #hero,
 #hero-page {
+  display: flex;
+
+  margin-top: $site-header-height;
+
+  @include mq($until: mobile) {
+    height: 20rem;
+  }
+  @include mq(tablet) {
+    height: 30rem;
+  }
+  align-items: center;
+  justify-content: center;
+}
+
+#hero img {
   position: relative;
 
-  height: 550px;
-
-  background: linear-gradient(to bottom right,rgba(195,172,11,.4),rgba(15,78,126,.4)), url('../assets/images/hero-one.jpg') center center no-repeat;
-  background-size: cover;
-}
-
-/* Center image vertically and horizontally - works on <IE8*/
-#hero img {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-
-  max-width: 30%;
-}
-
-#hero img:empty {
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
+  height: 50vh;
+  max-width: 100%;
 }
 
 #hero-page {
