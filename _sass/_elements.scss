@@ -24,8 +24,26 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
+
   color: $near-ish-black;
-  background-color: $white;
+
+  // Sticky background
+  &:before {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: linear-gradient(
+      to bottom right,
+      rgba(195,172,11,.4),
+      rgba(15,78,126,.4)
+    ),
+    url('../assets/images/hero-one.jpg') center center no-repeat;
+    background-size: cover;
+  }
 }
 
 h1,
