@@ -31,12 +31,16 @@
 }
 
 .btn--wide {
-  @include mq(mobile) {
   min-width: 200px;
 }
+
+.btn--wide--mobile {
+  @include mq(mobile) {
+    min-width: 200px;
+  }
   @include mq(tablet) {
-  min-width: auto;
-}
+    min-width: auto;
+  }
 }
 
 .centered-row-items {
