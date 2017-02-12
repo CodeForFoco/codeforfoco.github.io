@@ -3,8 +3,11 @@
  */
 
 // General
+$transparent: hsla(0,0,0,0);
 $white: #fff;
+$near-white: #ddd;
 $near-black: #111;
+$near-ish-black: #222;
 
 // From the logo
 $dark-red: hsl(349, 90%, 38%);
@@ -18,6 +21,7 @@ $link-color-hover: lighten($link-color, 10%);
 $call-to-action-color: $dark-red;
 $big-ol-panel-bg: $light-blue;
 $header-footer-bg: $white;
+$btn-default-bg: saturate($medium-blue, 1);
 
 /**
  * FONTS

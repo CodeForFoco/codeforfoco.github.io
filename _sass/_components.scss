@@ -4,14 +4,18 @@
 
 // Bootstrap overrides
 .btn {
+  border: $white dashed 1px;
   border-radius: 3px;
+  .fa {
+    margin-right: 5px;
+  }
 }
 
 // Custom Bootstrap button color
 .btn--call-to-action {
   color: $white;
-  border: solid 1px $dark-red;
   background-color: $call-to-action-color;
+  box-shadow: 0 0 0 4px $call-to-action-color, 2px 1px 6px 4px rgba(10, 10, 0, .5);
 
   &:hover {
     color: $call-to-action-color;
@@ -19,6 +23,26 @@
   }
 }
 
+.btn--default {
+  color: $white;
+  background-color: $btn-default-bg;
+  box-shadow: 0 0 0 4px $btn-default-bg, 2px 1px 6px 4px rgba(10, 10, 0, .5);
+
+  &:hover {
+    color: $btn-default-bg;
+    border-color: $btn-default-bg;
+    background-color: $white;
+  }
+}
+
+.centered-row-items {
+  display: flex;
+
+  justify-content: center;
+  > li:not(:last-of-type) {
+    margin-right: 15px;
+  }
+}
 /**
  * Tilted hamburger-ish mobile nav menu toggle
  * Inspired by: https://codepen.io/karlovidek/pen/aNYWKE

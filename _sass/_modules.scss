@@ -78,15 +78,19 @@
 
   text-align: right;
 
-  ul {
-    margin: 0;
-
-    @include flex-vert-align;
-  }
-
   @include mq($until: tablet) {
     ul {
       display: none;
+    }
+  }
+
+  ul {
+    font-size: 1.15rem;
+
+    margin: 0;
+
+    @include mq($from: tablet) {
+      @include flex-vert-align;
     }
   }
 }
