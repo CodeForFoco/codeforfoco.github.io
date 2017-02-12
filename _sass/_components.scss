@@ -127,3 +127,15 @@
     }
   }
 }
+
+/**
+ * Social link icons
+ */
+ul.social-links {
+  display: flex;
+
+  padding: 0;
+
+  justify-content: space-around;
+  align-items: center;
+}

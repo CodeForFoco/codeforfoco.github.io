@@ -1,7 +1,3 @@
-/**
- * Things that are too big to be components
- */
-
 // Container for logo, nav, etc.
 .top-bar {
   position: fixed;
@@ -23,8 +19,8 @@
       color: $link-color-hover;
     }
   }
-  /* see effects.js scroll effect */
 
+  /* see effects.js scroll effect */
   &--opaque {
     background-color: transparentize($white, .05);
   }
@@ -95,13 +91,4 @@
 
 .site-nav ul > li {
   padding: 0 8px;
-}
-
-ul.social-links {
-  display: flex;
-
-  padding: 0;
-
-  justify-content: space-around;
-  align-items: center;
 }
