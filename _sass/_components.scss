@@ -117,8 +117,6 @@
  * Big ol' vertical paddin'
  */
 .big-ol-panel {
-  font-size: 2.3rem;
-
   position: relative;
 
   display: flex;
@@ -130,7 +128,23 @@
 
   text-align: center;
 
+  @include mq(mobile) {
+    font-size: 1.7rem;
+  }
+  @include mq($from: tablet) {
+    font-size: 2.3rem;
+  }
   justify-content: center;
+
+  // The background
+  &:before {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+  }
 
   p {
     font-size: .7em;
@@ -186,7 +200,9 @@
   &:after {
     font-size: .5em;
 
-    content: '{{ }}';
+    margin-top: .2em;
+
+    content: '{\a0\a0}';
   }
 
   &:before {
