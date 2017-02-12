@@ -29,7 +29,7 @@
     @include mq($until: tablet) {
       display: flex;
 
-      padding: 0 5px;
+      padding: 0 2px;
 
       align-items: center;
       justify-content: space-between;
@@ -44,24 +44,13 @@
 .page-title {
   font-size: 1.9em;
 
-  display: inline-block;
   flex: 1;
 
   margin: 0;
 
-  // Link to home page
-  a {
-    display: inline-block;
-  }
-
   .logo {
-    display: inline-block;
-
     width: $site-header-height;
     height: $site-header-height;
-    margin: 0 auto;
-
-    cursor: pointer;
   }
 }
 
