@@ -23,6 +23,10 @@ $big-ol-panel-bg: $light-blue;
 $hipster-bg: linear-gradient(to bottom right,rgba(195,172,11,0.4),rgba(0,155,193,0.4)), url('../assets/images/bg-75.jpg') center center no-repeat;
 $header-footer-bg: $white;
 $btn-default-bg: saturate($medium-blue, 1);
+$textured-panel-bg: radial-gradient(
+  hsla(206, 79%, 28%,.3),
+  hsla(206, 79%, 28%,.3)),
+  url(../assets/images/dark_fish_skin.png); // image cred: subtlepatterns.com
 
 /**
  * FONTS

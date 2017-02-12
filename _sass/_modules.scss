@@ -15,8 +15,14 @@
   transition: background-color .4s;
 
   border-bottom: 1px solid rgba(0,0,0,.2);
-  background-color: transparentize($white, .2);
+  background: $textured-panel-bg;
   box-shadow: 0 0 4px #999;
+  a {
+    color: $near-white;
+    &:not(.btn--call-to-action):hover {
+      color: $link-color-hover;
+    }
+  }
   /* see effects.js scroll effect */
 
   &--opaque {
@@ -49,15 +55,7 @@
 
   // Link to home page
   a {
-    display: block;
-
-    transition: color 300ms;
-
-    color: $medium-blue;
-
-    &:hover {
-      color: lighten($medium-blue, 10%);
-    }
+    display: inline-block;
   }
 
   .logo {
@@ -85,7 +83,7 @@
   }
 
   ul {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
 
     margin: 0;
 

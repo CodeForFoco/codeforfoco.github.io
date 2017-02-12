@@ -127,12 +127,9 @@
     font-size: .7em;
   }
 
-  /**
-  * Stripes
-  */
   &--color-bg {
     color: $white;
-    background: radial-gradient(hsla(206, 79%, 28%,.3),hsla(206, 79%, 28%,.3)), url(../assets/images/dark_fish_skin.png); // credit: subtlepatterns.com
+    background: $textured-panel-bg;
 
     $thin-border: .07em;
     $thick-border: .2em;
