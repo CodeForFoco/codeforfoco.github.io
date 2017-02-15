@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<article class="row">
-    <section id="hero-page" >
-        <div class="row container">
+<article>
+    <section id="hero-page">
+        <div class="row">
             <div class="col-xs-12 col-md-6">
                 {% if page.image %}
-                    <img class="hero-page-logo center-block" src="/assets/images/{{ page.image }}"/>
+                    <img class="hero-page-logo" src="/assets/images/{{ page.image }}"/>
                 {% else %}
-                    <img class="hero-page-logo center-block" src="/assets/images/default.png"/>
+                    <img class="hero-page-logo" src="/assets/images/cff-logo.svg"/>
                 {% endif %}
             </div>
             <div class="col-xs-12 col-md-6 text-center">
@@ -27,9 +27,13 @@ layout: default
             </div>
         </div>
     </section>
-    <section class="col-xs-12 col-md-10 col-lg-offset-1 marg">
-        <div class="post-content">
-            {{ content }}
+    <section class="post-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    {{ content }}
+                </div>
+            </div>
         </div>
     </section>
 </article>
