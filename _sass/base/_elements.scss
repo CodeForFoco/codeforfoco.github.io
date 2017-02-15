@@ -24,6 +24,7 @@ html {
 
 body {
   font-family: $default-font-fam;
+  font-size: 1.1em;
 
   color: $near-ish-black;
 
@@ -52,10 +53,7 @@ body {
   }
 }
 
-h1,
-h4,
-h5,
-h6 {
+h1 {
   font-family: $heading-font;
 }
 
@@ -64,7 +62,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.9em;
 
   margin: 0 0 .2em;
 
@@ -76,7 +74,7 @@ h2 {
 h3 {
   font-size: 1.5em;
 
-  margin: .2em 0 0;
+  margin: .3em 0;
 }
 
 h4 {
@@ -84,9 +82,12 @@ h4 {
 }
 
 p {
-  font-size: 1.1em;
+  line-height: 1.8;
 
   margin: .9em auto;
+  + h2 {
+    margin-top: .9em;
+  }
 }
 
 a {
@@ -111,4 +112,8 @@ ul {
   padding: 0;
 
   list-style-type: none;
+}
+
+li {
+  line-height: 1.9;
 }

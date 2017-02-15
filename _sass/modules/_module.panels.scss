@@ -2,15 +2,14 @@
  * Large, decorative, container-level wrappers
  */
 .big-ol-panel {
-
   display: flex;
   flex-direction: column;
 
-  @include spacious-panel;
   text-align: center;
 
   background-color: transparentize($white, .8);
 
+  @include spacious-panel;
   @include mq(mobile) {
     font-size: 1.7rem;
   }
@@ -21,6 +20,14 @@
 
   p {
     font-size: .7em;
+    line-height: 1.5;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $default-font-fam;
   }
 
   h2 {
@@ -29,13 +36,19 @@
 
   &--color-bg {
     @include textured-bg;
+    $thin-border: .07em;
+    $thick-border: .2em;
+
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $near-white;
+    }
 
     h2 {
       @include fancy-code-hr($white);
     }
-
-    $thin-border: .07em;
-    $thick-border: .2em;
 
     &:before,
     &:after {
