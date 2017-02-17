@@ -20,8 +20,8 @@ The registry post use something called markdown to display. Markdown is a simple
 ```markdown
 ---
 layout: post
-title:  "[Your name here] signature"
-date:  [YOUR DATE HERE IN THE FOLLOWING FORMAT])(yyyy-mm-dd HH:mm)
+title:  "[Your name here]"
+date:  [YOUR DATE HERE IN THE FOLLOWING FORMAT yyyy-mm-dd HH:mm]
 categories: registry
 ---
 

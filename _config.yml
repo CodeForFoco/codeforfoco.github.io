@@ -1,9 +1,10 @@
 # Site settings
-title           : Code For Foco
+title           : Code For FoCo
 url             : "http://codeforfoco.org"
 baseurl         : ""
+copyright       : "2017"
 email           : people@codeforfoco.org
-github_username :  codeforfoco
+github_username : codeforfoco
 description: > # this means to ignore newlines until next yaml item
   We are programmers, designers, hackers, makers, tinkerers,
   writers and artists and we want to have an impact on the community
@@ -13,11 +14,9 @@ description: > # this means to ignore newlines until next yaml item
 encoding: "utf-8"
 markdown_ext: "md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
-
 
 # Markdown processing
 kramdown:
@@ -29,7 +28,6 @@ sass:
   style: nested
 #  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.htm
 
-  
 # Outputting
 permalink: pretty
 
@@ -38,6 +36,7 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-autoprefixer
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -45,7 +44,5 @@ whitelist:
   - jekyll-feed
   - jekyll-paginate
 
-
 # Serving
 port          : 8080
-

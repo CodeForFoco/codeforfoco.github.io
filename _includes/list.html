@@ -13,9 +13,11 @@
           <div class="meta">
               <h3>{{ post.title }}</h3>
               {{ post.date | date: "%b %-d, %Y" }}
+            {% if show_excerpt != false %}
             <div class="row">
               <p>{{ post.excerpt }}</p>
             </div>
+            {% endif %}
         </div>
       </div>
     </div>

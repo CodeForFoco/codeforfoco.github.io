@@ -6,7 +6,7 @@ permalink: /code-of-conduct/
 categories: organization
 ---
 
-# Code of Conduct
+## Code of Conduct
 
 The Code for Foco community expects that Code for Foco network activities, events, and digital forums:
 
@@ -35,21 +35,30 @@ This policy is based on several other policies, including the Ohio LinuxFest ant
 
 All Code for Foco network activities, events, and digital forums and their staff, presenters, and participants are held to an anti-harassment policy, included below.
 
+
 In addition to governing our own events by this policy, Code for Foco will only lend our brand and fund groups that offer an anti-harassment policy to their attendees. For information on how to offer an anti-harassment policy to your group, <a href="https://docs.google.com/a/codeforFoco.org/document/d/1Zg2FDt7awgfCmdcbzMwKHMb1A7KDOhs_z7ibCb3TLLQ/edit">see this guide</a>.
+
 
 Code for Foco is dedicated to providing a harassment-free experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, or religion. We do not tolerate harassment of staff, presenters, and participants in any form. Sexual language and imagery is not appropriate for any Code for Foco event or network activity, including talks. Anyone in violation of these policies may expelled from Code for Foco network activities, events, and digital forums, at the discretion of the event organizer or forum administrator.
 
+
 Harassment includes but is not limited to: offensive verbal or written comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion; sexual images in public spaces; deliberate intimidation; stalking; following; harassing photography or recording; sustained disruption of talks or other events; inappropriate physical contact; unwelcome sexual attention; unwarranted exclusion; and patronizing language or action.
+
 
 If a participant engages in harassing behavior, the organizers may take any action they deem appropriate, including warning the offender or expulsion from Code for Foco network activities, events, and digital forums.
 
+
 If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the event staff or forum administrator immediately. You can contact them at people@codeforfoco or 317-937-5755. Event staff or forum administrators will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the event.
+
 
 If you cannot reach an event organizer or forum administrator and/or it is an emergency, please call 911 and/or remove yourself from the situation.
 
+
 You can also contact Code for Foco about harassment at people@codeforfoco.org and feel free to use the email template below. Code for Foco staff acknowledge that we are not always in a position to evaluate a given situation due to the number of events and the fact that our team is not always present. However, we are hopeful that by providing these guidelines we are establishing a community that jointly adheres to these values and can provide an environment that is welcoming to all.
 
+
 We value your attendance and hope that by communicating these expectations widely we can all enjoy a harassment-free environment.
+
 
 #### Email Template for Anti-Harassment Reporting
 

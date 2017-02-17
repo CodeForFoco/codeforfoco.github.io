@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "First Post"
+title:  "David Crook"
 date:  2016-12-01 12:04:53 -0700
+image: idcrook-headshot.jpeg
 categories: registry
 ---
 
-## First Post
+## David Crook
 
 Hello everyone from Github!
 

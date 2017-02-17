@@ -6,7 +6,7 @@ author: Jordan Majd
 categories: blog
 ---
 
-Welcome to Code For Foco!
+Welcome to Code For Foco, an organization that aims to improve the Fort Collins community by creating new technology projects!
 
 We are really excited to have our website live and running. The next step is to start posting content to it.
 
