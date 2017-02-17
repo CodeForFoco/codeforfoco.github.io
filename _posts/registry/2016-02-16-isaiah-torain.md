@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Isaiah Torain"
-date:  2016-02-16 18:30
+date:  2017-02-16 18:30
 image: itorain-headshot.JPG
 categories: registry
 ---
