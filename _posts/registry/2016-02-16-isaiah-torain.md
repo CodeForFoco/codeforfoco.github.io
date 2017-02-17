@@ -2,7 +2,7 @@
 layout: post
 title:  "Isaiah Torain"
 date:  2016-02-16 18:30
-image: https://avatars3.githubusercontent.com/u/7142291?v=3&s=460
+image: itorain-headshot.JPG
 categories: registry
 ---
 
