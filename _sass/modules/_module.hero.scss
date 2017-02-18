@@ -2,11 +2,15 @@
 #hero-page is for our page.html, page.html and category.html(archive)*/
 #hero,
 #hero-page {
+  position: relative;
+
   display: flex;
 
   margin-top: $site-header-height;
 
-  @include mq($until: mobile) {
+  color: $white;
+
+  @include mq($until: tablet) {
     height: 20rem;
   }
   @include mq(tablet) {
@@ -14,53 +18,41 @@
   }
   align-items: center;
   justify-content: center;
-}
 
-#hero img {
-  position: relative;
+  img {
+    position: relative;
 
-  max-width: 100%;
-  height: 17em;
+    max-width: 100%;
+    height: 17em;
 
-  @include mq($from: tablet) {
-    height: 70%;
+    @include mq($from: tablet) {
+      height: 70%;
+    }
   }
 }
 
+.hero__title {
+  font-size: 3em;
+
+  position: relative;
+}
+
 #hero-page {
-  min-height: 20rem;
-  padding: 10% 0;
+  background: radial-gradient(ellipse at center, hsla(0, 0%, 0%, .35) 0%, hsla(0, 0%, 0%, .27) 35%, hsla(0, 0%, 0%, 0) 100%);
 }
-
-#hero-page .container {
-  padding-top: 7%;
-}
-
-#hero-page h2 {
-  font-size: 3rem;
-
-  padding-top: 3rem;
-
-  color: #fff;
-}
-
-#hero-page p {
-  color: #fff;
-}
-
-#hero-page .hero-page-logo {
-  width: 300px;
-}
-
-#hero-page time {
-  padding: 0 2%;
-}
-
-#hero-page .author {
-  padding: 0 2%;
-}
-
-#hero-page .hero-page-logo {
-  width: 300px;
-  height: 200px;
-}
+// #hero-page .hero-page-logo {
+//   width: 300px;
+// }
+//
+// #hero-page time {
+//   padding: 0 2%;
+// }
+//
+// #hero-page .author {
+//   padding: 0 2%;
+// }
+//
+// #hero-page .hero-page-logo {
+//   width: 300px;
+//   height: 200px;
+// }
