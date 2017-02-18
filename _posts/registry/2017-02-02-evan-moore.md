@@ -6,8 +6,6 @@ image: evan-headshot.png
 categories: registry
 ---
 
-## Evan Moore
-
 I'm an instructional designer and web developer based out of Loveland, CO.
 
 - [GitHub](https://github.com/etmoore)

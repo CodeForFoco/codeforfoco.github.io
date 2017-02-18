@@ -6,8 +6,6 @@ image: idcrook-headshot.jpeg
 categories: registry
 ---
 
-## David Crook
-
 Hello everyone from Github!
 
 I'm  <a href="https://github.com/idcrook"><i class="fa fa-github fa-2x" aria-hidden="true"></i>@idcrook</a> on Github and <a href="https://twitter.com/idcrook"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>@idcrook</a> on Twitter.
