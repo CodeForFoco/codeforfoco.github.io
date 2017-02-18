@@ -25,7 +25,5 @@ date:  [YOUR DATE HERE IN THE FOLLOWING FORMAT yyyy-mm-dd HH:mm]
 categories: registry
 ---
 
-## [Your Post's title]
-
 Enter a message here. Tell us a little bit about yourself, and what brought you here. Include links to your social media (if you want) like this: I'm  <a href="[LINK TO YOUR GITHUB HERE]">@[YOUR GIT NAME]</a> on Github and <a href="[LINK TO A SOCIAL MEDIA ACCOUNT]">@[YOUR SOCIAL MEDIA HERE]</a> on [SOME SOCIAL MEDIA].
 ```
