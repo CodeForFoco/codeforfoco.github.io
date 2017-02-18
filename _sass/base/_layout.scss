@@ -175,6 +175,9 @@
     VII. MISC
 ===================================*/
 .post-content {
+  position: relative;
+  background-color: $near-white;
+  @include spacious-panel;
   font-size: 1.1rem;
 
   ol {

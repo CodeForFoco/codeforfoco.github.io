@@ -1,26 +1,15 @@
-<li class="row">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <div class="list-item">
-            <div class="col-xs-12 col-md-4">
-                {% if post.image %}
-                    <img src="/assets/images/{{ post.image }}"/>
-                {% else %}
-                    <img src="/assets/images/default.png"/>
-                {% endif %}
-            </div>
-            <div class="col-xs-12 col-md-8">
-                <div class="row">
-                    <div class="meta">
-                        <h3>{{ post.title }}</h3>
-                        {{ post.date | date: "%b %-d, %Y" }}
-                        {% if show_excerpt != false %}
-                            <div class="row">
-                                <p>{{ post.excerpt }}</p>
-                            </div>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
+<div class="row">
+    <div class="col-xs-12 col-md-4">
+        {% if post.image %}
+            <img src="/assets/images/{{ post.image }}"/>
+        {% else %}
+            <img src="/assets/images/cff-logo.svg"/>
+        {% endif %}
+    </div>
+    <div class="col-xs-12 col-md-8">
+        {% if show_excerpt != false %}
+            <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+            <p>{{ post.content }}</p>
+        {% endif %}
+    </div>
+</div>
