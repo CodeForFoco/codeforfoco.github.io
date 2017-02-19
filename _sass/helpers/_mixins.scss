@@ -75,3 +75,8 @@
   transparentize($color, .9)
   );
 }
+
+@mixin circular-image-size($side-length) {
+    height: $side-length;
+    width: $side-length;
+}

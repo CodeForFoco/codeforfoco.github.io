@@ -1,7 +1,7 @@
 <div class="posts-list-item">
     <div class="row">
         <div class="col-xs-12 col-sm-4 posts-list__thumb">
-            <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="circular-image" title="{{ post.title }}">
                 {% if post.image %}
                     <img src="/assets/images/{{ post.image }}" alt="{{ post.title }}"/>
                 {% else %}

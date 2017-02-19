@@ -1,15 +1,17 @@
 <article>
-    <section id="hero-page">
-        <div class="row">
-            <div class="col-xs-12 col-md-6">
-                {% if page.image %}
-                    <img class="hero-page-logo" src="/assets/images/{{ page.image }}"/>
-                {% else %}
-                    <img class="hero-page-logo" src="/assets/images/cff-logo.svg"/>
-                {% endif %}
+    <section class="hero hero--page">
+        {% if page.image %}
+            <div class="circular-image">
+                <img src="/assets/images/{{ page.image }}"/>
             </div>
-            <div class="col-xs-12 col-md-6 text-center">
-                <h2>{{ page.title }}</h2>
+        {% else %}
+            <div class="circular-image">
+                <img src="/assets/images/cff-logo.svg"/>
+            </div>
+        {% endif %}
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="hero__title">{{ page.title }}</h2>
                 <p class="post-meta">
                     {% if page.date %}
                         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>

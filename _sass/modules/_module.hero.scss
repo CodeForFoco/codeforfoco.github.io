@@ -1,7 +1,6 @@
-/* #hero is for our landing page
-#hero-page is for our page.html, page.html and category.html(archive)*/
-#hero,
-#hero-page {
+/* .hero is for our landing page
+.hero--page is for our page.html, page.html and category.html(archive)*/
+.hero {
   position: relative;
 
   display: flex;
@@ -11,19 +10,27 @@
   color: $white;
   box-shadow: inset 0 0 .7em 1px hsla(0, 0%, 7%, .5);
 
-  @include mq($until: tablet) {
-    height: 20rem;
-  }
-  @include mq(tablet) {
-    height: 30rem;
-  }
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
-  img {
+  @include mq($until: tablet) {
+    flex-direction: column;
+
+    height: 20em;
+  }
+  @include mq($from: tablet) {
+    flex-direction: row;
+
+    height: 30em;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  &:not(.hero--page) img {
     position: relative;
 
-    max-width: 100%;
     height: 17em;
 
     @include mq($from: tablet) {
@@ -32,30 +39,25 @@
   }
 }
 
+.hero--page {
+  background: radial-gradient(ellipse at center, hsla(0, 0%, 0%, .35) 0%, hsla(0, 0%, 0%, .27) 35%, hsla(0, 0%, 0%, 0) 100%);
+
+  .circular-image {
+    @include circular-image-size(13em);
+    @include mq($from: tablet) {
+      margin-right: 20px;
+    }
+  }
+}
+
 .hero__title {
-  font-size: 3em;
+  font-size: 2.5em;
 
   position: relative;
 
   text-shadow: 0 0 .55em hsla(0, 0%, 20%, .8);
-}
 
-#hero-page {
-  background: radial-gradient(ellipse at center, hsla(0, 0%, 0%, .35) 0%, hsla(0, 0%, 0%, .27) 35%, hsla(0, 0%, 0%, 0) 100%);
+  .hero-page--no-img & {
+    font-size: 3em;
+  }
 }
-// #hero-page .hero-page-logo {
-//   width: 300px;
-// }
-//
-// #hero-page time {
-//   padding: 0 2%;
-// }
-//
-// #hero-page .author {
-//   padding: 0 2%;
-// }
-//
-// #hero-page .hero-page-logo {
-//   width: 300px;
-//   height: 200px;
-// }
