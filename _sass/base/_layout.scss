@@ -134,12 +134,24 @@
   .circular-image {
     @include circular-image-size(11em);
     margin: 0 auto;
+    box-shadow: $shadow-half-trans-gray;
+  }
+}
+
+.posts-list__text {
+  h3 {
+    margin-bottom: 0;
+  }
+
+  p {
+    line-height: 1.3;
   }
 }
 
 // The date
 .posts-list__subheading {
   color: $med-gray;
+  margin-top: 0;
 }
 
 /*=================================

@@ -43,7 +43,7 @@
   background: radial-gradient(ellipse at center, hsla(0, 0%, 0%, .35) 0%, hsla(0, 0%, 0%, .27) 35%, hsla(0, 0%, 0%, 0) 100%);
 
   .circular-image {
-    @include circular-image-size(13em);
+    @include circular-image-size(12em);
     @include mq($from: tablet) {
       margin-right: 20px;
     }
