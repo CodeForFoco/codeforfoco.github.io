@@ -1,13 +1,9 @@
 <article>
     <section class="hero hero--page">
         {% if page.image %}
-            <div class="circular-image">
-                <img src="/assets/images/{{ page.image }}"/>
-            </div>
+            <div class="circular-image" style="background-image: url('/assets/images/{{ page.image }}');"></div>
         {% else %}
-            <div class="circular-image">
-                <img src="/assets/images/cff-logo.svg"/>
-            </div>
+            <div class="circular-image" style="background-image: url('/assets/images/cff-logo.svg');"></div>
         {% endif %}
         <div class="row">
             <div class="col-xs-12 text-center">
