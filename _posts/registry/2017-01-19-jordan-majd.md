@@ -5,8 +5,6 @@ date:  2017-01-19 19:35
 categories: registry
 ---
 
-## Jordan Majd
-
 Hi everyone,
 
 Welcome to Code for Foco. I'm Jordan, the Brigade Captain.

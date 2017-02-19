@@ -1,0 +1,200 @@
+/*
+    STYLES.CSS
+
+    I.      Structure Classes - contains classes that reference
+            the layout. Grid is done with bootstrap
+
+    II.     Typography
+
+    III.    Header Classes - for header tags, contains classes
+            for Navigation and social icons
+
+    IV.     Section Classes - I divided each section up and gave it
+            an ID. That way I can set heights and organize my layout
+            better. Also contains classes for my full page templates
+            of #posts and #archives
+
+    V.      Full Screen Template Classes - These are for the page.html,
+            post.html and category.html
+
+    VI.      List Classes - This contains multiple classes for all of
+            my repeating _includes like list.html.
+            -   I have 3 default classes setup for this.
+                1.  Gallery - square with pic in background. 3 to row.
+                2.  List - Size can be set by bootstrap columns in html.
+                    Has an image to the left, information to the right.
+                3.  Thumb - Small version of list with image and title
+                4.  Just the Title
+                5.  Just the Image
+
+    VI.     Footer Classes - bootstrap grid can be changed in html. Default
+            3 column. Contains classes for copyright and social.
+
+    VII.    Popup Menu - displays the menu over all content. Mainly for
+            mobile. see /assets/js/effects.js for the toggle function
+*/
+
+/*=================================
+    I.  STRUCTURE CLASSES
+===================================*/
+.marg {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.marg-big {
+  padding-top: 12%;
+}
+
+/*=================================
+    II. TYPOGRAPHY CLASSES
+===================================*/
+/** MOSTLY MOVED TO _elements.scss **/
+/*
+    red-orange: #FF5300; rgba(255,83, 0, 1); eaa319
+    hover - Light Red-Orange: #F8AC51;
+    Blue-gray: #399ED2;
+*/
+
+/*=================================
+    III.    HEADER CLASSES
+===================================*/
+/** MOVED TO _modules.scss **/
+
+/*=================================
+    IV. SECTION CLASSES
+===================================*/
+/** HERO MOVED TO modules/_module.hero.scss **/
+
+/* -- Partners section on landing page -- */
+
+#partners {
+  img {
+    max-width: 100%;
+
+    transition: transform .2s;
+    transform: scale3d(1,1,1);
+
+    &:hover {
+      transform: scale3d(1.05,1.05,1);
+    }
+  }
+}
+
+/*=================================
+    V. FULLSCREEN TEMPLATES
+===================================*/
+#post {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+
+  display: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 7%;
+
+  background-color: #ccc;
+}
+
+#archive {
+  padding: 4%;
+}
+
+/*==================================================
+    VI.  LIST CLASSES
+====================================================*/
+/** GALLERY CLASSES - moved to modules/_module.gallery.scss **/
+
+/* LIST CLASSES - These are used in _includes/list.html*/
+.post-content .posts-list-item {
+  font-size: 1.2rem;
+  padding: 1.2em 1em;
+
+  outline: dashed $light-dull-blue-gray 1px;
+  background-color: $posts-list-item-bg;
+
+  text-align: center;
+
+  @include mq(tablet) {
+    text-align: left;
+  }
+
+  + .posts-list-item {
+    margin-top: 1.5em;
+  }
+
+}
+
+.posts-list__thumb {
+  .circular-image {
+    @include circular-image-size(11em);
+    margin: 0 auto;
+    box-shadow: $shadow-half-trans-gray;
+  }
+}
+
+.posts-list__text {
+  h3 {
+    margin-bottom: 0;
+  }
+
+  p {
+    line-height: 1.3;
+  }
+}
+
+// The date
+.posts-list__subheading {
+  color: $med-gray;
+  margin-top: 0;
+}
+
+/*=================================
+    VI. FOOTER CLASSES
+===================================*/
+.site-footer {
+  font-size: 1.1rem;
+
+  @include textured-bg;
+  @include spacious-panel;
+  h3 {
+    font-family: $heading-font;
+    border-bottom: dashed 1px;
+    padding-bottom: .24em;
+    margin-bottom: .3em;
+  }
+  .copyright {
+    font-size: small;
+    margin-top: 1.5em;
+    position: relative;
+    top: $panel-vert-padding;
+  }
+}
+
+/*=================================
+    VI. POPUP MENU CLASSES
+===================================*/
+/** MOVED TO _modules.scss **/
+
+/*=================================
+    VII. MISC
+===================================*/
+.post-content {
+  position: relative;
+  background-color: $near-white;
+  @include spacious-panel;
+  font-size: 1.1rem;
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}

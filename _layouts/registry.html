@@ -2,24 +2,20 @@
 layout: default
 ---
 
-<section class="row">
-  <div id="hero-page" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 marg-big">
-  		<h2 class="text-center marg">{{ page.title }}</h2>
-  </div>
+<article id="registry">
+    <section class="hero hero--page hero-page--no-img">
+        <h2 class="text-center hero__title">{{ page.title }}</h2>
+    </section>
+    <section class="post-content">
+        <div class="container posts-list">
+            {% unless page.content == '' %}
+                <p>{{ page.content }}</p>
+            {% endunless %}
 
-
-  <div class="col-xs-12 col-sm-12 col-md-10 col-lg-offset-1 col-lg-10 col-lg-offset-1 marg">
-
-    <ul>
-
-
-		{% unless page.content == '' %}
-		  <p>{{ page.content }}</p>
-		{% endunless %}
-
-		{% for post in site.categories[page.category] %}
-			{% assign show_excerpt = false %}
-			{% include list.html %}
-		{% endfor %}
-	</ul>
-</section>
+            {% for post in site.categories[page.category] %}
+                {% assign show_excerpt = false %}
+            	{% include list.html %}
+            {% endfor %}
+        </div>
+    </section>
+</article>

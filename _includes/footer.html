@@ -1,9 +1,8 @@
-<footer class="row marg site-footer">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <h4>Connect</h4>
-            <hr/>
-            <nav class="row">
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <h3>Connect</h3>
                 <ul class="social-links">
                     <li>
                         <a href="mailTo:people@codeforfoco.org">
@@ -36,33 +35,33 @@
                         </a>
                     </li>
                 </ul>
-            </nav>
-            <hr/>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <h4>Organization</h4>
-            <hr/>
-            {% for post in site.categories.organization limit : 5 %}
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                    <h5 class="title-list-item">{{ post.title | capitalize }}</h5>
-                </a>
-            {% endfor %}
-            <hr/>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <h4>Categories</h4>
-            <hr/>
-            {% for category in site.categories %}
-                <a href="/category/{{ category[0] }}/">
-                    <h5 class="title-list-item">{{ category[0] | capitalize }}</h5>
-                </a>
-            {% endfor %}
-            <hr/>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <h3>Organization</h3>
+                <ul>
+                    {% for post in site.categories.organization limit : 5 %}
+                        <li>
+                            <a href="{{ post.url | prepend: site.baseurl }}">
+                                {{ post.title | capitalize }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <h3>Categories</h3>
+                <ul>
+                    {% for category in site.categories %}
+                        <li>
+                            <a href="/category/{{ category[0] }}/">
+                                {{ category[0] | capitalize }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="col-xs-12 text-center">
-        <span class="copyright">&copy;
-            {{ site.copyright }}
-            Code for Fort Collins</span>
-    </div>
+    <div class="text-center copyright">&copy;{{ site.copyright }}
+        Code for Fort Collins</div>
 </footer>
