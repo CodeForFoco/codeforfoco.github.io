@@ -2,13 +2,12 @@
 layout: default
 ---
 
-<section class="row">
-    <div id="hero-page">
+<article>
+    <section id="hero-page">
         <h2 class="text-center hero__title">{{ page.title }}</h2>
-    </div>
-    <div class="col-xs-12 col-md-10 col-lg-offset-1 marg">
-        <ul>
-
+    </section>
+    <section class="post-content">
+        <div class="container posts-list">
             {% unless page.content == '' %}
                 <p>{{ page.content }}</p>
             {% endunless %}
@@ -16,6 +15,6 @@ layout: default
             {% for post in site.categories[page.category] %}
                 {% include list.html %}
             {% endfor %}
-        </ul>
-    </div>
-</section>
+        </div>
+    </section>
+</article>

@@ -85,8 +85,13 @@ p {
   line-height: 1.8;
 
   margin: .9em auto;
+
   + h2 {
     margin-top: .9em;
+  }
+
+  &:empty:last-of-type {
+    margin: 0;
   }
 }
 

@@ -6,6 +6,7 @@
 $transparent: hsla(0,0,0,0);
 $white: #fff;
 $near-white: #eee;
+$light-dull-blue-gray: hsl(206, 29%, 70%);
 $black: #000;
 $near-black: #111;
 $near-ish-black: #222;
@@ -15,6 +16,7 @@ $dark-red: hsl(349, 90%, 38%);
 $medium-blue: hsl(206, 79%, 28%);
 $gold: hsl(52, 89%, 40%);
 $light-blue: hsl(206, 30%, 71%);
+$very-light-blue: hsl(206, 30%, 93%);
 
 // Components
 $link-color: $medium-blue;
@@ -23,12 +25,13 @@ $call-to-action-color: $dark-red;
 
 // Backgrounds
 $big-ol-panel-bg: $light-blue;
-$hipster-bg: linear-gradient(to bottom right, hsla(52, 88.3%, 40.3%, 0.4), hsla(192, 100%, 38%, 0.4)), url(../assets/images/bg-75.jpg) center center no-repeat;
+$hipster-bg: linear-gradient(to bottom right, hsla(52, 88.3%, 40.3%, .4), hsla(192, 100%, 38%, .4)), url(../assets/images/bg-75.jpg) center center no-repeat;
 $btn-default-bg: saturate($medium-blue, 1);
 $textured-panel-bg: radial-gradient(
   hsla(206, 79%, 28%,.3),
   hsla(206, 79%, 28%,.3)),
   url(../assets/images/dark_fish_skin.png); // image cred: subtlepatterns.com
+$posts-list-item-bg: $very-light-blue;
 
 /**
  * FONTS
