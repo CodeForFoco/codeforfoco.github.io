@@ -53,10 +53,8 @@ ul.social-links {
 .circular-image {
   position: relative;
 
-  display: block;
+  display: inline-block;
   overflow: hidden;
-
-  margin: 0 auto;
 
   border-radius: 100%;
   background-repeat: no-repeat;
@@ -66,4 +64,8 @@ ul.social-links {
 
 .subtle-shadow {
   @include subtle-shadow;
+}
+
+.cffc-logo {
+  background-image: url('../assets/images/cff-logo.svg');
 }

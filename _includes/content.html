@@ -1,13 +1,12 @@
-<article>
 <article class="page-type--{{ page.categories }}">
     <section class="hero hero--page">
-        {% if page.image %}
-            <div class="circular-image" style="background-image: url('/assets/images/{{ page.image }}');"></div>
-        {% else %}
-            <div class="circular-image" style="background-image: url('/assets/images/cff-logo.svg');"></div>
-        {% endif %}
-        <div class="row">
-            <div class="col-xs-12 text-center">
+        <div class="container">
+            <header class="text-center">
+                {% if page.image %}
+                    <div class="circular-image subtle-shadow" style="background-image: url('/assets/images/{{ page.image }}');"></div>
+                {% else %}
+                    <div class="circular-image cffc-logo"></div>
+                {% endif %}
                 <h2 class="hero__title">{{ page.title }}</h2>
                 <p class="post-meta">
                     {% if page.date %}
@@ -19,7 +18,7 @@
                         {% endif %}
                     {% endif %}
                 </p>
-            </div>
+            </header>
         </div>
     </section>
     <section class="post-content">
