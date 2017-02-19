@@ -33,7 +33,6 @@
  * Fancypants pseudo-<hr> line
  */
 @mixin fancy-code-hr($color) {
-
   display: flex;
   flex-direction: column;
 
@@ -50,18 +49,15 @@
     top: -.25em;
 
     height: 1px;
+
     content: '';
 
     order: 2;
-
-    @include mq(mobile) {
-      @include fancy-hr-gradient(44%,56%,$color);
-    }
+    @include fancy-hr-gradient(43%,57%,$color);
     @include mq($from: tablet) {
-      @include fancy-hr-gradient(46%,54%,$color);
+      @include fancy-hr-gradient(45%,55%,$color);
     }
   }
-
 }
 
 @mixin fancy-hr-gradient($stop1, $stop2, $color) {
@@ -77,10 +73,10 @@
 }
 
 @mixin circular-image-size($side-length) {
-    height: $side-length;
-    width: $side-length;
+  width: $side-length;
+  height: $side-length;
 }
 
 @mixin subtle-shadow {
-  box-shadow: 2px 1px 8px 2px hsla(60, 100%, 2%, 0.5);
+  box-shadow: 2px 1px 8px 2px hsla(60, 100%, 2%, .5);
 }
