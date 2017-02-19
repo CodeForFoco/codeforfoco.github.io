@@ -11,9 +11,9 @@
         </div>
         <div class="col-xs-12 col-sm-8 posts-list__text">
             <header class="posts-list__heading">
-                <h2>
+                <h3>
                     <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
-                </h2>
+                </h3>
                 <p class="posts-list__subheading">{{ post.date | date: "%b %-d, %Y" }}</p>
             </header>
             {% if show_excerpt != false %}
