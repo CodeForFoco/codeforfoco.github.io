@@ -13,7 +13,8 @@ layout: default
             {% endunless %}
 
             {% for post in site.categories[page.category] %}
-                {% include list.html %}
+                {% assign show_excerpt = false %}
+            	{% include list.html %}
             {% endfor %}
         </div>
     </section>

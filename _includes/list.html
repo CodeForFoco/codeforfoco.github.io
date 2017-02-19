@@ -3,20 +3,23 @@
         <div class="col-xs-12 col-sm-4 posts-list__thumb">
             <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
                 {% if post.image %}
-                    <img src="/assets/images/{{ post.image }}"/>
+                    <img src="/assets/images/{{ post.image }}" alt="{{ post.title }}"/>
                 {% else %}
-                    <img src="/assets/images/cff-logo.svg"/>
+                    <img src="/assets/images/cff-logo.svg" alt="Code for FoCo logo"/>
                 {% endif %}
             </a>
         </div>
         <div class="col-xs-12 col-sm-8 posts-list__text">
-            {% if show_excerpt != false %}
-                <h2 class="posts-list__heading">
-                    <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
-                        {{ post.title }}
-                    </a>
+            <header class="posts-list__heading">
+                <h2>
+                    <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
                 </h2>
-                <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+                <p class="posts-list__subheading">{{ post.date | date: "%b %-d, %Y" }}</p>
+            </header>
+            {% if show_excerpt != false %}
+                <p>{{ post.excerpt }}</p>
+                <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-lg btn--wide btn--default" title="{{ post.title }}">Read More</a>
+            {% else %}
                 <p>{{ post.content }}</p>
             {% endif %}
         </div>
