@@ -1,13 +1,11 @@
 <div class="posts-list-item">
     <div class="row">
         <div class="col-xs-12 col-sm-4 posts-list__thumb">
-            <a href="{{ post.url | prepend: site.baseurl }}" class="circular-image" title="{{ post.title }}">
-                {% if post.image %}
-                    <img src="/assets/images/{{ post.image }}" alt="{{ post.title }}"/>
-                {% else %}
-                    <img src="/assets/images/cff-logo.svg" alt="Code for FoCo logo"/>
-                {% endif %}
-            </a>
+            {% if post.image %}
+                <a href="{{ post.url | prepend: site.baseurl }}" class="circular-image" style="background-image: url('/assets/images/{{ post.image }}')" title="{{ post.title }}"></a>
+            {% else %}
+                <a href="{{ post.url | prepend: site.baseurl }}" class="circular-image" style="background-image: url('/assets/images/cff-logo.svg')" title="{{ post.title }}"></a>
+            {% endif %}
         </div>
         <div class="col-xs-12 col-sm-8 posts-list__text">
             <header class="posts-list__heading">

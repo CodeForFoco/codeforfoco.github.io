@@ -2,6 +2,8 @@
  * Large, decorative, container-level wrappers
  */
 .big-ol-panel {
+  font-size: 1.7rem;
+
   display: flex;
   flex-direction: column;
 
@@ -10,9 +12,7 @@
   background-color: transparentize($white, .8);
 
   @include spacious-panel;
-  @include mq(mobile) {
-    font-size: 1.7rem;
-  }
+
   @include mq($from: tablet) {
     font-size: 2.3rem;
   }

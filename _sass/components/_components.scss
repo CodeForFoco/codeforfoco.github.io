@@ -52,12 +52,20 @@ ul.social-links {
 // Completely round image
 .circular-image {
   position: relative;
-  display: block;
+
+  display: inline-block;
   overflow: hidden;
+
   border-radius: 100%;
-  img {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.subtle-shadow {
+  @include subtle-shadow;
+}
+
+.cffc-logo {
+  background-image: url('../assets/images/cff-logo.svg');
 }

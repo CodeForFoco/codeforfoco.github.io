@@ -1,41 +1,28 @@
-/* .hero is for our landing page
+/* .hero--home is for our landing page
 .hero--page is for our page.html, page.html and category.html(archive)*/
 .hero {
   position: relative;
 
-  display: flex;
-
+  height: 20em;
   margin-top: $site-header-height;
 
   color: $white;
   box-shadow: inset 0 0 .7em 1px hsla(0, 0%, 7%, .5);
 
-  justify-content: center;
-  align-items: center;
-
-  @include mq($until: tablet) {
-    flex-direction: column;
-
-    height: 20em;
+  @include mq(tablet) {
+    height: 25em;
   }
-  @include mq($from: tablet) {
-    flex-direction: row;
-
+  @include mq(desktop) {
     height: 30em;
+  }
+  @include flex-vert-align;
+  justify-content: center;
+  header {
+    flex-direction: column;
   }
 
   h2 {
     margin-bottom: 0;
-  }
-
-  &:not(.hero--page) img {
-    position: relative;
-
-    height: 17em;
-
-    @include mq($from: tablet) {
-      height: 70%;
-    }
   }
 }
 
@@ -44,20 +31,30 @@
 
   .circular-image {
     @include circular-image-size(12em);
-    @include mq($from: tablet) {
-      margin-right: 20px;
-    }
+  }
+}
+
+.hero--home .circular-image {
+  @include circular-image-size(20em);
+  @include mq(tablet) {
+    @include circular-image-size(25em);
+  }
+  @include mq(desktop) {
+    @include circular-image-size(25em);
   }
 }
 
 .hero__title {
-  font-size: 2.5em;
+  font-size: 3.5rem;
 
   position: relative;
 
   text-shadow: 0 0 .55em hsla(0, 0%, 20%, .8);
 
-  .hero-page--no-img & {
-    font-size: 3em;
-  }
+  @include mq($until: tablet) {
+    font-size: 1.9em;
+    .hero-page--no-img & {
+      font-size: 2.5em;
+    }
+  };
 }
