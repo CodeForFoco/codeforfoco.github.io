@@ -62,5 +62,8 @@ ul.social-links {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: 2px 1px 8px 2px hsla(60, 100%, 2%, 0.5);
+}
+
+.subtle-shadow {
+  @include subtle-shadow;
 }

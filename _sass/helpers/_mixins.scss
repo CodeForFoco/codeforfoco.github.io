@@ -80,3 +80,7 @@
     height: $side-length;
     width: $side-length;
 }
+
+@mixin subtle-shadow {
+  box-shadow: 2px 1px 8px 2px hsla(60, 100%, 2%, 0.5);
+}

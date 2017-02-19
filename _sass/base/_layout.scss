@@ -133,6 +133,7 @@
 .posts-list__thumb {
   .circular-image {
     @include circular-image-size(11em);
+    @include subtle-shadow;
   }
 }
 
