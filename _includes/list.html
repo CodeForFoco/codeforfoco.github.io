@@ -18,7 +18,9 @@
             </header>
             {% if show_excerpt != false %}
                 <p>{{ post.excerpt }}</p>
-                <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-lg btn--wide btn--default" title="{{ post.title }}">Read More</a>
+                <div class="text-center">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-lg btn--wide btn--default" title="{{ post.title }}">Read More</a>
+                </div>
             {% else %}
                 <p>{{ post.content }}</p>
             {% endif %}
