@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Code Of Conduct"
+title:  "Code of Conduct"
 date:   2016-06-07 12:04:53 -0700
 permalink: /code-of-conduct/
 categories: organization
