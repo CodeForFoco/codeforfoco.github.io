@@ -42,7 +42,7 @@
                     {% for post in site.categories.organization limit : 5 %}
                         <li>
                             <a href="{{ post.url | prepend: site.baseurl }}">
-                                {{ post.title | capitalize }}
+                                {{ post.title }}
                             </a>
                         </li>
                     {% endfor %}
