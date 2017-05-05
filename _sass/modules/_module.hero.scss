@@ -13,7 +13,7 @@
     height: 25em;
   }
   @include mq(desktop) {
-    height: 30em;
+    height: 20em;
   }
   @include flex-vert-align;
   justify-content: center;
@@ -30,17 +30,17 @@
   background: radial-gradient(ellipse at center, hsla(0, 0%, 0%, .35) 0%, hsla(0, 0%, 0%, .27) 35%, hsla(0, 0%, 0%, 0) 100%);
 
   .circular-image {
-    @include circular-image-size(12em);
+    @include circular-image-size(10em);
   }
 }
 
 .hero--home .circular-image {
   @include circular-image-size(20em);
   @include mq(tablet) {
-    @include circular-image-size(25em);
+    @include circular-image-size(12em);
   }
   @include mq(desktop) {
-    @include circular-image-size(25em);
+    @include circular-image-size(12em);
   }
 }
 
