@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Org Update"
-date:   2016-05-27 12:04:53 -0700
+date:   2017-05-12 10:00:00 -0700
 author: Jordan Majd
 categories: blog
 ---
