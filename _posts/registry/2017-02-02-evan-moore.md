@@ -2,7 +2,7 @@
 layout: post
 title:  "Evan Moore"
 date:  2017-02-02 18:59:10 -0700
-image: evan-headshot.png
+image: registry/evan-headshot.png
 categories: registry
 ---
 

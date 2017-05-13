@@ -2,7 +2,7 @@
 layout: post
 title:  "Isaiah Torain"
 date:  2017-02-16 18:30
-image: itorain-headshot.JPG
+image: registry/itorain-headshot.JPG
 categories: registry
 ---
 
