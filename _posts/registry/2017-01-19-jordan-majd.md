@@ -2,6 +2,7 @@
 layout: post
 title:  "Jordan Majd"
 date:  2017-01-19 19:35
+image: registry/jordan-headshot.jpg
 categories: registry
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ben Gondrez"
-date:  (2017-01-29 18:40)
+date:  2017-01-29 18:40
 categories: registry
 ---
 
