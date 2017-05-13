@@ -6,7 +6,7 @@ This repo is for our organizations website at [codeforfoco.org](http://www.codef
 
 Before you can run the website on your machine you need to ensure you have some prerequisites installed:
 
-1. [Fork][fork] and clone your fork locally.
+1. [Fork this repository][forkthisrepo] and clone your fork.
 1. `cd` into the cloned directory.
 1. Run `git submodule update --init --recursive` to install several third-party submodules.
 1. Install Ruby V2 or greater, we recommend you use [RVM](https://rvm.io/)
@@ -25,7 +25,7 @@ Open your browser up to [localhost:8080](http://localhost:8080) to view the deve
 
 We welcome new contributors.  Be sure to check out guide on [contributing][contributing], which includes instructions on how to fork, clone, branch, commit, pull request and sync your fork.
 
-Not sure where to start? Look for [open issues][githubissue] on GitHub, or message the team on [our Slack site](https://codeforfoco.slack.com/) (can sign up via [email here]()).
+Not sure where to start? Look for [open issues][githubissue] on GitHub, or message the team on [our Slack site][slack]. If you aren't on our Slack, [click here for an invite][slackinvite].
 
 TL;DR Contribution Workflow:
 
