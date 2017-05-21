@@ -3,7 +3,7 @@
         <div class="container">
             <header class="text-center">
                 {% if page.image %}
-                    {% if page.categories contains 'partners' %}
+                    {% if page.show-full-img %}
                     <img class="hero__image" src="/assets/images/{{ page.image }}" />
                     {% else %}
                     <div class="hero__image circular-image subtle-shadow" style="background-image: url('/assets/images/{{ page.image }}');"></div>

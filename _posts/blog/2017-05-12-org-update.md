@@ -2,6 +2,8 @@
 layout: post
 title:  "Org Update"
 date:   2017-05-12 10:00:00 -0700
+image: projects/innovate-fc-logo.png
+show-full-img: true
 author: Jordan Majd
 categories: blog
 ---
