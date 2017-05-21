@@ -2,14 +2,13 @@
     <div class="row">
         <div class="col-xs-12 col-sm-4 posts-list__thumb">
             {% if post.image %}
-                <a href="{{ post.url | prepend: site.baseurl }}"
-                class="circular-image circular-image--{{ post.categories | array_to_sentence_string }}"
-                 style="background-image: url('/assets/images/{{ post.image }}')" title="{{ post.title }}"></a>
+                {% assign bg_image = {{post.image}} %}
             {% else %}
-                <a href="{{ post.url | prepend: site.baseurl }}"
-                class="circular-image circular-image--{{ post.categories | array_to_sentence_string }}"
-                 style="background-image: url('/assets/images/cff-logo.svg')" title="{{ post.title }}"></a>
+                {% assign bg_image = 'cff-logo.svg' %}
             {% endif %}
+            <a href="{{ post.url | prepend: site.baseurl }}"
+            class="circular-image circular-image--{{ post.categories | array_to_sentence_string }} {% if post.show-full-img %}thumb-img--full-width{% endif %}"
+            style="background-image: url('/assets/images/{{bg_image}}')" title="{{ post.title }}"></a>
         </div>
         <div class="col-xs-12 col-sm-8 posts-list__text">
             <header class="posts-list__heading">

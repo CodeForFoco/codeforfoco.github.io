@@ -132,7 +132,16 @@
 }
 
 .posts-list__thumb {
-  .circular-image {
+  text-align: center;
+
+  // Non-circular, full-width logos (e.g. narrow ones that do not look good square-ish)
+  .thumb-img--full-width {
+    display: block;
+    background-position: center;
+    background-size: 80%;
+  }
+
+  > a {
     @include circular-image-size(11em);
     margin: 0 auto;
     @include subtle-shadow;
