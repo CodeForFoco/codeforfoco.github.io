@@ -131,3 +131,39 @@ li {
 img {
   max-width: 100%;
 }
+
+blockquote {
+  font-style: italic;
+
+  margin: 1.5em 1em;
+  padding: 1em;
+
+  quotes: '\201C''\201D';
+
+  color: $med-gray;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $light-blue;
+  border-left: 1em solid $light-blue;
+  border-radius: 1em 5px 5px 1em;
+}
+
+blockquote:before {
+  font-size: 4em;
+  line-height: .1em;
+
+  margin-right: .25em;
+
+  content: open-quote;
+  vertical-align: -.4em;
+
+  color: #808080;
+}
+
+blockquote :first-child {
+  display: inline;
+}
+
+blockquote :last-child {
+  margin-bottom: 0;
+}
