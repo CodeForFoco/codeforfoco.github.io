@@ -1,0 +1,111 @@
+---
+layout: default
+---
+<article class="page-type--category">
+    <section class="hero hero--page hero-page--no-img">
+        <h2 class="text-center hero__title">{{ page.title }}</h2>
+    </section>
+    <section class="post-content">
+        <div class="container posts-list">
+            {% assign delimiter = "," %}
+            {% assign names_str = "" %}
+
+            {% for poast in site.posts %}
+                {% for techtag in poast.tech_tags %}
+                    {% assign names_arr = names_str | split: delimiter %}
+                    {% unless names_arr contains techtag %}
+                        {% assign names_str = names_str | append: delimiter | append: techtag %}
+                    {% endunless %}
+                {% endfor %}
+            {% endfor %}
+            {% assign names_uniq = names_str | remove_first: delimiter | split: delimiter %}
+            <p><strong>{{names_str}}</strong></p>
+
+            <h3>Tech Tags</h3>
+            <div class="table-responsive">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Descrip</th>
+                            <th>Count</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    {% for post in site.posts %}
+                        {% for tech_tag in post.tech_tags %}
+                            <tr>
+                                <td class="col-sm-3">
+                                    <a href="#" class="tag tag--tech">
+                                        <i class="fa fa-code-fork"></i>{{tech_tag}}</a>
+                                </td>
+                                <td class="col-sm-3"></td>
+                                <td class="col-sm-3"></td>
+                                <td class="col-sm-3">
+                                    <a href="#">View Posts</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </table>
+            </div>
+            <h3>Industry Tags</h3>
+            <div class="table-responsive">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Descrip</th>
+                            <th>Count</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    {% for post in site.posts %}
+                        {% for industry_tag in post.industry_tags %}
+                            <tr>
+                                <td class="col-sm-3">
+                                    <a href="#" class="tag tag--industry">
+                                        <i class="fa fa-industry"></i>{{industry_tag}}</a>
+                                </td>
+                                <td class="col-sm-3"></td>
+                                <td class="col-sm-3"></td>
+                                <td class="col-sm-3">
+                                    <a href="#">View Posts</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </table>
+            </div>
+            <h3>Language Tags</h3>
+            <div class="table-responsive">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Descrip</th>
+                            <th>Count</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    {% for post in site.posts %}
+                        {% assign sorted_tags = post.language_tags %}
+                        {% for language_tag in post.language_tags %}
+                            <tr>
+                                <td class="col-sm-3">
+                                    <a href="#" class="tag tag--language">
+                                        <i class="fa fa-code"></i>{{language_tag}}</a>
+                                </td>
+                                <td class="col-sm-3"></td>
+                                <td class="col-sm-3"></td>
+                                <td class="col-sm-3">
+                                    <a href="#">View Posts</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </section>
+</article>

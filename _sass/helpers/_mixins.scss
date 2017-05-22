@@ -80,3 +80,20 @@
 @mixin subtle-shadow {
   box-shadow: 2px 1px 8px 2px hsla(60, 100%, 2%, .5);
 }
+
+@mixin tags($class-suffix, $bg-color) {
+  .tag--#{$class-suffix} {
+    background-color: $bg-color;
+
+    &:before {
+      border-right-color: $bg-color;
+    }
+    &:hover {
+      color: $white;
+      background-color: darken($bg-color, 5%);
+    }
+    &:hover:before {
+      border-right-color: darken($bg-color, 5%);
+    }
+  }
+}
