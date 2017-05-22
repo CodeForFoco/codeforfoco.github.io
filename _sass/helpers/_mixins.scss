@@ -87,3 +87,20 @@
 
   list-style-type: none;
 }
+
+@mixin tags($class-suffix, $bg-color) {
+  .tag--#{$class-suffix} {
+    background-color: $bg-color;
+
+    &:before {
+      border-right-color: $bg-color;
+    }
+    &:hover {
+      color: $white;
+      background-color: darken($bg-color, 5%);
+    }
+    &:hover:before {
+      border-right-color: darken($bg-color, 5%);
+    }
+  }
+}
