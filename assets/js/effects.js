@@ -6,6 +6,7 @@
 	and the popup menu toggle
 
 */
+$ = jQuery;
 $(document).ready(function(){
 
 

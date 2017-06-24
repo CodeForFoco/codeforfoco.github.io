@@ -72,4 +72,22 @@
 </footer>
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $api_key = "566830125c564b57904d631159349";
+</script>
+<script type="text/javascript">
+    jQuery.noConflict();
+    var mup_widget = {
+        with_jquery: function (block) {
+            block(jQuery, document.body);
+        },
+        api_call: function (path, params) {
+            return "http://api.meetup.com" + path + "?callback=?&" + jQuery.param(jQuery.extend({
+                key: $api_key
+            }, params));
+        }
+    };
+</script>
+<script type="text/javascript" src="/assets/js/group-calendar.js"></script>
+<script type="text/javascript" src="/assets/js/upcoming-meetups.js"></script>
 <script type="text/javascript" src="/assets/js/effects.js"></script>
