@@ -44,6 +44,8 @@
 }
 
 .centered-row-items {
+  @include unstyled-list;
+
   @include mq(tablet) {
     display: flex;
 
@@ -52,6 +54,7 @@
       margin-right: 15px;
     }
   }
+
   li {
     margin-bottom: 1.2rem;
   }
