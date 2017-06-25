@@ -25,6 +25,7 @@ The registry post use something called markdown to display. Markdown is a simple
 layout: post
 title:  "[Your name here]"
 date:  [YOUR DATE HERE IN THE FOLLOWING FORMAT yyyy-mm-dd HH:mm]
+image: OPTIONAL, but remove this line otherwise registry/<your-profile-pic>
 categories: registry
 ---
 
