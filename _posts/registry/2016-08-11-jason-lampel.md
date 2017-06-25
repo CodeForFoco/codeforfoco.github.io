@@ -21,7 +21,9 @@ Besides maps, I enjoy pretty much all things tech: from IoT to NodeJS to WordPre
 [<i class="fa fa-globe fa-2x"></i>][abm]&nbsp;&nbsp;
 [<i class="fa fa-linkedin-square fa-2x"></i>][linkedin]&nbsp;&nbsp;
 [<i class="fa fa-meetup fa-2x"></i>][meetup]&nbsp;&nbsp;
+[<i class="fa fa-slack fa-2x"></i>][slack]&nbsp;&nbsp;
 [<i class="fa fa-twitter fa-2x"></i>][twitter]&nbsp;&nbsp;
+[<i class="fa fa-codepen fa-2x"></i>][codepen]&nbsp;&nbsp;
 [<i class="fa fa-facebook-official fa-2x"></i>][fb]&nbsp;&nbsp;
 
 [cemml]: https://www.cemml.colostate.edu/
@@ -35,3 +37,5 @@ Besides maps, I enjoy pretty much all things tech: from IoT to NodeJS to WordPre
 [stack]: https://stackexchange.com/users/1042890/abettermap
 [stack-overflow]: https://stackoverflow.com/users/1048518/abettermap
 [meetup]: https://www.meetup.com/Code-for-Fort-Collins/members/12854091/
+[codepen]: https://codepen.io/abettermap/
+[slack]: https://codeforfoco.slack.com/team/abettermap
