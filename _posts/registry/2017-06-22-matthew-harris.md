@@ -5,11 +5,11 @@ date:  2017-06-22 18:30
 categories: registry
 ---
 
-### About
+#### About
 
 Hi, my name is Matthew Harris.  I am the CTO of a SaaS company in the finance sector.  I'd be happy consult or work on any project.
 
-### Skills
+#### Skills
 * Languages
     * Python
     * TypeScript
@@ -23,7 +23,7 @@ Hi, my name is Matthew Harris.  I am the CTO of a SaaS company in the finance se
     * Predictive Analysis
     * Math
 
-### Links
+#### Links
 
 - [Github](https://github.com/deidyomega)
 - [LinkedIn](https://www.linkedin.com/in/matthewarmonharris/)
