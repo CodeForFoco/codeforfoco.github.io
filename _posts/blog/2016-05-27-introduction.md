@@ -12,4 +12,4 @@ We are really excited to have our website live and running. The next step is to 
 
 If you are or know someone interested in content writing be sure to contact us at [people@codeforfoco.com](mailto:people@codeforfoco.com).
 
-- Jordan Majd
+\- Jordan Majd
