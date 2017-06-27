@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Matthew Harris"
-date:  2017-07-22 18:30
+date:  2017-06-17 18:30
 categories: registry
 ---
 
@@ -10,10 +10,18 @@ categories: registry
 Hi, my name is Matthew Harris.  I am the CTO of a SaaS company in the finance sector.  I'd be happy consult or work on any project.
 
 ### Skills
-
-Languages: Python, TypeScript, JavaScript, Ruby, C, Fortran, R
-
-Other Skills: Data Analysis, Predictive Analysis, Math
+* Languages
+    * Python
+    * TypeScript
+    * JavaScript
+    * Ruby
+    * C
+    * Fortran (basic)
+    * R
+* Other Skills
+    * Data Analysis
+    * Predictive Analysis
+    * Math
 
 ### Links
 
