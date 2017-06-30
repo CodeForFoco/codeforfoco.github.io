@@ -2,11 +2,24 @@
     <div class="col-xs-12 popup-menu__content">
         <nav>
             <ul class="internal-links">
-                {% for category in site.categories %}
-                    <li>
-                        <a href="/category/{{ category[0] }}/">{{ category[0] | capitalize }}</a>
-                    </li>
-                {% endfor %}
+                <li>
+                    <a href="/category/blog/">Blog</a>
+                </li>
+                <li>
+                    <a href="/category/organization/">Organization</a>
+                </li>
+                <li>
+                    <a href="/category/partners/">Partners</a>
+                </li>
+                <li>
+                    <a href="/category/registry/">Our Team</a>
+                </li>
+                <li>
+                    <a href="https://docs.google.com/forms/d/1dQGjgGF1a3ZbquO2x_68XZLIgFbe-iQ6IWb1QILkmes/viewform?edit_requested=true" title="Google Form to submit project idea" target="_blank">Submit Ideas</a>
+                </li>
+                <li>
+                    <a href="/donate">Donate!</a>
+                </li>
             </ul>
             <hr>
             <ul class="social-links">
@@ -45,7 +58,9 @@
             <ul>
                 <li>
                     <a href="{{ site.baseurl }}/license">
-                        <span class="copyright">&copy; {{ site.copyright }} codeforfoco.org</span>
+                        <span class="copyright">&copy;
+                            {{ site.copyright }}
+                            codeforfoco.org</span>
                     </a>
                 </li>
             </ul>

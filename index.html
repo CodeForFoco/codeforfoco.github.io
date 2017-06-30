@@ -2,108 +2,116 @@
 layout: default
 ---
 
-
 <!-- Hero -->
-<section class="row">
-    <div id="hero" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <img src="/assets/images/cff-logo.svg"/>
-    </div>
-</section>
-
-
+<div class="hero hero--home">
+    <div class="circular-image cffc-logo"></div>
+</div>
 
 <!-- Join Us -->
-<section id="join-us" class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <p class="text-center about">
-          We are programmers, designers, hackers, makers, tinkerers, writers and artists and we want to have an impact on the community around us.
-        </p>
-        <p class="text-center about">
-          We are dedicated to using technology to solve everyday challenges that the people, non-profits, charities, schools, government and grassroots organizations of Fort Collins face.
-        </p>
-      </div>
+<section id="who-we-are" class="big-ol-panel big-ol-panel--color-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <h2>Who We Are</h2>
+                <p>
+                    We are programmers, designers, hackers, makers, tinkerers, writers and artists who want to have an impact on the community around us.
+                </p>
+                <p>
+                    We are dedicated to using technology to solve everyday challenges that the people, non-profits, charities, schools, government and grassroots organizations of Fort Collins face.
+                </p>
+                <a href="/category/registry" class="btn btn-lg btn--default btn--wide" title="Members list">Meet our team</a>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h2 class="text-center"><a href="https://github.com/CodeForFoco/org/blob/master/onboarding.md">Want to get involved?</a></h2>
-        <ul class="text-center">
-          <a href="https://www.meetup.com/Code-for-Fort-Collins"><li><i class="fa fa-calendar-plus-o fa-1x" aria-hidden="true"></i> Join Our Meetup</li></a>
-          <a href="https://codeforfocoslack.herokuapp.com" target="_blank" ><li><i class="fa fa-slack fa-1x" aria-hidden="true"></i> Signup for Slack</li></a>
-          <a href="https://github.com/codeforfoco"><li><i class="fa fa-github fa-1x" aria-hidden="true"></i> Hack on Github</li></a>
-          <a href="mailto:people@codeforfoco.org"><li><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> Email Us</li></a>
-        </ul>
-      </div>
-    </div>
-  </div>
 </section>
-
-
-<!-- BLOG -->
-<!-- <section class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <h2 class="text-center marg">What are we up to?</h2>
-      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-offset-1 col-lg-10 col-lg-offset-1 marg">
-          <ul>
-            {% for post in site.categories.blog limit:3 %}
-                {% include list.html %}
-            {% endfor %}
-          </ul>
-        <a href="/category/blog/"><h4 class="more">View all posts</h4></a>
-      </div>
-  </div>
-</section> -->
-
+<section id="join-us" class="big-ol-panel">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Get Involved</h2>
+                <p>We are always looking for new members to help with projects or contribute ideas, so reach out to us on your platform of choice.</p>
+                <ul class="centered-row-items">
+                    <li>
+                        <a href="https://www.meetup.com/Code-for-Fort-Collins" title="Code For Fort Collins Meetup group" class="btn btn-lg btn--default btn--wide--mobile"><i class="fa fa-calendar-plus-o fa-1x" aria-hidden="true"></i>Join our Meetup</a>
+                    </li>
+                    <li>
+                        <a href="https://codeforfocoslack.herokuapp.com" title="Code For Fort Collins Slack group" class="btn btn-lg btn--default btn--wide--mobile" target="_blank"><i class="fa fa-slack fa-1x" aria-hidden="true"></i>Sign up for Slack</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/codeforfoco" "Code For Fort Collins GitHub organization" class="btn btn-lg btn--default btn--wide--mobile"><i class="fa fa-github fa-1x" aria-hidden="true"></i>Hack on GitHub</a>
+                    </li>
+                    <li>
+                        <a href="mailto:people@codeforfoco.org" title="Send an email to Code For Fort Collins" class="btn btn-lg btn--default btn--wide--mobile"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i>Email Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Partners -->
-<section class="row">
-  <div id="partners" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 marg">
-    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-offset-1 col-lg-10 col-lg-offset-1">
-      <div class="row">
-      {% for post in site.categories.partners limit:9 %}
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="/assets/images/{{ post.image }}"/>
-        </a>
-      {% endfor %}
-      </div>
+<section id="partners" class="big-ol-panel big-ol-panel--color-bg">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Our Partners</h2>
+                <p>We have several partners who support our cause in a variety of ways.</p>
+            </div>
+        </div>
+        <div class="row flex-vert-align">
+            {% for post in site.categories.partners limit : 9 %}
+                <div class="col-sm-4">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <img src="/assets/images/{{ post.image }}"/>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <a href="/category/partners/" class="btn btn-lg btn--default btn--wide">View all partners</a>
+        </div>
     </div>
-    <div class="row">
-      <a href="/category/partners/"><h4 class="more">View all partners</h4></a>
-    </div>
-  </div>
 </section>
-
-
 
 <!-- OTHER CODE FOR ORGS -->
-<section class="row">
-  <div id="other-orgs" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <ul class="text-center">
-      <a href="https://www.codeforamerica.org/"><li>Code For America</li></a>
-      <a href="http://www.codefordenver.org/"><li>Code For Denver</li></a>
-      <a href="http://www.codeforboulder.org/"><li>Code For Boulder</li></a>
-    </ul>
-  </div>
+<section class="big-ol-panel">
+    <div class="container">
+        <div class="row">
+            <div id="other-orgs" class="col-xs-12">
+                <h2>A Family Affair</h2>
+                <p>Code For Fort Collins is just one of many similar organizations throughout the country, including some of our sister organizations here in the Front Range.</p>
+                <ul class="centered-row-items">
+                    <li>
+                        <a href="https://www.codeforamerica.org/" class="btn btn-lg btn--default btn--wide--mobile">Code For America</a>
+                    </li>
+                    <li>
+                        <a href="http://www.codefordenver.org/" class="btn btn-lg btn--default btn--wide--mobile">Code For Denver</a>
+                    </li>
+                    <li>
+                        <a href="http://www.codeforboulder.org/" class="btn btn-lg btn--default btn--wide--mobile">Code For Boulder</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
-
 
 <!-- PROJECTS -->
 {% if site.categories.projects.size %}
-<section class="row">
-  <div id="projects" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <h2 class="text-center marg">What have we been working on?</h2>
-    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-offset-1 col-lg-10 col-lg-offset-1 marg">
-      <div class="row">
-        {% assign categoryname = "projects" %}
-        {% assign limitsize = 9 %}
-        {% include gallery.html %}
-      </div>
-      <br/>
-      <div class="row">
-        <a href="/category/projects/"><h4 class="more">View all projects</h4></a>
-      </div>
-    </div>
-  </div>
-</section>
+    <section class="row">
+        <div id="projects" class="col-xs-12">
+            <h2 class="text-center marg">What have we been working on?</h2>
+            <div class="col-xs-12 col-md-10 col-lg-offset-1 marg">
+                <div class="row">
+                    {% assign categoryname = "projects" %}
+                    {% assign limitsize = 9 %}
+                    {% include gallery.html %}
+                </div>
+                <br/>
+                <div class="row">
+                    <a href="/category/projects/">View all projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endif %}

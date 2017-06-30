@@ -1,0 +1,71 @@
+/**
+ * Components: things not big enough to be modules
+ */
+
+/**
+ * Social link icons
+ */
+ul.social-links {
+  display: flex;
+
+  padding: 0;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Vertical alignment using flexbox
+.flex-vert-align {
+  @include mq($until: tablet) {
+    &:not(.row) {
+      @include flex-vert-align;
+    }
+  }
+  @include mq(tablet) {
+    @include flex-vert-align;
+  }
+}
+
+// Blurred background
+.blur-bg:before {
+  transition: 2s;
+
+  filter: blur(2px);
+}
+
+// Spacing between columns on mobile
+@include mq($until: tablet) {
+  .row {
+    [class^='col-'] + [class^='col-'] {
+      margin: $inter-grid-spacing 0;
+    }
+  }
+}
+
+@include mq(tablet) {
+  .row + .row {
+    margin-top: $inter-grid-spacing;
+    margin-bottom: $inter-grid-spacing;
+  }
+}
+
+// Completely round image
+.circular-image {
+  position: relative;
+
+  display: inline-block;
+  overflow: hidden;
+
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.subtle-shadow {
+  @include subtle-shadow;
+}
+
+.cffc-logo {
+  background-image: url('../assets/images/cff-logo.min.svg');
+}

@@ -1,0 +1,83 @@
+// Container for logo, nav, etc.
+.top-bar {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: $site-header-height;
+
+  transition: background-color .4s;
+
+  background: $textured-panel-bg;
+  box-shadow: 0 4px 12px 1px transparentize($near-black, .5);
+
+  a {
+    color: $near-white;
+    &:not(.btn--call-to-action):hover {
+      color: $link-color-hover;
+    }
+  }
+
+  /* see effects.js scroll effect */
+  &--opaque {
+    background-color: transparentize($white, .05);
+  }
+
+  .container {
+    @include mq($until: tablet) {
+      display: flex;
+
+      padding: 0 2px;
+
+      align-items: center;
+      justify-content: space-between;
+    }
+    @include mq($until: desktop) {
+      width: 100%;
+    }
+  }
+}
+
+// Logo and page title container
+.page-title {
+  font-size: 1.75em;
+
+  flex: 1;
+
+  margin: 0;
+
+  .logo {
+    width: $site-header-height;
+    height: $site-header-height;
+  }
+}
+
+// Nav menu
+.site-nav {
+  display: inline-block;
+  float: right;
+
+  text-align: right;
+
+  @include mq($until: tablet) {
+    ul {
+      display: none;
+    }
+  }
+
+  ul {
+    font-size: 1.1rem;
+
+    margin: 0;
+
+    @include mq($from: tablet) {
+      @include flex-vert-align;
+    }
+  }
+}
+
+.site-nav ul > li {
+  padding: 0 8px;
+}

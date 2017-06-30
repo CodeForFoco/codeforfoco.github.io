@@ -1,13 +1,31 @@
 # Code For Fort Collins
 
-This git repo is for the site [codeforfoco.org](http://www.codeforfoco.org).
+This repo is for our organizations website at [codeforfoco.org](http://www.codeforfoco.org).
+
+## Getting Started
+
+Before you can run the website on your machine you need to ensure you have some prerequisites installed:
+
+1. [Fork this repository][forkthisrepo] and clone your fork.
+1. `cd` into the cloned directory.
+1. Run `git submodule update --init --recursive` to install several third-party submodules.
+1. Install Ruby V2 or greater, we recommend you use [RVM](https://rvm.io/)
+1. Install `bundler` by running `gem install bundler`
+1. Install any Ruby dependencies by running `bundle install`
+
+Once all the dependencies have been installed you run the development server with:
+
+```bash
+bundle exec jekyll serve
+```
+
+Open your browser up to [localhost:8080](http://localhost:8080) to view the development site.
 
 ## Contributing
 
 We welcome new contributors.  Be sure to check out guide on [contributing][contributing], which includes instructions on how to fork, clone, branch, commit, pull request and sync your fork.
 
-Not sure where to start? Look for [open issues][githubissue] on GitHub, or message the team on [our Slack site](https://codeforfoco.slack.com/) (can sign up via [email here]()).
-
+Not sure where to start? Look for [open issues][githubissue] on GitHub, or message the team on [our Slack site][slack]. If you aren't on our Slack, [click here for an invite][slackinvite].
 
 TL;DR Contribution Workflow:
 
@@ -18,7 +36,12 @@ TL;DR Contribution Workflow:
 1. Commit your changes. Push your changes to your fork on GitHub.
 1. Submit a new [pull request][pullrequest] and your changes will be reviewed and merged.
 
+## Bugs / Feedback / Suggestions
+
+We encourage you to [open up an issue][newissue] if you have any feedback, suggestions or bugs.
+
 ### Code Standards
+
 Development in a team environment can result in code inconsistency, which may 
 have undesired impacts including a reduction in readability. Therefore we ask 
 that you standardize and "beautify" your code before submitting a pull request. 
@@ -32,6 +55,7 @@ This tool eliminates common inconsistencies such as tab style and line endings,
 and has plugins available for most modern IDEs and text editors. Find yours [here](http://editorconfig.org/#download).
 
 #### Linters
+
 Linters validate your code and provide errors and warnings when validation is 
 not met. Here are some linters for common text editors:
 - [linter](https://atom.io/packages/linter) for **Atom** and these 
@@ -46,6 +70,7 @@ language-specific linters:
   
 
 #### Beautifiers
+
 The settings for beautifying this repo's code is found in `.csscomb.json` and 
 `.jsbeautifyrc` at the root of the project. Implementation of the settings is 
 carried out by various plugins specific to each text editor. Here are some of 
@@ -57,33 +82,6 @@ it's a big package so it takes a little while for the installation to complete!)
 [Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify)
 should suffice for this project.
 
-## Seeing What Changes Will Look Like
-
-### Locally test changes
-
-A few requirements:
- 1. Requires a working installation of Ruby programming language.
- 2. Installed `bundler` tool for installing "gems" (`gem install bundler`).
- 3. Local git clone of [this repo][forkthisrepo] where you have changes to test.
-
-Previewing
-
-```bash
-cd codeforfoco.github.io
-bundle install
-bundle exec jekyll serve
-open http://127.0.0.1:8080/  # open this address in web broswer
-```
-
-
-## Site Roadmap
-
-- Need to develop content
-
-## Bugs / Feedback / Suggestions
-
-We encourage you to [open up an issue](https://github.com/CodeForFoco/codeforfoco.github.io/issues/new) if you have any feedback, suggestions or bugs.
-
 ## License
 
 MIT, see [LICENSE](/LICENSE) for full license.
@@ -92,4 +90,5 @@ MIT, see [LICENSE](/LICENSE) for full license.
 [forkthisrepo]: https://github.com/CodeForFoco/codeforfoco.github.io#fork-destination-box
 [contributing]: https://github.com/CodeForFoco/org/blob/master/CONTRIBUTING.md
 [githubissue]: https://github.com/CodeForFoco/codeforfoco.github.io/issues
+[newissue]: https://github.com/CodeForFoco/codeforfoco.github.io/issues/new
 [pullrequest]: https://github.com/CodeForFoco/codeforfoco.github.io/pulls

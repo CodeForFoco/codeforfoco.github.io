@@ -1,23 +1,30 @@
-<li class="row">
-  <a href="{{ post.url | prepend: site.baseurl }}">
-    <div class="list-item">
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        {% if post.image %}
-          <img src="/assets/images/{{ post.image }}"/>
-        {% else %}
-          <img src="/assets/images/default.png"/>
-        {% endif %}
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-        <div class="row">
-          <div class="meta">
-              <h3>{{ post.title }}</h3>
-              {{ post.date | date: "%b %-d, %Y" }}
-            <div class="row">
-              <p>{{ post.excerpt }}</p>
-            </div>
+<div class="posts-list-item">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 posts-list__thumb">
+            {% if post.image %}
+                {% assign bg_image = {{post.image}} %}
+            {% else %}
+                {% assign bg_image = 'cff-logo.svg' %}
+            {% endif %}
+            <a href="{{ post.url | prepend: site.baseurl }}"
+            class="circular-image circular-image--{{ post.categories | array_to_sentence_string }} {% if post.show-full-img %}thumb-img--full-width{% endif %}"
+            style="background-image: url('/assets/images/{{bg_image}}')" title="{{ post.title }}"></a>
         </div>
-      </div>
+        <div class="col-xs-12 col-sm-8 posts-list__text">
+            <header class="posts-list__heading">
+                <h3>
+                    <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
+                </h3>
+                <p class="posts-list__subheading">{{ post.date | date: "%b %-d, %Y" }}</p>
+            </header>
+            {% if show_excerpt != false %}
+                <p>{{ post.excerpt }}</p>
+                <div class="text-center">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-lg btn--wide btn--default" title="{{ post.title }}">Read More</a>
+                </div>
+            {% else %}
+                <p>{{ post.content }}</p>
+            {% endif %}
+        </div>
     </div>
-  </a>
-</li>
+</div>
