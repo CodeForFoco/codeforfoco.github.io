@@ -36,10 +36,6 @@ TL;DR Contribution Workflow:
 1. Commit your changes. Push your changes to your fork on GitHub.
 1. Submit a new [pull request][pullrequest] and your changes will be reviewed and merged.
 
-## Bugs / Feedback / Suggestions
-
-We encourage you to [open up an issue][newissue] if you have any feedback, suggestions or bugs.
-
 ### Code Standards
 
 Development in a team environment can result in code inconsistency, which may 
@@ -68,7 +64,6 @@ language-specific linters:
   - [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
   - [SublimeLinter-html-tidy](https://github.com/SublimeLinter/SublimeLinter-html-tidy)
   
-
 #### Beautifiers
 
 The settings for beautifying this repo's code is found in `.csscomb.json` and 
@@ -81,6 +76,10 @@ it's a big package so it takes a little while for the installation to complete!)
 - **Sublime Text** does not have an all-in-one beautifier, but
 [Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify)
 should suffice for this project.
+
+## Bugs / Feedback / Suggestions
+
+We encourage you to [open up an issue][newissue] if you have any feedback, suggestions or bugs.
 
 ## License
 
