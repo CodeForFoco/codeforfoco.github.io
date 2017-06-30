@@ -14,7 +14,7 @@ The registry post use something called markdown to display. Markdown is a simple
  1. In your local repository, copy the **.md template** below
  1. Create a new file, and paste in the template.
  1. Save the file with the name in the form: `YYYY-MM-DD-YOURTITLE.md`
- 1. Edit the template with your information and message
+ 1. Edit the template with your information and message (optionally include a photo in *assets/images/registry*)
  1. Commit your changes
  1. Make a pull request to merge your post into master.
 
@@ -25,6 +25,7 @@ The registry post use something called markdown to display. Markdown is a simple
 layout: post
 title:  "[Your name here]"
 date:  [YOUR DATE HERE IN THE FOLLOWING FORMAT yyyy-mm-dd HH:mm]
+image: OPTIONAL, but remove this line otherwise registry/<your-profile-pic>
 categories: registry
 ---
 

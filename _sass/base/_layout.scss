@@ -149,13 +149,28 @@
 }
 
 .posts-list__text {
-  h3 {
-    margin-bottom: 0;
-  }
-
-  p {
+  p,
+  li {
     line-height: 1.3;
   }
+
+  ul, ol {
+    padding-left: 20px;
+  }
+
+  // Aka not nested lists
+  > ul, > ol {
+    margin-bottom: .9em;
+  }
+
+  li {
+    list-style-type: disc;
+  }
+}
+
+// Post title
+.posts-list__heading h3 {
+  margin-bottom: 0;
 }
 
 // The date
@@ -172,12 +187,18 @@
 
   @include textured-bg;
   @include spacious-panel;
+
   h3 {
     font-family: $heading-font;
     border-bottom: dashed 1px;
     padding-bottom: .24em;
     margin-bottom: .3em;
   }
+
+  ul {
+    @include unstyled-list;
+  }
+
   .copyright {
     font-size: small;
     margin-top: 1.5em;
