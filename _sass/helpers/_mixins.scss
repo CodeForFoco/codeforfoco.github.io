@@ -80,3 +80,10 @@
 @mixin subtle-shadow {
   box-shadow: 2px 1px 8px 2px hsla(60, 100%, 2%, .5);
 }
+
+// Left-flush, unbulleted lists
+@mixin unstyled-list {
+  padding: 0;
+
+  list-style-type: none;
+}

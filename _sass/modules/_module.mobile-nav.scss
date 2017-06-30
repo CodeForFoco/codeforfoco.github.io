@@ -97,8 +97,8 @@
       border-bottom: dashed 1px $white;
     }
   }
-}
 
-#popup-menu ul {
-  padding: 0;
+  ul {
+    @include unstyled-list;
+  }
 }
