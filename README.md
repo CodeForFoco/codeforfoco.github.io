@@ -77,6 +77,11 @@ it's a big package so it takes a little while for the installation to complete!)
 [Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify)
 should suffice for this project.
 
+## Site Architecture
+The CFFC website will ultimately adhere to an organized, intuitive, and SEO-friendly navigation and content structure, currently based on [this model](site-architecture-chart):
+
+![Site architecture diagram][site-architecture-image]
+
 ## Bugs / Feedback / Suggestions
 
 We encourage you to [open up an issue][newissue] if you have any feedback, suggestions or bugs.
@@ -91,3 +96,5 @@ MIT, see [LICENSE](/LICENSE) for full license.
 [githubissue]: https://github.com/CodeForFoco/codeforfoco.github.io/issues
 [newissue]: https://github.com/CodeForFoco/codeforfoco.github.io/issues/new
 [pullrequest]: https://github.com/CodeForFoco/codeforfoco.github.io/pulls
+[site-architecture-image]: assets/images/CFFC-site-architecture.png
+[site-architecture-chart]: https://www.lucidchart.com/documents/view/eb916f30-ba86-417d-bb4a-999b6c558274 
