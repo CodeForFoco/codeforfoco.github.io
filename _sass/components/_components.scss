@@ -90,6 +90,7 @@ $tag-bg--contributor: $med-gray;
 .tags {
   display: inline-block;
   float: left;
+  @include unstyled-list;
 }
 
 .tags li,
@@ -106,7 +107,6 @@ $tag-bg--contributor: $med-gray;
 
 .tag {
   display: inline-block;
-  float: left;
 
   margin-left: 20px;
   padding: 0 9px 0 3px;
