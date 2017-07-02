@@ -89,7 +89,7 @@ $tag-bg--contributor: $med-gray;
 
 .tags {
   display: inline-block;
-  float: left;
+
   @include unstyled-list;
 }
 
