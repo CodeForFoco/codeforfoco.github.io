@@ -1,7 +1,7 @@
 # Code For Fort Collins
 <p align="center">
   <a href="http://www.codeforfoco.org">
-    <img alt="CFFC logo" src="assets/images/cff-logo.min.svg" width="400"/>
+    <img alt="CFFC logo" src="http://codeforfoco.org/assets/images/cff-logo.min.svg" width="400"/>
   </a>
 </p>
 This repo is for our organization's website at [codeforfoco.org](http://www.codeforfoco.org).
