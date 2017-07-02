@@ -4,6 +4,7 @@
     <img alt="CFFC logo" src="http://codeforfoco.org/assets/images/cff-logo.min.svg" width="400"/>
   </a>
 </p>
+
 This repo is for our organization's website at [codeforfoco.org](http://www.codeforfoco.org).
 
 ## Getting Started
