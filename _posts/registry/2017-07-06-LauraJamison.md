@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Laura/Jamison O'Gan"
-2017-07-06 18:30
+date: 2017-07-06 18:30
 categories: registry
 ---
 
