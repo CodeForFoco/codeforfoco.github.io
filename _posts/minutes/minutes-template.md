@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Minutes for ____DATE_____"
-date:  ____DATE_____ (like 2017-07-05 18:30)
+date:  ____DATE_(like 2017-07-05 18:30)____
 categories: minutes
 ---
 
