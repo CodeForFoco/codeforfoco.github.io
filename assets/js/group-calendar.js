@@ -1,52 +1,46 @@
 'use strict';
 
 (function initGroupCalendar() {
-
-    var $ = jQuery;
-
-    var $queries = {
-            events: function () {
-                return mup_widget.api_call("/2/events", {
-                    group_urlname: 'Code-for-Fort-Collins',
-                    page: 4,
-                });
-            },
+    var $ = jQuery,
+        eventsQueryParams = function () {
+            return mup_widget.api_call("/2/events", {
+                group_urlname: 'Code-for-Fort-Collins',
+                page: 4,
+            });
         },
         $target = $("#meetups");
 
-    $.getJSON($queries.events(), function (data) {
+    $.getJSON(eventsQueryParams(), function (data) {
         $target.empty();
 
-        var ev, date, $li, go;
-
-        if (data.status && data.status.match(/^200/) == null) {
+        if (data.status && data.status.match(/^200/) === null) {
             $("#meetup_listing").empty();
-        } else
-            for (var i in data.results.reverse()) {
-                ev = data.results[data.results.length - i - 1];
-                date = timeConverter(ev.time);
-                $li = $('<li></li>');
-
-                $li.append($('<div style="font-weight: bold"></div>').append(ev.name));
-
-                go = $('<div></div>')
-                    .append($('<a target="_TOP" href="' + ev.event_url + '"></a>')
-                        .append(date));
-
-                if (ev.status === 'upcoming') {
-                    go
-                        .append(' | ')
-                        .append(
-                            $('<a target="_TOP" href="' + ev.event_url + '" style="background: red; color: white; text-decoration: none; font-size: smaller; font-weight: bold; padding: .3em .5em; border: white; border-radius: .3em;>RSVP</a>')
-                        );
-                }
-
-                $target.append($li.append(go));
-            }
+        } else {
+            $($target).html(
+                prepUpcomingMarkup(data.results.reverse())
+            );
+        }
     });
 
-    function createUpcomingMarkup() {
+    function prepUpcomingMarkup(data) {
+        var event, date,
+            html = '';
 
+        for (var i in data) {
+            event = data[data.length - i - 1];
+            date = timeConverter(event.time);
+
+            html +=
+                '<li class="meetup-list__item">' +
+                    '<a target="_blank" href="' + event.event_url +
+                    '" title="' + event.name + ' details">' +
+                    event.name +
+                    '</a><br>' +
+                    '<span>' + date + '</span>' +
+                '</li>';
+        }
+
+        return html;
     }
 
     function timeConverter(UNIX_timestamp) {
