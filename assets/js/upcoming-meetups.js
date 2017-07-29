@@ -1,3 +1,5 @@
+'use strict';
+
 var $parameters = {
     urlname: "Code-for-Fort-Collins",
     width: 425,

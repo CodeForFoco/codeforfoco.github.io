@@ -1,3 +1,5 @@
+'use strict';
+
 $ = jQuery;
 
 var $parameters_grp = {
