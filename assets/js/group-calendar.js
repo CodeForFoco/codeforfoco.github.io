@@ -23,21 +23,8 @@
                     desc: true
                 });
             },
-            groups: function () {
-                return mup_widget.api_call("/groups", {
-                    group_urlname: $parameters_grp.group_urlname
-                });
-            }
         },
         $target = $("#meetups");
-
-    $.getJSON($queries.groups(), function (data) {
-        if (data.results) {
-            for (var i in data.results) {
-                $("#group_name").text(data.results[i].name);
-            }
-        }
-    });
 
     $.getJSON($queries.events(), function (data) {
         $target.empty();
