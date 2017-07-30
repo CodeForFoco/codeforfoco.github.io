@@ -31,13 +31,17 @@
                 <div class="col-xs-12">
                     {{ content }}
                 </div>
+                {% if page.show-events %}
+                <div id="meetup_listing" class="col-xs-12">
+                    <h3>Upcoming Meetups</h3>
+                    <ul id="meetups" class="meetup-list">
+                        <li>
+                            <em>Loading...</em>
+                        </li>
+                    </ul>
+                </div>
+                {% endif %}
             </div>
-        </div>
-        <div id="meetup_listing">
-          <h2>Upcoming Events</h2>
-          <ul id="meetups">
-            <li><em>Loading...</em></li>
-          </ul>
         </div>
     </section>
 </article>
