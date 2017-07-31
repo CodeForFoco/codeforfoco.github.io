@@ -32,14 +32,7 @@
                     {{ content }}
                 </div>
                 {% if page.show-events %}
-                <div id="meetup_listing" class="col-xs-12">
-                    <h3>Upcoming Meetups</h3>
-                    <ul id="meetups" class="meetup-list">
-                        <li>
-                            <em>Loading...</em>
-                        </li>
-                    </ul>
-                </div>
+                {% include upcoming-meetups.html %}
                 {% endif %}
             </div>
         </div>
