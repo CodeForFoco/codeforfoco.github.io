@@ -32,8 +32,9 @@
 
             html +=
                 '<li class="meetup-list__item">' +
-                    '<a target="_blank" href="' + event.event_url +
-                    '" title="' + event.name + ' details">' +
+                    '<a href="' + event.event_url +
+                    '" target="_blank" class="meetup-list__heading" ' +
+                    'title="' + event.name + ' details">' +
                     event.name +
                     '</a><br>' +
                     '<span>' + date + '</span>' +

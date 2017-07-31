@@ -1,0 +1,19 @@
+.meetup-list {
+  @include unstyled-list;
+
+  .big-ol-panel & {
+    font-size: .95rem;
+  }
+}
+
+.meetup-list__heading {
+  font-size: 1.4em;
+}
+
+.meetup-list__item {
+  font-size: 1em;
+}
+
+.meetup-list__date {
+  font-size: .75em;
+}
