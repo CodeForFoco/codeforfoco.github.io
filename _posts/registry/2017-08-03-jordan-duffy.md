@@ -1,5 +1,6 @@
+---
 layout: post
-title:  "Jordan Duffy]"
+title:  "Jordan Duffy"
 date: 2017-08-03 19:50
 image: 
 categories: registry
