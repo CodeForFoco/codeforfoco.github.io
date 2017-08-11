@@ -1,4 +1,3 @@
----
 layout: post
 title:  Project Title
 date:   yyyy-mm-dd hh:mm:ss -0700
