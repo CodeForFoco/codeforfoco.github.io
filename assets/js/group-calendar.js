@@ -1,7 +1,25 @@
+/**
+ * Upcoming Meetups widget
+ */
+
 'use strict';
 
 (function initGroupCalendar() {
-    var $ = jQuery,
+    jQuery.noConflict();
+
+    // TODO: Replace with Jordan's API key
+    var $api_key = "566830125c564b57904d631159349",
+        mup_widget = {
+            with_jquery: function (block) {
+                block(jQuery, document.body);
+            },
+            api_call: function (path, params) {
+                return "http://api.meetup.com" + path + "?callback=?&" + jQuery.param(jQuery.extend({
+                    key: $api_key
+                }, params));
+            }
+        },
+        $ = jQuery,
         eventsQueryParams = function () {
             return mup_widget.api_call("/2/events", {
                 group_urlname: 'Code-for-Fort-Collins',
