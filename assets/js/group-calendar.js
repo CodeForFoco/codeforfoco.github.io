@@ -49,14 +49,14 @@
             date = timeConverter(event.time);
 
             html +=
-                '<li class="meetup-list__item">' +
-                    '<a href="' + event.event_url +
-                    '" target="_blank" class="meetup-list__heading" ' +
-                    'title="' + event.name + ' details">' +
-                    event.name +
-                    '</a><br>' +
-                    '<span>' + date + '</span>' +
-                '</li>';
+                '<div class="col-md-3 col-sm-6 meetup-list__item">' +
+                '<a href="' + event.event_url +
+                '" target="_blank" class="meetup-list__heading" ' +
+                'title="' + event.name + ' details">' +
+                event.name +
+                '</a>' +
+                '<span class="meetup-list__date">' + date + '</span>' +
+                '</div>';
         }
 
         return html;
