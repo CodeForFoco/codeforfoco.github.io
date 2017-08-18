@@ -31,6 +31,9 @@
                 <div class="col-xs-12">
                     {{ content }}
                 </div>
+                {% if page.show-events %}
+                {% include upcoming-meetups.html %}
+                {% endif %}
             </div>
         </div>
     </section>
