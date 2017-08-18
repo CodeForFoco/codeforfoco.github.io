@@ -8,7 +8,7 @@
     jQuery.noConflict();
 
     // TODO: Replace with Jordan's API key
-    var $api_key = "566830125c564b57904d631159349",
+    var $api_key = "761d3f4222312a1b646e25127b5507",
         mup_widget = {
             with_jquery: function (block) {
                 block(jQuery, document.body);
