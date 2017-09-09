@@ -1,14 +1,14 @@
 # Site settings
-title           : Code For FoCo
+title           : Code For Fort Collins
 url             : "http://codeforfoco.org"
 baseurl         : ""
 copyright       : "2017"
 email           : people@codeforfoco.org
 github_username : codeforfoco
 description: > # this means to ignore newlines until next yaml item
-  We are programmers, designers, hackers, makers, tinkerers,
-  writers and artists and we want to have an impact on the community
-  around us.
+  Code for Fort Collins is a volunteer organization dedicated to using technology
+  to solve challenges that charities, government agencies, and other
+  groups in Fort Collins face. 
 
 # Reading files
 encoding: "utf-8"

@@ -35,6 +35,9 @@
                         {{ content }}
                     {% endif %}
                 </div>
+                {% if page.show-events %}
+                {% include upcoming-meetups.html %}
+                {% endif %}
             </div>
         </div>
     </section>

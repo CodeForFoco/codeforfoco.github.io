@@ -1,42 +1,16 @@
-# January 12, 2017 Meetup Minutes :: Code For FoCo
+---
+layout: post
+title:  "Minutes for ____DATE_____"
+date:  ____DATE_(like 2017-07-05 18:30)____
+categories: minutes
+---
 
-## Announcements
+____GENERAL_UPDATES_HERE_____
 
-### General Announcements
-General things about things.
+## Project Updates
 
-### Organization-specific
-Things about the Code for FoCo organization.
-
-### Project-specific
-Things about individual projects.
-
-#### Project 1
-Project 1 stuff...
-
-##### Summary Since Last Week
-Project 1 recap/summary...
-
-##### Discussion Items this Week
-
-##### Actionable Goals for Next Week
-- Goal 1
-  - *Assignee/s*
-- Goal 2
-  - *Assignee/s*
-  
-#### Project 2
-Project 2 stuff...
-
-##### Summary Since Last Week
-Project 2 recap/summary...
-
-##### Actionable Goals for Next Week
-- Goal 1
-  - *Assignee/s*
-- Goal 2
-  - *Assignee/s*
+_____PROJECT_UPDATES_____
   
 ## Attendees
-- Me
-- You
+
+- _____ATTENDEE_____

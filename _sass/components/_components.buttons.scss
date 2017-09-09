@@ -10,7 +10,9 @@
 
   // Icons
   .fa {
-    margin-right: 5px;
+    margin-right: 8px;
+
+    vertical-align: middle;
   }
 
   &:hover {
@@ -45,7 +47,6 @@
 
 .centered-row-items {
   @include unstyled-list;
-
   @include mq(tablet) {
     display: flex;
 
