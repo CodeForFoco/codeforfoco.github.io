@@ -44,6 +44,15 @@ $textured-panel-bg: radial-gradient(
 $posts-list-item-bg: $very-light-blue;
 
 /**
+ *
+ * MODULES
+ * Typically a cohesive collection of components
+ */
+
+// Card/panel things
+$card-border: $link-color--light;
+
+/**
  * FONTS
  */
 $default-font-fam: 'Lato', sans-serif;
