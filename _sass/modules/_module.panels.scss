@@ -10,9 +10,7 @@
   text-align: center;
 
   background-color: transparentize($white, .8);
-
   @include spacious-panel;
-
   @include mq($from: tablet) {
     font-size: 2.3rem;
   }
@@ -23,35 +21,32 @@
     line-height: 1.5;
   }
 
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: $default-font-fam;
-  }
-
   h2 {
     @include fancy-code-hr($near-black);
   }
 
   &--color-bg {
+    color: $near-white;
     @include textured-bg;
     $thin-border: .07em;
     $thick-border: .2em;
 
-    h2,
-    h3,
-    h4,
-    h5 {
-      color: $near-white;
+    a:not(.btn) {
+      color: $link-color--light;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: underline;
+        color: $link-color--light-hover;
+      }
     }
 
     h2 {
       @include fancy-code-hr($white);
     }
 
-    &:before,
-    &:after {
+    &:after,
+    &:before {
       position: absolute;
 
       display: block;

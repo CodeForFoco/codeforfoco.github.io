@@ -184,9 +184,18 @@
 ===================================*/
 .site-footer {
   font-size: 1.1rem;
+  color: $white;
 
   @include textured-bg;
   @include spacious-panel;
+
+  a {
+    color: $link-color--light;
+
+    &:hover {
+      color: $link-color--light-hover;
+    }
+  }
 
   h3 {
     font-family: $heading-font;

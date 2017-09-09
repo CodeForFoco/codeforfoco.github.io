@@ -107,20 +107,34 @@ layout: default
 
 <!-- PROJECTS -->
 {% if site.categories.projects.size %}
-    <section class="row">
-        <div id="projects" class="col-xs-12">
-            <h2 class="text-center marg">What have we been working on?</h2>
-            <div class="col-xs-12 col-md-10 col-lg-offset-1 marg">
-                <div class="row">
-                    {% assign categoryname = "projects" %}
-                    {% assign limitsize = 9 %}
-                    {% include gallery.html %}
-                </div>
-                <br/>
-                <div class="row">
-                    <a href="/category/projects/">View all Code for Fort Collins projects</a>
-                </div>
+<section id="projects" class="big-ol-panel big-ol-panel--color-bg">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Current Projects</h2>
+                <p>What have we been working on?</p>
             </div>
         </div>
-    </section>
+        <div class="row flex-vert-align flex-horiz-center card">
+            {% for project in site.categories.projects limit : 9 %}
+                <div class="col-sm-4 card__inner">
+                    <h3 class="card__heading">{{project.title}}</h3>
+                    <div class="card__content">
+                        <a href="{{ project.url | prepend: site.baseurl }}"
+                        class="center-text card__image"
+                        style="background-image: url(/assets/images/{{ project.image }});"
+                        ></a>
+                        <p class="card__caption">{{project.project_summary}}</p>
+                        <a href="{{ project.url | prepend: site.baseurl }}" class="btn btn-lg btn--default btn--wide card__btn">View project</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="/category/projects/" class="link--subtle">View all Code for Fort Collins projects</a>
+            </div>
+        </div>
+    </div>
+</section>
 {% endif %}

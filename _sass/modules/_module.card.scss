@@ -1,0 +1,67 @@
+/**
+ * Card: similar to Bootstrap "panel"
+ */
+$card-gutter: 10px;
+
+// Parent/outer Bootstrap row
+.card.row {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+// Inner content
+.card .card__inner {
+  border: solid $card-border 1px;
+  border-radius: 5px;
+
+  // Override Bootstrap columns so we can have a full-width header bg
+  &[class^='col-'] {
+    padding: 0;
+    margin: $card-gutter;
+  }
+
+  @include mq($from: desktop) {
+    margin: 0 10px;
+  }
+}
+
+// Minimal button styling under the assumption is that it's already fancy
+.card__btn {
+  margin: .5em 0 1.3em;
+}
+
+// Title/heading
+.card__heading {
+  border-bottom: dashed 1px $card-border;
+  background-color: transparentize($medium-blue, .8);
+  font-size: .85em;
+  height: 2.9em;
+  justify-content: center;
+  padding: $card-gutter;
+  margin: 0;
+  @include flex-vert-align;
+}
+
+// Container of links, description, button
+.card__content {
+  padding: $card-gutter;
+}
+
+// Project logo and link
+.card__image {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+}
+
+// Project summary
+.card__inner .card__caption {
+  font-size: .55em;
+  margin: 0 auto .5em;
+
+  @include mq($from: desktop) {
+    font-size: .5em;
+  }
+}
