@@ -1,5 +1,8 @@
 /**
+ *
  * COLORS
+ * SCSS color definitions
+ *
  */
 
 // General
@@ -19,9 +22,15 @@ $light-blue: hsl(206, 30%, 71%);
 $light-dull-blue-gray: hsl(206, 29%, 70%);
 $very-light-blue: hsl(206, 30%, 93%);
 
-// Components
+// Components - Links
 $link-color: $medium-blue;
 $link-color-hover: lighten($link-color, 10%);
+
+// Components - Links against darker backgrounds (e.g. footer)
+$link-color--light: lighten(desaturate($link-color, 16%), 20%);
+$link-color--light-hover: lighten($link-color--light, 10%);
+
+// Components - Buttons
 $call-to-action-color: $dark-red;
 
 // Backgrounds
