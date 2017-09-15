@@ -1,51 +1,95 @@
 # Code For Fort Collins
+<p align="center">
+  <a href="http://www.codeforfoco.org">
+    <img alt="CFFC logo" src="http://codeforfoco.org/assets/images/cff-logo.min.svg" width="400"/>
+  </a>
+</p>
 
-This git repo is for the site [codeforfoco.org](http://www.codeforfoco.org).
+This repo is for our organization's website at [codeforfoco.org](http://www.codeforfoco.org).
+
+## Getting Started
+
+Before you can run the website on your machine you need to ensure you have some prerequisites installed:
+
+1. [Fork this repository][forkthisrepo] and clone your fork.
+1. `cd` into the cloned directory.
+1. Run `git submodule update --init --recursive` to install several third-party submodules.
+1. Install Ruby V2 or greater, we recommend you use [RVM](https://rvm.io/)
+1. Install `bundler` by running `gem install bundler`
+1. Install any Ruby dependencies by running `bundle install`
+
+Once all the dependencies have been installed you run the development server with:
+
+```bash
+bundle exec jekyll serve
+```
+
+Open your browser up to [localhost:8080](http://localhost:8080) to view the development site.
 
 ## Contributing
 
 We welcome new contributors.  Be sure to check out guide on [contributing][contributing], which includes instructions on how to fork, clone, branch, commit, pull request and sync your fork.
 
-Not sure where to start? Look for [open issues][githubissue] on GitHub, or message the team on [our Slack site](https://codeforfoco.slack.com/) (can sign up via [email here]()).
-
+Not sure where to start? Look for [open issues][githubissue] on GitHub, or message the team on [our Slack site][slack]. If you aren't on our Slack, [click here for an invite][slackinvite].
 
 TL;DR Contribution Workflow:
 
 1. [Fork][fork] this repository and Clone your fork locally.
 1. Checkout a new branch on which to make your changes.
-1. Make edits. Try to match existing coding style.
+1. Make edits. Try to match [existing coding style](https://github.com/CodeForFoco/codeforfoco.github.io#code-standards).
 1. Test your changes.
 1. Commit your changes. Push your changes to your fork on GitHub.
 1. Submit a new [pull request][pullrequest] and your changes will be reviewed and merged.
 
+### Code Standards
 
+Development in a team environment can result in code inconsistency, which may 
+have undesired impacts including a reduction in readability. Therefore we ask 
+that you standardize and "beautify" your code before submitting a pull request. 
+A few options to simplify this process are outlined below.
 
-## Seeing What Changes Will Look Like
+#### [EditorConfig project](http://editorconfig.org/) 
 
-### Locally test changes
+> EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.
 
-A few requirements:
- 1. Requires a working installation of Ruby programming language.
- 2. Installed `bundler` tool for installing "gems" (`gem install bundler`).
- 3. Local git clone of [this repo][forkthisrepo] where you have changes to test.
+This tool eliminates common inconsistencies such as tab style and line endings, 
+and has plugins available for most modern IDEs and text editors. Find yours [here](http://editorconfig.org/#download).
 
-Previewing
+#### Linters
 
-```bash
-cd codeforfoco.github.io
-bundle install
-bundle exec jekyll serve
-open http://127.0.0.1:8080/  # open this address in web broswer
-```
+Linters validate your code and provide errors and warnings when validation is 
+not met. Here are some linters for common text editors:
+- [linter](https://atom.io/packages/linter) for **Atom** and these 
+language-specific linters:
+  - [linter-scss-lint](https://atom.io/packages/linter-scss-lint)
+  - [linter-jshint](https://atom.io/packages/linter-jshint)
+  - [linter-htmlhint](https://atom.io/packages/linter-htmlhint)
+- [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3) for **Sublime Text** and these language-specific linters:
+  - [SublimeLinter-scss-lint](https://github.com/attenzione/SublimeLinter-scss-lint)
+  - [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
+  - [SublimeLinter-html-tidy](https://github.com/SublimeLinter/SublimeLinter-html-tidy)
+  
+#### Beautifiers
 
+The settings for beautifying this repo's code is found in `.csscomb.json` and 
+`.jsbeautifyrc` at the root of the project. Implementation of the settings is 
+carried out by various plugins specific to each text editor. Here are some of 
+the most common:
+- [atom-beautify](https://atom.io/packages/atom-beautify) is an all-in-one 
+package for **Atom** that will handle beautification of most common languages (FYI 
+it's a big package so it takes a little while for the installation to complete!).
+- **Sublime Text** does not have an all-in-one beautifier, but
+[Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify)
+should suffice for this project.
 
-## Site Roadmap
+## Site Architecture
+The CFFC website will ultimately adhere to an organized, intuitive, and SEO-friendly navigation and content structure, currently based on [this model](site-architecture-chart):
 
-- Need to develop content
+![Site architecture diagram][site-architecture-image]
 
 ## Bugs / Feedback / Suggestions
 
-We encourage you to [open up an issue](https://github.com/CodeForFoco/codeforfoco.github.io/issues/new) if you have any feedback, suggestions or bugs.
+We encourage you to [open up an issue][newissue] if you have any feedback, suggestions or bugs.
 
 ## License
 
@@ -55,4 +99,7 @@ MIT, see [LICENSE](/LICENSE) for full license.
 [forkthisrepo]: https://github.com/CodeForFoco/codeforfoco.github.io#fork-destination-box
 [contributing]: https://github.com/CodeForFoco/org/blob/master/CONTRIBUTING.md
 [githubissue]: https://github.com/CodeForFoco/codeforfoco.github.io/issues
+[newissue]: https://github.com/CodeForFoco/codeforfoco.github.io/issues/new
 [pullrequest]: https://github.com/CodeForFoco/codeforfoco.github.io/pulls
+[site-architecture-image]: assets/images/CFFC-site-architecture.png
+[site-architecture-chart]: https://www.lucidchart.com/documents/view/eb916f30-ba86-417d-bb4a-999b6c558274 

@@ -1,0 +1,150 @@
+/**
+ * Components: things not big enough to be modules
+ */
+
+/**
+ * Social link icons
+ */
+ul.social-links {
+  display: flex;
+
+  padding: 0;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Vertical alignment using flexbox
+.flex-vert-align {
+  @include mq($until: tablet) {
+    &:not(.row) {
+      @include flex-vert-align;
+    }
+  }
+  @include mq(tablet) {
+    @include flex-vert-align;
+  }
+}
+
+// Blurred background
+.blur-bg:before {
+  transition: 2s;
+
+  filter: blur(2px);
+}
+
+// Spacing between columns on mobile
+@include mq($until: tablet) {
+  .row {
+    [class^='col-'] + [class^='col-'] {
+      margin: $inter-grid-spacing 0;
+    }
+  }
+}
+
+@include mq(tablet) {
+  .row + .row {
+    margin-top: $inter-grid-spacing;
+    margin-bottom: $inter-grid-spacing;
+  }
+}
+
+// Completely round image
+.circular-image {
+  position: relative;
+
+  display: inline-block;
+  overflow: hidden;
+
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.subtle-shadow {
+  @include subtle-shadow;
+}
+
+.cffc-logo {
+  background-image: url('../assets/images/cff-logo.min.svg');
+}
+
+// Tags
+.post-tag {
+  font-size: .8rem;
+}
+
+$tag-bg--tech: hsl(146, 51%, 40%);
+$tag-bg--language: hsl(17, 78%, 48%);
+$tag-bg--industry: hsl(300, 38%, 37%);
+$tag-bg--contributor: $med-gray;
+
+.tag-heading {
+  display: inline-block;
+  float: left;
+
+  margin-right: 5px;
+}
+
+.tags {
+  display: inline-block;
+
+  @include unstyled-list;
+}
+
+.tags li,
+.tag {
+  font-size: 14px;
+  line-height: 24px;
+
+  position: relative;
+
+  float: left;
+
+  height: 26px;
+}
+
+.tag {
+  display: inline-block;
+
+  margin-left: 20px;
+  padding: 0 9px 0 3px;
+
+  text-decoration: none;
+
+  color: #fff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 1px 1px 3px $med-gray;
+
+  &:before {
+    transition: .2s;
+
+    position: absolute;
+    top: 0;
+    left: -12px;
+
+    float: left;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border-width: 12px 12px 14px 0;
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@include tags(tech, $tag-bg--tech);
+@include tags(industry, $tag-bg--industry);
+@include tags(contributor, $tag-bg--contributor);
+@include tags(language, $tag-bg--language);
+
+.tag > .fa {
+  margin-right: 5px;
+}

@@ -1,0 +1,83 @@
+/**
+ *
+ * COLORS
+ * SCSS color definitions
+ *
+ */
+
+// General
+$transparent: hsla(0,0,0,0);
+$white: #fff;
+$near-white: #eee;
+$med-gray: hsl(0, 0%, 37%);
+$black: #000;
+$near-black: #111;
+$near-ish-black: #222;
+
+// From the logo
+$dark-red: hsl(349, 90%, 38%);
+$medium-blue: hsl(206, 79%, 28%);
+$gold: hsl(52, 89%, 40%);
+$light-blue: hsl(206, 30%, 71%);
+$light-dull-blue-gray: hsl(206, 29%, 70%);
+$very-light-blue: hsl(206, 30%, 93%);
+
+// Components - Links
+$link-color: $medium-blue;
+$link-color-hover: lighten($link-color, 10%);
+
+// Components - Links against darker backgrounds (e.g. footer)
+$link-color--light: lighten(desaturate($link-color, 16%), 20%);
+$link-color--light-hover: lighten($link-color--light, 10%);
+
+// Components - Buttons
+$call-to-action-color: $dark-red;
+
+// Backgrounds
+$big-ol-panel-bg: $light-blue;
+$hipster-bg: linear-gradient(to bottom right, hsla(52, 88.3%, 40.3%, .4), hsla(192, 100%, 38%, .4)), url(../assets/images/min/bg-75.jpg) center center no-repeat;
+$btn-default-bg: saturate($medium-blue, 1);
+$textured-panel-bg: radial-gradient(
+  hsla(206, 79%, 28%,.3),
+  hsla(206, 79%, 28%,.3)),
+  url(../assets/images/dark_fish_skin.png); // image cred: subtlepatterns.com
+$posts-list-item-bg: $very-light-blue;
+
+/**
+ *
+ * MODULES
+ * Typically a cohesive collection of components
+ */
+
+// Card/panel things
+$card-border: $link-color--light;
+
+/**
+ * FONTS
+ */
+$default-font-fam: 'Lato', sans-serif;
+$heading-font: 'Quantico', sans-serif;
+
+/**
+ * LAYOUT
+ */
+$site-header-height: 4.2rem;
+$panel-min-height: 12em;
+$panel-vert-padding: 2em;
+$inter-grid-spacing: .75em; // between rows and between mobile columns
+
+/**
+ * BREAKPOINTS (using sass-mq)
+ */
+$mq-breakpoints: (
+  mobile:  321px,
+  tablet:  768px,
+  desktop: 1024px,
+  wide:    1300px
+);
+
+/**
+ * OTHER
+ */
+// Box shadow for buttons, etc.
+$shadow-half-trans-gray: 2px 1px 6px 4px rgba(10, 10, 0, .5)

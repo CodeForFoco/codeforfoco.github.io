@@ -2,7 +2,8 @@
 layout: post
 title:  "City of Fort Collins"
 date:   2016-06-07 12:04:53 -0700
-image: fortcollins.jpg
+image: partners/city-of-foco-logo.min.svg
+show-full-img: true
 categories: partners
 ---
 

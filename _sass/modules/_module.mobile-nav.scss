@@ -1,0 +1,104 @@
+/**
+ * Tilted hamburger-ish mobile nav menu toggle
+ * Inspired by: https://codepen.io/karlovidek/pen/aNYWKE
+ */
+
+// Container
+.menu-trigger {
+  display: block;
+
+  width: 40px;
+  margin-right: 6px;
+
+  // Hide on larger screens
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+// The individual bars
+.menu-trigger-bar {
+  position: relative;
+  top: 3px;
+
+  display: block;
+
+  width: 100%;
+  height: 2px;
+  margin-bottom: 6px;
+
+  transition: transform 300ms;
+
+  background-color: $near-white;
+
+  $small-bar-size: 50%;
+
+  &.middle {
+    transform: rotate(-45deg);
+  }
+
+  &.bottom,
+  &.top {
+    width: $small-bar-size;
+
+    transform: rotate(-45deg) translateX(0) translateY(0);
+  }
+
+  &.bottom {
+    margin-left: $small-bar-size;
+  }
+}
+
+// When menu is active
+.close-trigger .menu-trigger-bar {
+  &.top {
+    transform: rotate(45deg) translateX(2px) translateY(-2px);
+  }
+
+  &.bottom {
+    transform: rotate(45deg) translateX(-2px) translateY(0);
+  }
+}
+
+/**
+ * The hidden mobile nav menu
+ */
+#popup-menu {
+  position: fixed;
+  z-index: 50;
+  top: $site-header-height;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+
+  background: linear-gradient(to bottom right,rgba(0,155,193,.4),rgba(0,155,193,.4)), url('../assets/images/min/bg-75.jpg') center center no-repeat;
+}
+
+.popup-menu__content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: $white;
+  box-shadow: 0 4px 15.4px rgba(15, 79, 128, .9);
+
+  // Links to pages within the site
+  .internal-links li {
+    line-height: 2;
+
+    a {
+      font-size: 1.2rem;
+    }
+
+    &:not(:last-of-type) {
+      border-bottom: dashed 1px $white;
+    }
+  }
+
+  ul {
+    @include unstyled-list;
+  }
+}

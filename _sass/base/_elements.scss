@@ -1,0 +1,163 @@
+/**
+ * BASE ELEMENTS STYLING (aka not classes)
+ */
+
+/**
+ * By setting base font in pixels at various breakpoints,
+ * font sizes can easily be controlled using rems for
+ * module-level parent elements, then fine-tuned using ems
+ * for components within the module.
+ */
+html {
+  font-size: 15px;
+
+  @include mq(tablet) {
+    font-size: 16px;
+  }
+  @include mq(desktop) {
+    font-size: 17px;
+  }
+  @include mq($from: wide) {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: $default-font-fam;
+  font-size: 1.1em;
+
+  color: $near-ish-black;
+
+  // Sticky background
+  &:before {
+    position: fixed;
+
+    width: 100%;
+    height: 100vh;
+
+    content: '';
+
+    background: linear-gradient(to bottom right, hsla(52, 40%, 48%, .3) 5%, hsla(192, 100%, 38%, .3)), url(../assets/images/min/hero-one.jpg) center center no-repeat;
+    background-size: cover;
+
+    // Mobile devices get weird with fixed full-height bg's during scroll
+    // since the viewport resizes due to the address bar hiding/showing.
+    // Ideally we would use modernizr and check if touch is enabled, but this
+    // is a cheap fix for now.
+    @media (max-height: 600px) {
+      height: 600px;
+    }
+    @media (min-height: 601px) {
+      height: 1024px;
+    }
+  }
+}
+
+h1 {
+  font-family: $heading-font;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.9em;
+
+  margin: 0 0 .2em;
+
+  + p {
+    margin-top: 0;
+  }
+}
+
+h3 {
+  font-size: 1.5em;
+
+  margin: .3em 0;
+
+  + p {
+    margin-top: 0;
+  }
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+p {
+  line-height: 1.7;
+
+  margin: .9em auto;
+
+  + h2 {
+    margin-top: .9em;
+  }
+
+  &:empty:last-of-type {
+    margin: 0;
+  }
+}
+
+a {
+  transition: .15s;
+
+  color: $link-color;
+
+  &:hover {
+    text-decoration: none;
+
+    color: $link-color-hover;
+  }
+
+  &:active {
+    text-decoration: none;
+
+    color: #f8ac51;
+  }
+}
+
+li {
+  line-height: 1.9;
+}
+
+// Responsive images
+img {
+  max-width: 100%;
+}
+
+blockquote {
+  font-style: italic;
+
+  margin: 1.5em 1em;
+  padding: 1em;
+
+  quotes: '\201C''\201D';
+
+  color: $med-gray;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $light-blue;
+  border-left: 1em solid $light-blue;
+  border-radius: 1em 5px 5px 1em;
+}
+
+blockquote:before {
+  font-size: 4em;
+  line-height: .1em;
+
+  margin-right: .25em;
+
+  content: open-quote;
+  vertical-align: -.4em;
+
+  color: #808080;
+}
+
+blockquote :first-child {
+  display: inline;
+}
+
+blockquote :last-child {
+  margin-bottom: 0;
+}

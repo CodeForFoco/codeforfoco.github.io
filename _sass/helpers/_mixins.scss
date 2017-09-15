@@ -1,0 +1,103 @@
+@mixin flex-vert-align() {
+  display: flex;
+
+  align-items: center;
+}
+
+@mixin textured-bg() {
+  color: $white;
+  background: $textured-panel-bg;
+}
+
+@mixin spacious-panel() {
+  position: relative;
+
+  min-height: $panel-min-height;
+  padding-top: $panel-vert-padding;
+  padding-bottom: $panel-vert-padding;
+}
+
+@mixin boostrap-btn-override($color) {
+  background-color: $color;
+  box-shadow: 0 0 0 4px $color, $shadow-half-trans-gray;
+
+  &:hover {
+    color: $color;
+  }
+}
+
+/**
+ * Fancypants pseudo-<hr> line
+ */
+@mixin fancy-code-hr($color) {
+  display: flex;
+  flex-direction: column;
+
+  &:after {
+    font-size: .5em;
+
+    margin-top: .2em;
+
+    content: '{\a0\a0}';
+  }
+
+  &:before {
+    position: relative;
+    top: -.25em;
+
+    height: 1px;
+
+    content: '';
+
+    order: 2;
+    @include fancy-hr-gradient(43%,57%,$color);
+    @include mq($from: tablet) {
+      @include fancy-hr-gradient(45%,55%,$color);
+    }
+  }
+}
+
+@mixin fancy-hr-gradient($stop1, $stop2, $color) {
+  background: linear-gradient(
+  to right,
+  transparentize($color, .9),
+  $color calc(#{$stop1} + .1em),
+  $transparent calc(#{$stop1} + .1em),
+  $transparent calc(#{$stop2} - .1em),
+  $color calc(#{$stop2} - .1em),
+  transparentize($color, .9)
+  );
+}
+
+@mixin circular-image-size($side-length) {
+  width: $side-length;
+  height: $side-length;
+}
+
+@mixin subtle-shadow {
+  box-shadow: 2px 1px 8px 2px hsla(60, 100%, 2%, .5);
+}
+
+// Left-flush, unbulleted lists
+@mixin unstyled-list {
+  padding: 0;
+
+  list-style-type: none;
+}
+
+@mixin tags($class-suffix, $bg-color) {
+  .tag--#{$class-suffix} {
+    background-color: $bg-color;
+
+    &:before {
+      border-right-color: $bg-color;
+    }
+    &:hover {
+      color: $white;
+      background-color: darken($bg-color, 5%);
+    }
+    &:hover:before {
+      border-right-color: darken($bg-color, 5%);
+    }
+  }
+}

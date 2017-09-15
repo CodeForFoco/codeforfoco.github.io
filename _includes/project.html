@@ -1,0 +1,68 @@
+<h2 class="text-center">{{page.client_tagline}}</h2>
+{% if page.client_mission_stmt %}
+    <blockquote>
+        <p>{{page.client_mission_stmt}}</p>
+    </blockquote>
+{% endif %}
+<h3>Project Summary</h3>
+<p>{{ page.project_summary }}</p>
+<div>{{ content }}</div>
+<div class="text-center">
+    <a href="{{page.project_url}}" class="btn btn-lg btn--default btn--wide" title="{{page.title}} project page">View Live Project</a>
+</div>
+<h3>Project Meta</h3>
+<p>
+    <strong class="tag-heading">Project Status:</strong>{{page.status}}
+</p>
+<div class="tag-section clearfix">
+    <strong class="tag-heading">Contributors:</strong>
+    <ul class="tags">
+        {% for contributor in page.contributors %}
+            <li>
+                <a href="{{ contributor[1] }}" class="tag tag--contributor" target="_blank">
+                    <i class="fa fa-user"></i>{{ contributor[0] }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="tag-section clearfix">
+    <strong class="tag-heading">Tech Tags:</strong>
+    <ul class="tags">
+        {% for tech_tag in page.tech_tags %}
+            <li>
+                <a href="#{{ tech_tag }}" class="tag tag--tech">
+                    <i class="fa fa-code-fork"></i>{{ tech_tag }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="tag-section clearfix">
+    <strong class="tag-heading">Languages:</strong>
+    <ul class="tags">
+        {% for language_tag in page.language_tags %}
+            <li>
+                <a href="#{{ language_tag }}" class="tag tag--language">
+                    <i class="fa fa-code"></i>{{ language_tag }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="tag-section clearfix">
+    <strong class="tag-heading">Industry Tags:</strong>
+    <ul class="tags">
+        {% for industry_tag in page.industry_tags %}
+            <li>
+                <a href="#{{ industry_tag }}" class="tag tag--industry">
+                    <i class="fa fa-industry"></i>{{ industry_tag }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<h3>GitHub Repos</h3>
+<ol>
+    {% for repo in page.github_repos %}
+        <li>
+            <a href="#{{ repo[1] }}">{{ repo[0] }}</a>
+        </li>
+    {% endfor %}
+</ol>

@@ -6,12 +6,15 @@
 	and the popup menu toggle
 
 */
+$ = jQuery;
 $(document).ready(function(){
 
 
-	/* Menu Pop up Toggle */	
-	$('#popmenu').click( function(){
+	/* Menu Pop up Toggle */
+	$('.menu-trigger').click( function(e){
+        e.preventDefault();
 		$('#popup-menu').toggle('hide');
+        $('.menu-trigger').toggleClass('close-trigger');
 	});
 
 
@@ -35,20 +38,20 @@ $(document).ready(function(){
 
 	/* Scroll Effect - can elements at different positions */
 	$(window).on("scroll", function() {
-    //if (window.matchMedia("(min-width: 400px)").matches) {
-        if($(window).scrollTop() > 35) {
-            $('header').css('background-color', '#fff');
-        } else {
-            $('header').css('background-color', 'transparent');
-        }    
-    //} else {
-            //do nothing
-    //}
-
+	    if ($(window).scrollTop() > 35) {
+	        $('#site-header').addClass('top-bar--opaque');
+	    } else {
+            $('#site-header').removeClass('top-bar--opaque');
+	    }
+	    if ($(window).scrollTop() > window.innerHeight/4) {
+	        $('body').addClass('blur-bg');
+	    } else {
+            $('body').removeClass('blur-bg');
+	    }
 	});
 
 
 
 
-});
 
+});

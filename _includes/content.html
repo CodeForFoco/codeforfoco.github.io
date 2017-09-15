@@ -1,0 +1,44 @@
+<article class="page-type--{{ page.categories }}">
+    <section class="hero hero--page">
+        <div class="container">
+            <header class="text-center">
+                {% if page.image %}
+                    {% if page.show-full-img %}
+                    <img class="hero__image" src="/assets/images/{{ page.image }}" />
+                    {% else %}
+                    <div class="hero__image circular-image subtle-shadow" style="background-image: url('/assets/images/{{ page.image }}');"></div>
+                    {% endif %}
+                {% else %}
+                    <div class="circular-image cffc-logo"></div>
+                {% endif %}
+                <h2 class="hero__title">{{ page.title }}</h2>
+                <p class="post-meta">
+                    {% if page.date %}
+                        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+                        {% if page.author %}
+                            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                <span class="author" itemprop="name">{{ page.author }}</span>
+                            </span>
+                        {% endif %}
+                    {% endif %}
+                </p>
+            </header>
+        </div>
+    </section>
+    <section class="post-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    {% if page.categories contains 'projects' %}
+                        {% include project.html %}
+                    {% else %}
+                        {{ content }}
+                    {% endif %}
+                </div>
+                {% if page.show-events %}
+                {% include upcoming-meetups.html %}
+                {% endif %}
+            </div>
+        </div>
+    </section>
+</article>

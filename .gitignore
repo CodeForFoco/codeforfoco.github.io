@@ -2,3 +2,5 @@
 Gemfile.lock
 .DS_Store
 /_site/
+vendor
+.bundle

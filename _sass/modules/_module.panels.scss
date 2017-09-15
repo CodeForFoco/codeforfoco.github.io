@@ -1,0 +1,79 @@
+/**
+ * Large, decorative, container-level wrappers
+ */
+.big-ol-panel {
+  font-size: 1.7rem;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+
+  background-color: transparentize($white, .8);
+  @include spacious-panel;
+  @include mq($from: tablet) {
+    font-size: 2.3rem;
+  }
+  justify-content: center;
+
+  p {
+    font-size: .7em;
+    line-height: 1.5;
+  }
+
+  h2 {
+    @include fancy-code-hr($near-black);
+  }
+
+  &--color-bg {
+    color: $near-white;
+    @include textured-bg;
+    $thin-border: .07em;
+    $thick-border: .2em;
+
+    a:not(.btn) {
+      color: $link-color--light;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: underline;
+        color: $link-color--light-hover;
+      }
+    }
+
+    h2 {
+      @include fancy-code-hr($white);
+    }
+
+    &:after,
+    &:before {
+      position: absolute;
+
+      display: block;
+
+      width: 100%;
+      height: .9em;
+
+      content: '';
+
+      border-width: 0;
+      border-style: solid;
+      border-color: $medium-blue;
+      background-color: transparentize($light-blue,.3);
+    }
+
+    &:before {
+      top: 0;
+
+      border-top-width: $thick-border;
+      border-bottom-width: $thin-border;
+    }
+
+    &:after {
+      bottom: 0;
+
+      border-top-width: $thin-border;
+      border-bottom-width: $thick-border;
+    }
+  }
+}

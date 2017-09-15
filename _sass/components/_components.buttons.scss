@@ -1,0 +1,62 @@
+/**
+ * BUTTONS, TINY PIECES, ETC.
+ */
+
+// Bootstrap overrides
+.btn {
+  color: $white;
+  border: $white dashed 1px;
+  border-radius: 3px;
+
+  // Icons
+  .fa {
+    margin-right: 8px;
+
+    vertical-align: middle;
+  }
+
+  &:hover {
+    border-color: currentColor;
+    background-color: $white;
+    box-shadow: 0 0 0 4px $white, 2px 1px 6px 4px rgba(10, 10, 0, .5);
+    text-shadow: 0 0 currentColor;
+  }
+}
+
+// Custom Bootstrap button color
+.btn--call-to-action {
+  @include boostrap-btn-override($call-to-action-color);
+}
+
+.btn--default {
+  @include boostrap-btn-override($btn-default-bg);
+}
+
+.btn--wide {
+  min-width: 200px;
+}
+
+.btn--wide--mobile {
+  @include mq(mobile) {
+    min-width: 200px;
+  }
+  @include mq(tablet) {
+    min-width: auto;
+  }
+}
+
+.centered-row-items {
+  @include unstyled-list;
+  @include mq(tablet) {
+    display: flex;
+
+    justify-content: center;
+    > li:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
+
+  li {
+    margin-bottom: 1.2rem;
+  }
+}
