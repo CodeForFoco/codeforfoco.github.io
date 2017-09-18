@@ -11,3 +11,10 @@
   transition: 300ms color;
   text-decoration: underline;
 }
+
+// Bootstrap .container too wide
+.post-content .container {
+  @include mq($from: desktop) {
+    width: 1000px;
+  }
+}

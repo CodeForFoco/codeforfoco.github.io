@@ -1,12 +1,14 @@
 /**
  * Card: similar to Bootstrap "panel"
  */
-$card-gutter: 10px;
+$card-gutter: 14px;
 
 // Parent/outer Bootstrap row
 .card.row {
   margin-top: 0;
   margin-bottom: 1em;
+  // Account for inconsistent height (centering looks weird)
+  align-items: flex-start;
 }
 
 // Inner content
@@ -49,19 +51,25 @@ $card-gutter: 10px;
 
 // Project logo and link
 .card__image {
-  display: block;
+  display: inline-block;
   background-size: contain;
+  background-color: transparentize($medium-blue, .8);
   background-repeat: no-repeat;
   background-position: center;
-  height: 150px;
+  border-radius: 100%;
+  border: dashed 2px $card-border;
+  border: dashed $barely-white 2px;
+  height: 4.5em;
+  width: 4.5em;
+  margin: .5em 0 .4em;
 }
 
 // Project summary
 .card__inner .card__caption {
-  font-size: .55em;
+  font-size: .65em;
   margin: 0 auto .5em;
 
-  @include mq($from: desktop) {
-    font-size: .5em;
+  @include mq($from: tablet) {
+    font-size: .45em;
   }
 }

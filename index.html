@@ -125,7 +125,7 @@ layout: default
                         style="background-image: url(/assets/images/{{ project.image }});"
                         ></a>
                         <p class="card__caption">{{project.project_summary}}</p>
-                        <a href="{{ project.url | prepend: site.baseurl }}" class="btn btn-lg btn--default btn--wide card__btn">View project</a>
+                        <a href="{{ project.url | prepend: site.baseurl }}" class="btn btn-lg btn--default card__btn">View project</a>
                     </div>
                 </div>
             {% endfor %}
