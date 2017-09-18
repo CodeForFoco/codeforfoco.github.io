@@ -12,10 +12,10 @@ contributors:
     Matthew Harris: /registry/2017/06/17/matthew-harris
 github_repo: https://github.com/CodeForFoco/solar-scorecard
 industry_tags:
-    - Renewable Energy
-    - Sustainability
-    - Solar Power
     - Environment
+    - Renewable Energy
+    - Solar Power
+    - Sustainability
 tech_tags:
     - HTML
     - JavaScript
