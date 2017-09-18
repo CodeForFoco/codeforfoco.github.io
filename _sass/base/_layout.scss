@@ -190,7 +190,7 @@
   @include spacious-panel;
 
   a {
-    color: $link-color--light;
+    color: inherit;
 
     &:hover {
       color: $link-color--light-hover;
