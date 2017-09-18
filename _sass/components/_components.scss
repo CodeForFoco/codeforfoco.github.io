@@ -76,9 +76,8 @@ ul.social-links {
 }
 
 $tag-bg--tech: hsl(146, 51%, 40%);
-$tag-bg--language: hsl(17, 78%, 48%);
-$tag-bg--industry: hsl(300, 38%, 37%);
-$tag-bg--contributor: $med-gray;
+$tag-bg--contributor: hsl(300, 38%, 37%);
+$tag-bg--industry: hsl(17, 78%, 48%);
 
 .tag-heading {
   display: inline-block;
@@ -143,7 +142,6 @@ $tag-bg--contributor: $med-gray;
 @include tags(tech, $tag-bg--tech);
 @include tags(industry, $tag-bg--industry);
 @include tags(contributor, $tag-bg--contributor);
-@include tags(language, $tag-bg--language);
 
 .tag > .fa {
   margin-right: 5px;

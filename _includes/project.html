@@ -7,9 +7,6 @@
 <h3>Project Summary</h3>
 <p>{{ page.project_summary }}</p>
 <div>{{ content }}</div>
-<div class="text-center">
-    <a href="{{page.project_url}}" class="btn btn-lg btn--default btn--wide" title="{{page.title}} project page">View Live Project</a>
-</div>
 <h3>Project Meta</h3>
 <p>
     <strong class="tag-heading">Project Status:</strong>{{page.status}}
@@ -37,17 +34,6 @@
     </ul>
 </div>
 <div class="tag-section clearfix">
-    <strong class="tag-heading">Languages:</strong>
-    <ul class="tags">
-        {% for language_tag in page.language_tags %}
-            <li>
-                <a href="#{{ language_tag }}" class="tag tag--language">
-                    <i class="fa fa-code"></i>{{ language_tag }}</a>
-            </li>
-        {% endfor %}
-    </ul>
-</div>
-<div class="tag-section clearfix">
     <strong class="tag-heading">Industry Tags:</strong>
     <ul class="tags">
         {% for industry_tag in page.industry_tags %}
@@ -58,11 +44,10 @@
         {% endfor %}
     </ul>
 </div>
-<h3>GitHub Repos</h3>
-<ol>
-    {% for repo in page.github_repos %}
-        <li>
-            <a href="#{{ repo[1] }}">{{ repo[0] }}</a>
-        </li>
-    {% endfor %}
-</ol>
+<h3>GitHub Repo</h3>
+<p>
+    <a href="{{ page.github_repo }}">{{ page.github_repo }}</a>
+</p>
+<div class="text-center">
+    <a href="{{page.project_url}}" class="btn btn-lg btn--default btn--wide" title="{{page.title}} project page">View Live Project</a>
+</div>

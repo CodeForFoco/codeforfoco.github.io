@@ -62,7 +62,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.9em;
+  font-size: 2em;
 
   margin: 0 0 .2em;
 
@@ -72,9 +72,16 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
-
+  font-size: 1.6em;
   margin: .3em 0;
+
+  .post-content__inner & {
+    border-bottom: dotted 1px $med-gray;
+  }
+
+  + h4 {
+    margin-top: .7em;
+  }
 
   + p {
     margin-top: 0;
@@ -82,7 +89,13 @@ h3 {
 }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 1.3em;
+  margin-bottom: .2em;
+  color: $dark-gray;
+
+  + p {
+    margin-top: 0;
+  }
 }
 
 p {

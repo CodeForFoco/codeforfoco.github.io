@@ -10,22 +10,20 @@ contributors:
     Dominic Gendill: https://github.com/dgendill
     Jason Lampel: /registry/2016/08/11/jason-lampel
     Matthew Harris: /registry/2017/06/17/matthew-harris
-github_repos:
-    Main: https://github.com/CodeForFoco/solar-scorecard
+github_repo: https://github.com/CodeForFoco/solar-scorecard
 industry_tags:
-    - Renewable Energy
-    - Sustainability
-    - Solar Power
     - Environment
+    - Renewable Energy
+    - Solar Power
+    - Sustainability
 tech_tags:
-    - Website
-language_tags:
-    - SCSS
-    - JavaScript
     - HTML
+    - JavaScript
     - NodeJS
+    - SCSS
     - TypeScript
-project_summary: Track Fort Collins solar/renewable energy goals
+    - Website
+project_summary: Track Fort Collins solar and renewable energy goals.
 project_url: http://codeforfoco.org/solar-scorecard/
 client_mission_stmt: The goal of this project is to create an up-to-date web-based data visualization tool for tracking solar contributions with respect to City of Fort Collins 2015 Climate Action Plan.
 client_tagline: Track Fort Collins renewable/solar energy goals
