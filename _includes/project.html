@@ -58,11 +58,7 @@
         {% endfor %}
     </ul>
 </div>
-<h3>GitHub Repos</h3>
-<ol>
-    {% for repo in page.github_repos %}
-        <li>
-            <a href="#{{ repo[1] }}">{{ repo[0] }}</a>
-        </li>
-    {% endfor %}
-</ol>
+<h3>GitHub Repo</h3>
+<p>
+    <a href="{{ page.github_repo }}">{{ page.github_repo }}</a>
+</p>

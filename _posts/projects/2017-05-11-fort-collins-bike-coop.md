@@ -11,10 +11,7 @@ contributors:
     Jason Lampel: https://github.com/abettermap
     Jordan Majd: /registry/2017/01/19/jordan-majd
     Kevin Briggs: https://github.com/redisforlosers
-github_repos:
-    Central: https://github.com/CodeForFoco/bike-coop
-    Plugin: https://github.com/CodeForFoco/bike-coop-plugin
-    Theme: https://github.com/CodeForFoco/bike-coop-theme
+github_repo: https://github.com/CodeForFoco/bike-coop
 industry_tags:
     - Non-profit
     - Transportation
