@@ -23,7 +23,7 @@ tech_tags:
     - SCSS
     - TypeScript
     - Website
-project_summary: Track Fort Collins solar/renewable energy goals
+project_summary: Track Fort Collins solar and renewable energy goals.
 project_url: http://codeforfoco.org/solar-scorecard/
 client_mission_stmt: The goal of this project is to create an up-to-date web-based data visualization tool for tracking solar contributions with respect to City of Fort Collins 2015 Climate Action Plan.
 client_tagline: Track Fort Collins renewable/solar energy goals

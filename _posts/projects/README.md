@@ -7,16 +7,22 @@ categories: projects
 status: "In progress" or "Launched"
 contributors:
     Author Name: Ideally use relative link to member's registry page (e.g. /registry/2016/08/11/jason-lampel), otherwise use a URL to a personal or business site, or GitHub profile.
+    Dan LaRoche: https://github.com/DanLaRoche
     Darlington: https://raddcreative.com/
     David Hayes: https://github.com/davidbhayes
     Jason Lampel: https://github.com/abettermap
     Jordan Majd: /registry/2017/01/19/jordan-majd
     Kevin Briggs: https://github.com/redisforlosers
+    Website-less: It happens. Use a '#' sign (with quotes) for these folks.
     More Authors: IF YOU ADD A NEW ONE NOT FOUND IN THIS LIST, ADD IT IN _posts/projects/README.md AS A VALIDATION CHECK
 github_repo: https://github.com/somethin
 industry_tags:
+    - Civic Engagement
+    - Data Science
+    - Election Information
     - Environment
     - Non-profit
+    - Politics
     - Renewable Energy
     - Solar Power
     - Sustainability
