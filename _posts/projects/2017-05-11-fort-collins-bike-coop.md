@@ -18,13 +18,12 @@ industry_tags:
 tech_tags:
     - CMS
     - Database
-    - Website
-language_tags:
-    - SCSS
-    - JavaScript
     - HTML
-    - WordPress
+    - JavaScript
     - PHP
+    - SCSS
+    - Website
+    - WordPress
 project_summary: Modernize a community-driven bicycle co‑op website
 project_url: https://new.fcbikecoop.org/
 client_mission_stmt: We keep as many happy bikers on the road as possible by assisting them with work on their own rides during our Open Shop hours, providing low-cost used and new parts, as-is bikes and refurbished, ready-to-ride bikes. We also handle all recovered bikes for the Fort Collins Police.

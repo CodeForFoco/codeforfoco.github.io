@@ -21,13 +21,11 @@ industry_tags:
 tech_tags:
     - CMS
     - Database
-    - Website
-    - If you add a new one not found in this list, add it in _posts/projects/README.md as a validation check
-language_tags:
     - HTML
     - JavaScript
     - PHP
     - SCSS
+    - Website
     - WordPress
     - If you add a new one not found in this list, add it in _posts/projects/README.md as a validation check
 client_tagline: Super-short, single-line project tagline to serve as page content heading
