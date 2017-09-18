@@ -8,7 +8,7 @@ status: "In progress" or "Complete" or "It's complicated :stuck_out_tongue_winki
 contributors:
     Author Name: url to github repo or personal site, etc.
     More Authors: If you add a new one not found in this list, add it in _posts/projects/README.md as a validation check
-    Darlington: https://github.com/radd2004
+    Darlington: https://raddcreative.com/
     David Hayes: https://github.com/davidbhayes
     Jason Lampel: https://github.com/abettermap
     Jordan Majd: /registry/2017/01/19/jordan-majd

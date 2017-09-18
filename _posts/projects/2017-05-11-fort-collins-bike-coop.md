@@ -6,7 +6,7 @@ image: projects/fcbikecoop.svg
 categories: projects
 status: In progress
 contributors:
-    Darlington: https://github.com/radd2004
+    Darlington: https://raddcreative.com/
     David Hayes: https://github.com/davidbhayes
     Jason Lampel: https://github.com/abettermap
     Jordan Majd: /registry/2017/01/19/jordan-majd
