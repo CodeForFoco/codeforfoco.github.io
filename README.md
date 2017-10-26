@@ -14,9 +14,9 @@ Before you can run the website on your machine you need to ensure you have some 
 1. [Fork this repository][forkthisrepo] and clone your fork.
 1. `cd` into the cloned directory.
 1. Run `git submodule update --init --recursive` to install several third-party submodules.
-1. Install Ruby V2 or greater, we recommend you use [RVM](https://rvm.io/)
-1. Install `bundler` by running `gem install bundler`
-1. Install any Ruby dependencies by running `bundle install`
+1. Install Ruby V2 or greater, we recommend you use [RVM](https://rvm.io/).
+1. Install `bundler` by running `gem install bundler`.
+1. Install any Ruby dependencies by running `bundle install`.
 
 Once all the dependencies have been installed you run the development server with:
 
@@ -83,6 +83,7 @@ it's a big package so it takes a little while for the installation to complete!)
 should suffice for this project.
 
 ## Site Architecture
+
 The CFFC website will ultimately adhere to an organized, intuitive, and SEO-friendly navigation and content structure, currently based on [this model](site-architecture-chart):
 
 ![Site architecture diagram][site-architecture-image]
@@ -95,11 +96,13 @@ We encourage you to [open up an issue][newissue] if you have any feedback, sugge
 
 MIT, see [LICENSE](/LICENSE) for full license.
 
+[contributing]: https://github.com/CodeForFoco/org/blob/master/CONTRIBUTING.md
 [fork]: https://help.github.com/articles/fork-a-repo/
 [forkthisrepo]: https://github.com/CodeForFoco/codeforfoco.github.io#fork-destination-box
-[contributing]: https://github.com/CodeForFoco/org/blob/master/CONTRIBUTING.md
 [githubissue]: https://github.com/CodeForFoco/codeforfoco.github.io/issues
 [newissue]: https://github.com/CodeForFoco/codeforfoco.github.io/issues/new
 [pullrequest]: https://github.com/CodeForFoco/codeforfoco.github.io/pulls
 [site-architecture-image]: assets/images/CFFC-site-architecture.png
-[site-architecture-chart]: https://www.lucidchart.com/documents/view/eb916f30-ba86-417d-bb4a-999b6c558274 
+[site-architecture-chart]: https://www.lucidchart.com/documents/view/eb916f30-ba86-417d-bb4a-999b6c558274
+[slack]: https://codeforfoco.slack.com/
+[slackinvite]: https://codeforfocoslack.herokuapp.com/
