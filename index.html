@@ -67,7 +67,7 @@ layout: default
                 <p>Code for Fort Collins has several partners who support our cause in a variety of ways.</p>
             </div>
         </div>
-        <div class="row flex-vert-align">
+        <div class="row flex-vert-align flex-horiz-center">
             {% for post in site.categories.partners limit : 9 %}
                 <div class="col-sm-4">
                     <a href="{{ post.url | prepend: site.baseurl }}">
