@@ -57,7 +57,7 @@ do not hesitate to reach out in Slack.
 
 ## Finally, NoCo Tech Meetups Slack
 
-If you're just looking to be more involved in the community of Northern Colorado technology, check out the Northern Colorado Tech Meetups Slack. While Code for Fort Collins maintains our own Slack (https://codeforfocoslack.herokuapp.com/, if you want an invite), there are lots of peeople from lots of different Meetup grounds in the NoCo Tech Slack. Check it out, make friends :)
+If you're just looking to be more involved in the community of Northern Colorado technology, check out the Northern Colorado Tech Meetups Slack. While Code for Fort Collins maintains our own Slack (https://codeforfocoslack.herokuapp.com/, if you want an invite), there are lots of people from lots of different Meetup grounds in the NoCo Tech Slack. Check it out, make friends :)
 
 tinyurl.com/nocotech
 
