@@ -62,7 +62,7 @@ If you're just looking to be more involved in the community of Northern Colorado
 tinyurl.com/nocotech
 
 Cheers,
-David ([davidhayes.com](http://davidbhayes.com), david@codeforfoco.org)
+<br/>David ([davidhayes.com](http://davidbhayes.com), david@codeforfoco.org)
 
 PS: I'm trying to make this a regular (monthly) blog post and email. If you'd like to write it, or have other thoughts on the idea, let me know.
 
