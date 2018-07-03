@@ -65,3 +65,5 @@ Cheers,
 David ([davidhayes.com](http://davidbhayes.com), david@codeforfoco.org)
 
 PS: I'm trying to make this a regular (monthly) blog post and email. If you'd like to write it, or have other thoughts on the idea, let me know.
+
+PPS: We're not meeting this week, the first week of July. While we typically would, we had no host available for July 5. So **we're meeting on July 12th for new member night instead**.
