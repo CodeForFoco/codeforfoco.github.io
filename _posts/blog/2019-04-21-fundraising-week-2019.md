@@ -51,3 +51,5 @@ We hope to see you then! (You'll find me as a 5'11" bald man in a Code for Ameri
 
 Thanks again,<br>
 The Code for Fort Collins Brigade
+
+PS: Want to keep up with what we're doing? Sign up to our email list. We'll just use it for periodic updates (like what you just read): [Subscribe to stay up to date!](https://mailchi.mp/2f1261464b5e/friendsofcffc)
