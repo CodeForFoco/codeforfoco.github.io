@@ -9,7 +9,7 @@ This week we're starting a brand new tradition at Code for Fort Collins: our ann
 
 We'll be emailing daily this week to highlight who we are, what we've done, and how you can help.
 
-And if you're not busy, we want to see you in person! We will be at Odell from 2pm to 4pm on Saturday April 26th. If you're not busy that afternoon, we'd love to see you and chat about Code for Fort Collins. (Or anything else you'd like to chat about that's within our Code of Conduct. This doesn't need to be a single-purpose afternoon.)
+And if you're not busy, we want to see you in person! We will be at Odell from 2pm to 4pm on Saturday April 27th. If you're not busy that afternoon, we'd love to see you and chat about Code for Fort Collins. (Or anything else you'd like to chat about that's within our Code of Conduct. This doesn't need to be a single-purpose afternoon.)
 
 # What is Code for Fort Collins?
 
@@ -45,7 +45,7 @@ If money's not what you've got to give, we'd also love your help in other ways. 
 
 If we've convinced you that Code for Fort Collins is an organization worth your dollars, please give at [https://tinyurl.com/CFFCDonate](https://tinyurl.com/CFFCDonate)
 
-And please consider joining us at Odell on Saturday April 26th from 2pm to 4pm. We'll just be hanging out, chatting with folks like you about technology, the movies, and our great northern Colorado climate. It'll be a fun and easy time.
+And please consider joining us at Odell on Saturday April 27th from 2pm to 4pm. We'll just be hanging out, chatting with folks like you about technology, the movies, and our great northern Colorado climate. It'll be a fun and easy time.
 
 We hope to see you then! (You'll find me as a 5'11" bald man in a Code for America jacket and wearing, holding, and/or standing near a Code for Fort Collins sign.)
 
