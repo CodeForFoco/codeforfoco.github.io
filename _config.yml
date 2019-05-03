@@ -2,7 +2,7 @@
 title           : Code For Fort Collins
 url             : "http://codeforfoco.org"
 baseurl         : ""
-copyright       : "2017"
+copyright       : "2019"
 email           : people@codeforfoco.org
 github_username : codeforfoco
 description: > # this means to ignore newlines until next yaml item
