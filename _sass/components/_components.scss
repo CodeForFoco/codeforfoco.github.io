@@ -7,11 +7,15 @@
  */
 ul.social-links {
   display: flex;
-
-  padding: 0;
+  flex-wrap: wrap;
+  padding: 1em;
 
   justify-content: space-between;
   align-items: center;
+}
+
+ul.social-links li {
+  margin: 0 2em 0 .5em;
 }
 
 // Vertical alignment using flexbox
