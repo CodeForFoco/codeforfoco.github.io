@@ -28,6 +28,11 @@ sass:
   style: nested
 #  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.htm
 
+collections:
+  roles:
+    output: true
+    permalink: /:collection
+
 # Outputting
 permalink: pretty
 
