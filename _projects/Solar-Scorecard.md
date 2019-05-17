@@ -1,9 +1,7 @@
 ---
-layout: post
+layout: page
 title:  Solar Scorecard
-date:   2017-05-11 19:54:00 -0700
 image: projects/solar-icon.png
-categories: projects
 status: In progress
 contributors:
     Ian Skor: http://sandboxsolar.com/#about
@@ -27,6 +25,7 @@ project_summary: Track Fort Collins solar and renewable energy goals.
 project_url: http://codeforfoco.org/solar-scorecard/
 client_mission_stmt: The goal of this project is to create an up-to-date web-based data visualization tool for tracking solar contributions with respect to City of Fort Collins 2015 Climate Action Plan.
 client_tagline: Track Fort Collins renewable/solar energy goals
+redirect_from: /projects/2017/05/12/solar-scorecard/
 ---
 
 ### Project Details

@@ -1,10 +1,8 @@
 ---
-layout: post
+layout: page
 title:  Project Title
-date:   yyyy-mm-dd hh:mm:ss -0700
 image: e.g. projects/fcbikecoop.svg (dir is actually in assets/images/projects but jekyll will find it)
-categories: projects
-status: "In progress" or "Launched"
+status: In progress
 contributors:
     Author Name: Ideally use relative link to member's registry page (e.g. /registry/2016/08/11/jason-lampel), otherwise use a URL to a personal or business site, or GitHub profile.
     Dan LaRoche: https://github.com/DanLaRoche

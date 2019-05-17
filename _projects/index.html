@@ -1,0 +1,23 @@
+---
+layout: default
+title:  "Code for Fort Collins Projects"
+author: David Hayes
+permalink: /projects/
+redirect_from: /category/projects/
+---
+
+<article class="page-type--category">
+    <section class="hero hero--page hero-page--no-img">
+        <h2 class="text-center hero__title">{{ page.title }}</h2>
+    </section>
+    <section class="post-content">
+        <div class="container posts-list">
+            {% for post in site.projects %}
+				{% if post.path contains 'README' or post.path contains 'index' %}
+					{% continue %}
+				{% endif %}
+                {% include list.html %}
+            {% endfor %}
+        </div>
+    </section>
+</article>

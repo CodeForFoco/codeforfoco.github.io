@@ -32,6 +32,9 @@ collections:
   roles:
     output: true
     permalink: /:collection/:name/
+  projects:
+    output: true
+    permalink: /:collection/:name/
 
 # Outputting
 permalink: pretty
@@ -42,6 +45,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-autoprefixer
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:

@@ -15,7 +15,7 @@ Supporting them, we have [Meeting Leaders](/roles/meeting-leader/). Each project
 
 {% for role in site.roles %}
 	{% if role.path contains 'index' %}
-		{% break %}
+		{% continue %}
 	{% endif %}
 * [{{role.title}}]({{role.url}})
 {% endfor %}

@@ -1,14 +1,10 @@
 ---
-layout: post
+layout: page
 title: CERP
-date:   2017-09-14 18:54:00 -0700
 image: projects/vote.png
-categories: projects
 status: In progress
 contributors:
     Dan LaRoche: https://github.com/DanLaRoche
-    Jeremy Thornton: '#'
-    Tony DeMillard: '#'
 github_repo: https://github.com/CodeForFoco/CERP
 industry_tags:
     - Election Information
@@ -26,6 +22,7 @@ project_summary: Provide information on local elections, politicians, issues, an
 project_url: http://codeforfoco.org/
 client_mission_stmt: Election information should be available to citizens in an easy to understand, fun to explore, and overall interesting way so that our community can better understand itself and its political past, present, and future.
 client_tagline: Community Elections Resources and Polling
+redirect_from: /projects/2017/09/15/cerp/
 ---
 
 ### Project Details

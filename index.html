@@ -106,7 +106,7 @@ layout: default
 </section>
 
 <!-- PROJECTS -->
-{% if site.categories.projects.size %}
+{% if site.projects.size %}
 <section id="projects" class="big-ol-panel big-ol-panel--color-bg">
     <div class="container text-center">
         <div class="row">
@@ -116,7 +116,7 @@ layout: default
             </div>
         </div>
         <div class="row flex-vert-align flex-horiz-center card">
-            {% for project in site.categories.projects limit : 9 %}
+            {% for project in site.projects limit : 9 %}
                 <div class="col-sm-4 card__inner">
                     <h3 class="card__heading">{{project.title}}</h3>
                     <div class="card__content">
@@ -132,7 +132,7 @@ layout: default
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <a href="/category/projects/" class="link--subtle">View all Code for Fort Collins projects</a>
+                <a href="/projects/" class="link--subtle">View all Code for Fort Collins projects</a>
             </div>
         </div>
     </div>

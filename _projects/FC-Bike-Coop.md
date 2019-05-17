@@ -1,9 +1,7 @@
 ---
-layout: post
+layout: page
 title:  Fort Collins Bike Co‑op
-date:   2017-05-12 12:00:00 -0700
 image: projects/fcbikecoop.svg
-categories: projects
 status: In progress
 contributors:
     Darlington: https://raddcreative.com/
@@ -28,6 +26,7 @@ project_summary: Modernize a community-driven bicycle co‑op website.
 project_url: https://new.fcbikecoop.org/
 client_mission_stmt: We keep as many happy bikers on the road as possible by assisting them with work on their own rides during our Open Shop hours, providing low-cost used and new parts, as-is bikes and refurbished, ready-to-ride bikes. We also handle all recovered bikes for the Fort Collins Police.
 client_tagline: Building Community Through Bicycling
+redirect_from: /projects/2017/05/12/fort-collins-bike-coop/
 ---
 
 ### Project Details
