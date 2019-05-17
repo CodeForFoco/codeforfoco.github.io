@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: CERP
 image: projects/vote.png
 status: In progress

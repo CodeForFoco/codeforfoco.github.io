@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title:  Solar Scorecard
 image: projects/solar-icon.png
 status: In progress

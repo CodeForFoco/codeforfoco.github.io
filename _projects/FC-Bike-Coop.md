@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title:  Fort Collins Bike Co‑op
 image: projects/fcbikecoop.svg
 status: In progress
