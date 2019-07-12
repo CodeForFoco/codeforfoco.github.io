@@ -58,52 +58,6 @@ layout: default
     </div>
 </section>
 
-<!-- Partners -->
-<section id="partners" class="big-ol-panel big-ol-panel--color-bg">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Our Partners</h2>
-                <p>Code for Fort Collins has several partners who support our cause in a variety of ways.</p>
-            </div>
-        </div>
-        <div class="row flex-vert-align flex-horiz-center">
-            {% for post in site.categories.partners limit : 9 %}
-                <div class="col-sm-4">
-                    <a href="{{ post.url | prepend: site.baseurl }}">
-                        <img src="/assets/images/{{ post.image }}"/>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
-        <div class="row">
-            <a href="/category/partners/" class="btn btn-lg btn--default btn--wide">View all partners</a>
-        </div>
-    </div>
-</section>
-
-<!-- OTHER CODE FOR ORGS -->
-<section class="big-ol-panel">
-    <div class="container">
-        <div class="row">
-            <div id="other-orgs" class="col-xs-12">
-                <h2>A Family Affair</h2>
-                <p>Code For Fort Collins is just one of many similar organizations throughout the country, including some of our sister organizations here in the Front Range.</p>
-                <ul class="centered-row-items">
-                    <li>
-                        <a href="https://www.codeforamerica.org/" class="btn btn-lg btn--default btn--wide--mobile">Code For America</a>
-                    </li>
-                    <li>
-                        <a href="http://www.codefordenver.org/" class="btn btn-lg btn--default btn--wide--mobile">Code For Denver</a>
-                    </li>
-                    <li>
-                        <a href="http://www.codeforboulder.org/" class="btn btn-lg btn--default btn--wide--mobile">Code For Boulder</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- PROJECTS -->
 {% if site.projects.size %}
@@ -142,3 +96,51 @@ layout: default
     </div>
 </section>
 {% endif %}
+
+<!-- OTHER CODE FOR ORGS -->
+<section class="big-ol-panel">
+    <div class="container">
+        <div class="row">
+            <div id="other-orgs" class="col-xs-12">
+                <h2>A Family Affair</h2>
+                <p>Code For Fort Collins is just one of many similar organizations throughout the country, including some of our sister organizations here in the Front Range.</p>
+                <ul class="centered-row-items">
+                    <li>
+                        <a href="https://www.codeforamerica.org/" class="btn btn-lg btn--default btn--wide--mobile">Code For America</a>
+                    </li>
+                    <li>
+                        <a href="http://www.codefordenver.org/" class="btn btn-lg btn--default btn--wide--mobile">Code For Denver</a>
+                    </li>
+                    <li>
+                        <a href="http://www.codeforboulder.org/" class="btn btn-lg btn--default btn--wide--mobile">Code For Boulder</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Partners -->
+<section id="partners" class="big-ol-panel big-ol-panel--color-bg">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Our Partners</h2>
+                <p>Code for Fort Collins has several partners who support our cause in a variety of ways.</p>
+            </div>
+        </div>
+        <div class="row flex-vert-align flex-horiz-center">
+            {% for post in site.categories.partners limit : 9 %}
+                <div class="col-sm-4">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <img src="/assets/images/{{ post.image }}"/>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <a href="/category/partners/" class="btn btn-lg btn--default btn--wide">View all partners</a>
+        </div>
+    </div>
+</section>
