@@ -17,7 +17,7 @@ tech_tags:
     - React
     - Flask
     - Python
-project_summary: Provide information on local elections, politicians, issues, and political outcomes. Visualize and share results.
+project_summary: Replace a tired old technology with a great volunteer database tool
 project_url: #
 client_mission_stmt: Make it easier to connect volunteers with great opportunities throughout Northern Colorado
 client_tagline: Get people involved!
