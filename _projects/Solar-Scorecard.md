@@ -8,7 +8,7 @@ contributors:
     Ian Skor: http://sandboxsolar.com/#about
     Dominic Gendill: https://github.com/dgendill
     Jason Lampel: /registry/2016/08/11/jason-lampel
-    Matthew Harris: /registry/2017/06/17/matthew-harris
+    David B Hayes: https://twitter.com/davidbhayes
 github_repo: https://github.com/CodeForFoco/solar-scorecard
 industry_tags:
     - Environment

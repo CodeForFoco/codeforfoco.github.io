@@ -20,4 +20,4 @@ client_mission_stmt: Our ongoing community-wide engagement aligns local service 
 client_tagline: The Homeward 2020 Long-term Homelessness Data Dashboard -- Making Homelessness Rare, Short-lived, and Non-Recurring
 ---
 
-Homeward 2020 wanted to start to compile reports about long-term homelessness. Gudrun jumped at the opportunity to use a cool new tool: Tableau, and make a great report. The team from Homeward 2020 (Holly Le Maseurier and Marla from the Murphy Center) did the hard work of collecting all the data, but we helped them with the tech side. And we still do a bit of WordPress support from time to time :)
+Homeward 2020 wanted to start to compile reports about long-term homelessness in Fort Collins. Gudrun jumped at the opportunity to use a cool new tool: Tableau, and make a great report. The team from Homeward 2020 (Holly LeMasurier and Marla Cleary from the Murphy Center) did the hard work of collecting all the data, but we helped them with the tech side. And while the project is complete, we still do a bit of WordPress support from time to time :)
