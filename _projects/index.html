@@ -12,7 +12,8 @@ redirect_from: /category/projects/
     </section>
     <section class="post-content">
         <div class="container posts-list">
-            {% for post in site.projects %}
+            {% assign sorted = (site.projects | sort: 'date') | reverse %}
+            {% for post in sorted %}
 				{% if post.path contains 'README' or post.path contains 'index' %}
 					{% continue %}
 				{% endif %}
