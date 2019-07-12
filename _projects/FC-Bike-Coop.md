@@ -1,6 +1,7 @@
 ---
 layout: project
 title:  Fort Collins Bike Co‑op
+date: 2017-06-01
 image: projects/fcbikecoop.svg
 status: In progress
 contributors:

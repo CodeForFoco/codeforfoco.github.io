@@ -1,6 +1,7 @@
 ---
 layout: project
 title:  Solar Scorecard
+date: 2018-02-01
 image: projects/solar-icon.png
 status: In progress
 contributors:

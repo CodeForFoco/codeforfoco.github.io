@@ -1,6 +1,7 @@
 ---
 layout: project
 title: CERP
+date: 2018-01-01
 image: projects/vote.png
 status: In progress
 contributors:

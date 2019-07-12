@@ -116,7 +116,14 @@ layout: default
             </div>
         </div>
         <div class="row flex-vert-align flex-horiz-center card">
-            {% for project in site.projects limit : 9 %}
+            {% assign sorted = (site.projects | sort: 'date') | reverse %}
+            {% for project in sorted limit : 9 %}
+            {% if project.path contains 'index' %}
+                {% continue %}
+            {% endif %}
+            {% if project.path contains 'README' %}
+                {% continue %}
+            {% endif %}
                 <div class="col-sm-4 card__inner">
                     <h3 class="card__heading">{{project.title}}</h3>
                     <div class="card__content">
