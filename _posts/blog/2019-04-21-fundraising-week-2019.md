@@ -4,6 +4,7 @@ title:  "It's CFFC Fundraising Week, Party on Saturday"
 date:   2019-04-21
 author: David Hayes
 categories: blog
+image: blog/money-tips-photo-donate.jpg
 ---
 This week we're starting a brand new tradition at Code for Fort Collins: our annual fundraising drive. Why fundraise? So we're better able to cover our incidental costs. Things like food, SaaS plans we need, and paying rent for a meeting space. Remember, Code for Fort Collins is a completely volunteer organization, and that donations to us (through Code for America, more on that tomorrow) are completely tax deductible. There's a real 501(c)3 here 🤓
 
