@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Proposal: Board Procedures"
+date:   2019-09-19
+author: David Hayes
+categories: board, cffc-org
+---
+
 *This is a proposal for formalizing the way that the board of Code for Fort Collins works.*
 
 There exists an advisory board of Code for Fort Collins which meets quarterly on the first(-ish) Saturday of months where x % 3 = 1. 
