@@ -28,4 +28,4 @@ Participation in the board meeting is more about being thoughtful about organiza
 Only after a topic of conversation or action has been debated for a few cycles without a clearly mutually-agreed course of action should a vote be taken. 
 (Robert’s Rules of Order and all that should be considered, but are not committed here. 
 Because so far no such structure has been useful. 
-In the event that it should become so, those details should be enumerated here.)
+In the event that it should become useful, those details should be enumerated here.)
