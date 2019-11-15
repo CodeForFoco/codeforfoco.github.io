@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FCx: We're learning about Fort Collins!"
-date:   2019-10-03
+date:   2019-10-02
 author: David Hayes
 categories: blog, cffc-org, city-of-foco
 ---
