@@ -67,7 +67,7 @@ layout: default
             </div>
         </div>
         <div class="row flex-vert-align flex-horiz-center card">
-            {% assign sorted = (site.projects | sort: 'date') | reverse %}
+            {% assign sorted = site.projects | sort: 'date' | reverse %}
             {% for project in sorted limit : 4 %}
             {% if project.path contains 'README' or project.path contains 'index' %}
                     {% continue %}
