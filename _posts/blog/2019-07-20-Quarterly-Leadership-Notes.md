@@ -76,4 +76,4 @@ Alex is thinking he'll run something this day, but Steven and David aren't commi
 
 * David will check with the library about food being OK
 * David will make more complete more complete documentation (blog post) about the board process
-* Next time: A more complete inventory of organizational need and goals should be made
+* Next time: A more complete inventory of organizational need and goals should be made 
