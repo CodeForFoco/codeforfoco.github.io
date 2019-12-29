@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "FCx: We're learning about Fort Collins!"
-date:   2019-10-02
+date:   2019-10-03
 author: David Hayes
-categories: blog, cffc-org, city-of-foco
+categories: [blog, cffc-org, city-of-foco]
 ---
 
 This is a short, late summary of our first event run with the city of Fort Collins on September 5, 2019. Quick summary: the events are codenamed FCx, the next one will be February 6, 2020, and you can find out about [the project at the Our City portal](https://ourcity.fcgov.com/open-data).

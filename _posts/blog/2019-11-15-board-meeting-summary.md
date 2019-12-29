@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Q4 Board Meeting: Some Notes
+title:  "Q4 Board Meeting: Some Notes"
 date:   2019-11-15
 author: David Hayes
-categories: board, cffc-org
+categories: [blog, board, cffc-org]
 ---
 
 This is mostly my sharing my disorganized notes from the meeting, so you might be asking David (me) for more details if any of this is unclear.

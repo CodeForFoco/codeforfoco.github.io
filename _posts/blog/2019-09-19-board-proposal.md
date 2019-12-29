@@ -3,7 +3,7 @@ layout: post
 title:  "Proposal: Board Procedures"
 date:   2019-09-19
 author: David Hayes
-categories: board, cffc-org
+categories: [blog, board, cffc-org]
 ---
 
 *This is a proposal for formalizing the way that the board of Code for Fort Collins works.*
