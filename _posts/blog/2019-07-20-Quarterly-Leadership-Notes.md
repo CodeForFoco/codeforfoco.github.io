@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "We Had Coffee! - Quarterly Leadership Meeting"
-date:   2019-07-18
+date:   2019-07-20
 author: David Hayes
 categories: blog
 ---
