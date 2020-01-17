@@ -2,7 +2,7 @@
 layout: page
 title:  "Roles in Code for Fort Collins"
 author: David Hayes
-permalink: /roles
+permalink: /roles/
 ---
 
 # Code for Fort Collins Administrative Roles
